@@ -1,6 +1,0 @@
-Invoking command in '/root/data/ros2_ws/build/ionic_demo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /root/data/ros2_ws/src/ionic_demo/ionic_demo -DCMAKE_INSTALL_PREFIX=/root/data/ros2_ws/install/ionic_demo
-Invoked command in '/root/data/ros2_ws/build/ionic_demo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /root/data/ros2_ws/src/ionic_demo/ionic_demo -DCMAKE_INSTALL_PREFIX=/root/data/ros2_ws/install/ionic_demo
-Invoking command in '/root/data/ros2_ws/build/ionic_demo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /root/data/ros2_ws/build/ionic_demo -- -j20 -l20
-Invoked command in '/root/data/ros2_ws/build/ionic_demo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /root/data/ros2_ws/build/ionic_demo -- -j20 -l20
-Invoking command in '/root/data/ros2_ws/build/ionic_demo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /root/data/ros2_ws/build/ionic_demo
-Invoked command in '/root/data/ros2_ws/build/ionic_demo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /root/data/ros2_ws/build/ionic_demo

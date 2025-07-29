@@ -1,6 +1,0 @@
-source;share/spawn_osoyoo/hook/pythonpath.ps1
-source;share/spawn_osoyoo/hook/pythonpath.dsv
-source;share/spawn_osoyoo/hook/pythonpath.sh
-source;share/spawn_osoyoo/hook/ament_prefix_path.ps1
-source;share/spawn_osoyoo/hook/ament_prefix_path.dsv
-source;share/spawn_osoyoo/hook/ament_prefix_path.sh
