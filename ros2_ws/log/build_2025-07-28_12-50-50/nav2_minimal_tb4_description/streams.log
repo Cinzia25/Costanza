@@ -1,0 +1,85 @@
+[0.169s] Invoking command in '/root/data/ros2_ws/build/nav2_minimal_tb4_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /root/data/ros2_ws/models/turtlebot4/nav2_minimal_turtlebot_description -DCMAKE_INSTALL_PREFIX=/root/data/ros2_ws/install/nav2_minimal_tb4_description
+[0.272s] -- The C compiler identification is GNU 13.3.0
+[0.368s] -- The CXX compiler identification is GNU 13.3.0
+[0.386s] -- Detecting C compiler ABI info
+[0.463s] -- Detecting C compiler ABI info - done
+[0.471s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.472s] -- Detecting C compile features
+[0.472s] -- Detecting C compile features - done
+[0.480s] -- Detecting CXX compiler ABI info
+[0.562s] -- Detecting CXX compiler ABI info - done
+[0.572s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.572s] -- Detecting CXX compile features
+[0.573s] -- Detecting CXX compile features - done
+[0.584s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.734s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.884s] -- Found urdf: 2.10.0 (/opt/ros/jazzy/share/urdf/cmake)
+[0.957s] -- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2
+[0.978s] -- Found xacro: 2.0.13 (/opt/ros/jazzy/share/xacro/cmake)
+[0.985s] -- Found ament_lint_auto: 0.17.2 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.108s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.120s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.120s] -- Configured 'flake8' exclude dirs and/or files: 
+[1.123s] -- Added test 'lint_cmake' to check CMake code style
+[1.125s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.131s] -- Added test 'xmllint' to check XML markup files
+[1.134s] -- Configuring done (1.0s)
+[1.137s] -- Generating done (0.0s)
+[1.138s] -- Build files have been written to: /root/data/ros2_ws/build/nav2_minimal_tb4_description
+[1.141s] Invoked command in '/root/data/ros2_ws/build/nav2_minimal_tb4_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /root/data/ros2_ws/models/turtlebot4/nav2_minimal_turtlebot_description -DCMAKE_INSTALL_PREFIX=/root/data/ros2_ws/install/nav2_minimal_tb4_description
+[1.142s] Invoking command in '/root/data/ros2_ws/build/nav2_minimal_tb4_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /root/data/ros2_ws/build/nav2_minimal_tb4_description -- -j20 -l20
+[1.175s] Invoked command in '/root/data/ros2_ws/build/nav2_minimal_tb4_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /root/data/ros2_ws/build/nav2_minimal_tb4_description -- -j20 -l20
+[1.177s] Invoking command in '/root/data/ros2_ws/build/nav2_minimal_tb4_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /root/data/ros2_ws/build/nav2_minimal_tb4_description
+[1.183s] -- Install configuration: ""
+[1.183s] -- Installing: /root/data/ros2_ws/install/nav2_minimal_tb4_description/share/nav2_minimal_tb4_description/environment/tb4_description.dsv
+[1.183s] -- Installing: /root/data/ros2_ws/install/nav2_minimal_tb4_description/share/nav2_minimal_tb4_description/launch
+[1.183s] -- Installing: /root/data/ros2_ws/install/nav2_minimal_tb4_description/share/nav2_minimal_tb4_description/launch/robot_description.launch.py
+[1.183s] -- Installing: /root/data/ros2_ws/install/nav2_minimal_tb4_description/share/nav2_minimal_tb4_description/meshes
+[1.184s] -- Installing: /root/data/ros2_ws/install/nav2_minimal_tb4_description/share/nav2_minimal_tb4_description/meshes/tower_sensor_plate.dae
+[1.184s] -- Installing: /root/data/ros2_ws/install/nav2_minimal_tb4_description/share/nav2_minimal_tb4_description/meshes/rplidar.dae
+[1.184s] -- Installing: /root/data/ros2_ws/install/nav2_minimal_tb4_description/share/nav2_minimal_tb4_description/meshes/oakd_pro.dae
+[1.192s] -- Installing: /root/data/ros2_ws/install/nav2_minimal_tb4_description/share/nav2_minimal_tb4_description/meshes/bumper_collision.dae
+[1.192s] -- Installing: /root/data/ros2_ws/install/nav2_minimal_tb4_description/share/nav2_minimal_tb4_description/meshes/shell_collision.dae
+[1.195s] -- Installing: /root/data/ros2_ws/install/nav2_minimal_tb4_description/share/nav2_minimal_tb4_description/meshes/tower.dae
+[1.195s] -- Installing: /root/data/ros2_ws/install/nav2_minimal_tb4_description/share/nav2_minimal_tb4_description/meshes/body_visual.dae
+[1.197s] -- Installing: /root/data/ros2_ws/install/nav2_minimal_tb4_description/share/nav2_minimal_tb4_description/meshes/camera_bracket.dae
+[1.197s] -- Installing: /root/data/ros2_ws/install/nav2_minimal_tb4_description/share/nav2_minimal_tb4_description/meshes/shell.dae
+[1.201s] -- Installing: /root/data/ros2_ws/install/nav2_minimal_tb4_description/share/nav2_minimal_tb4_description/meshes/tower_standoff.dae
+[1.201s] -- Installing: /root/data/ros2_ws/install/nav2_minimal_tb4_description/share/nav2_minimal_tb4_description/meshes/weight_block.dae
+[1.201s] -- Installing: /root/data/ros2_ws/install/nav2_minimal_tb4_description/share/nav2_minimal_tb4_description/meshes/bumper_visual.dae
+[1.202s] -- Installing: /root/data/ros2_ws/install/nav2_minimal_tb4_description/share/nav2_minimal_tb4_description/urdf
+[1.202s] -- Installing: /root/data/ros2_ws/install/nav2_minimal_tb4_description/share/nav2_minimal_tb4_description/urdf/standard
+[1.202s] -- Installing: /root/data/ros2_ws/install/nav2_minimal_tb4_description/share/nav2_minimal_tb4_description/urdf/standard/tower_sensor_plate.urdf.xacro
+[1.202s] -- Installing: /root/data/ros2_ws/install/nav2_minimal_tb4_description/share/nav2_minimal_tb4_description/urdf/standard/tower_standoff.urdf.xacro
+[1.202s] -- Installing: /root/data/ros2_ws/install/nav2_minimal_tb4_description/share/nav2_minimal_tb4_description/urdf/standard/turtlebot4.urdf.xacro
+[1.202s] -- Installing: /root/data/ros2_ws/install/nav2_minimal_tb4_description/share/nav2_minimal_tb4_description/urdf/standard/weight_block.urdf.xacro
+[1.203s] -- Installing: /root/data/ros2_ws/install/nav2_minimal_tb4_description/share/nav2_minimal_tb4_description/urdf/icreate
+[1.203s] -- Installing: /root/data/ros2_ws/install/nav2_minimal_tb4_description/share/nav2_minimal_tb4_description/urdf/icreate/bumper.urdf.xacro
+[1.203s] -- Installing: /root/data/ros2_ws/install/nav2_minimal_tb4_description/share/nav2_minimal_tb4_description/urdf/icreate/common_properties.urdf.xacro
+[1.203s] -- Installing: /root/data/ros2_ws/install/nav2_minimal_tb4_description/share/nav2_minimal_tb4_description/urdf/icreate/caster.urdf.xacro
+[1.203s] -- Installing: /root/data/ros2_ws/install/nav2_minimal_tb4_description/share/nav2_minimal_tb4_description/urdf/icreate/create3.urdf.xacro
+[1.203s] -- Installing: /root/data/ros2_ws/install/nav2_minimal_tb4_description/share/nav2_minimal_tb4_description/urdf/icreate/sensors
+[1.203s] -- Installing: /root/data/ros2_ws/install/nav2_minimal_tb4_description/share/nav2_minimal_tb4_description/urdf/icreate/sensors/imu.urdf.xacro
+[1.203s] -- Installing: /root/data/ros2_ws/install/nav2_minimal_tb4_description/share/nav2_minimal_tb4_description/urdf/icreate/wheel.urdf.xacro
+[1.203s] -- Installing: /root/data/ros2_ws/install/nav2_minimal_tb4_description/share/nav2_minimal_tb4_description/urdf/sensors
+[1.203s] -- Installing: /root/data/ros2_ws/install/nav2_minimal_tb4_description/share/nav2_minimal_tb4_description/urdf/sensors/oakd.urdf.xacro
+[1.203s] -- Installing: /root/data/ros2_ws/install/nav2_minimal_tb4_description/share/nav2_minimal_tb4_description/urdf/sensors/camera_bracket.urdf.xacro
+[1.203s] -- Installing: /root/data/ros2_ws/install/nav2_minimal_tb4_description/share/nav2_minimal_tb4_description/urdf/sensors/rplidar.urdf.xacro
+[1.204s] -- Installing: /root/data/ros2_ws/install/nav2_minimal_tb4_description/share/nav2_minimal_tb4_description/rviz
+[1.204s] -- Installing: /root/data/ros2_ws/install/nav2_minimal_tb4_description/share/nav2_minimal_tb4_description/rviz/config.rviz
+[1.204s] -- Installing: /root/data/ros2_ws/install/nav2_minimal_tb4_description/share/ament_index/resource_index/package_run_dependencies/nav2_minimal_tb4_description
+[1.204s] -- Installing: /root/data/ros2_ws/install/nav2_minimal_tb4_description/share/ament_index/resource_index/parent_prefix_path/nav2_minimal_tb4_description
+[1.205s] -- Installing: /root/data/ros2_ws/install/nav2_minimal_tb4_description/share/nav2_minimal_tb4_description/environment/ament_prefix_path.sh
+[1.205s] -- Installing: /root/data/ros2_ws/install/nav2_minimal_tb4_description/share/nav2_minimal_tb4_description/environment/ament_prefix_path.dsv
+[1.205s] -- Installing: /root/data/ros2_ws/install/nav2_minimal_tb4_description/share/nav2_minimal_tb4_description/environment/path.sh
+[1.205s] -- Installing: /root/data/ros2_ws/install/nav2_minimal_tb4_description/share/nav2_minimal_tb4_description/environment/path.dsv
+[1.205s] -- Installing: /root/data/ros2_ws/install/nav2_minimal_tb4_description/share/nav2_minimal_tb4_description/local_setup.bash
+[1.205s] -- Installing: /root/data/ros2_ws/install/nav2_minimal_tb4_description/share/nav2_minimal_tb4_description/local_setup.sh
+[1.205s] -- Installing: /root/data/ros2_ws/install/nav2_minimal_tb4_description/share/nav2_minimal_tb4_description/local_setup.zsh
+[1.205s] -- Installing: /root/data/ros2_ws/install/nav2_minimal_tb4_description/share/nav2_minimal_tb4_description/local_setup.dsv
+[1.208s] -- Installing: /root/data/ros2_ws/install/nav2_minimal_tb4_description/share/nav2_minimal_tb4_description/package.dsv
+[1.208s] -- Installing: /root/data/ros2_ws/install/nav2_minimal_tb4_description/share/ament_index/resource_index/packages/nav2_minimal_tb4_description
+[1.208s] -- Installing: /root/data/ros2_ws/install/nav2_minimal_tb4_description/share/nav2_minimal_tb4_description/cmake/nav2_minimal_tb4_descriptionConfig.cmake
+[1.208s] -- Installing: /root/data/ros2_ws/install/nav2_minimal_tb4_description/share/nav2_minimal_tb4_description/cmake/nav2_minimal_tb4_descriptionConfig-version.cmake
+[1.208s] -- Installing: /root/data/ros2_ws/install/nav2_minimal_tb4_description/share/nav2_minimal_tb4_description/package.xml
+[1.209s] Invoked command in '/root/data/ros2_ws/build/nav2_minimal_tb4_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /root/data/ros2_ws/build/nav2_minimal_tb4_description

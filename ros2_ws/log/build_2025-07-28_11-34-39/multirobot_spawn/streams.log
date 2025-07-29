@@ -1,0 +1,34 @@
+[1.049s] Invoking command in '/root/data/ros2_ws/src/multirobot_spawn': PYTHONPATH=/root/data/ros2_ws/build/multirobot_spawn/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/data/ros2_ws/install/multirobot_spawn/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/multirobot_spawn build --build-base /root/data/ros2_ws/build/multirobot_spawn/build install --record /root/data/ros2_ws/build/multirobot_spawn/install.log --single-version-externally-managed install_data
+[1.327s] running egg_info
+[1.327s] creating ../../build/multirobot_spawn/multirobot_spawn.egg-info
+[1.345s] writing ../../build/multirobot_spawn/multirobot_spawn.egg-info/PKG-INFO
+[1.345s] writing dependency_links to ../../build/multirobot_spawn/multirobot_spawn.egg-info/dependency_links.txt
+[1.345s] writing requirements to ../../build/multirobot_spawn/multirobot_spawn.egg-info/requires.txt
+[1.345s] writing top-level names to ../../build/multirobot_spawn/multirobot_spawn.egg-info/top_level.txt
+[1.345s] writing manifest file '../../build/multirobot_spawn/multirobot_spawn.egg-info/SOURCES.txt'
+[1.381s] reading manifest file '../../build/multirobot_spawn/multirobot_spawn.egg-info/SOURCES.txt'
+[1.381s] writing manifest file '../../build/multirobot_spawn/multirobot_spawn.egg-info/SOURCES.txt'
+[1.382s] running build
+[1.382s] running build_py
+[1.382s] creating /root/data/ros2_ws/build/multirobot_spawn/build
+[1.382s] creating /root/data/ros2_ws/build/multirobot_spawn/build/lib
+[1.382s] creating /root/data/ros2_ws/build/multirobot_spawn/build/lib/multirobot_spawn
+[1.382s] copying multirobot_spawn/__init__.py -> /root/data/ros2_ws/build/multirobot_spawn/build/lib/multirobot_spawn
+[1.382s] running install
+[1.389s] running install_lib
+[1.406s] creating /root/data/ros2_ws/install/multirobot_spawn/lib/python3.12/site-packages/multirobot_spawn
+[1.406s] copying /root/data/ros2_ws/build/multirobot_spawn/build/lib/multirobot_spawn/__init__.py -> /root/data/ros2_ws/install/multirobot_spawn/lib/python3.12/site-packages/multirobot_spawn
+[1.407s] byte-compiling /root/data/ros2_ws/install/multirobot_spawn/lib/python3.12/site-packages/multirobot_spawn/__init__.py to __init__.cpython-312.pyc
+[1.407s] running install_data
+[1.407s] creating /root/data/ros2_ws/install/multirobot_spawn/share/ament_index
+[1.407s] creating /root/data/ros2_ws/install/multirobot_spawn/share/ament_index/resource_index
+[1.407s] creating /root/data/ros2_ws/install/multirobot_spawn/share/ament_index/resource_index/packages
+[1.407s] copying resource/multirobot_spawn -> /root/data/ros2_ws/install/multirobot_spawn/share/ament_index/resource_index/packages
+[1.408s] copying package.xml -> /root/data/ros2_ws/install/multirobot_spawn/share/multirobot_spawn
+[1.408s] creating /root/data/ros2_ws/install/multirobot_spawn/share/multirobot_spawn/launch
+[1.408s] copying launch/multi_robot_spawn.launch.py -> /root/data/ros2_ws/install/multirobot_spawn/share/multirobot_spawn/launch
+[1.408s] running install_egg_info
+[1.427s] Copying ../../build/multirobot_spawn/multirobot_spawn.egg-info to /root/data/ros2_ws/install/multirobot_spawn/lib/python3.12/site-packages/multirobot_spawn-0.0.1-py3.12.egg-info
+[1.428s] running install_scripts
+[1.548s] writing list of installed files to '/root/data/ros2_ws/build/multirobot_spawn/install.log'
+[1.593s] Invoked command in '/root/data/ros2_ws/src/multirobot_spawn' returned '0': PYTHONPATH=/root/data/ros2_ws/build/multirobot_spawn/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/data/ros2_ws/install/multirobot_spawn/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/multirobot_spawn build --build-base /root/data/ros2_ws/build/multirobot_spawn/build install --record /root/data/ros2_ws/build/multirobot_spawn/install.log --single-version-externally-managed install_data

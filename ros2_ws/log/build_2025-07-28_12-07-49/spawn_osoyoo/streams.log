@@ -1,0 +1,21 @@
+[0.750s] Invoking command in '/root/data/ros2_ws/src/spawn_osoyoo': PYTHONPATH=/root/data/ros2_ws/build/spawn_osoyoo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/data/ros2_ws/install/spawn_osoyoo/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/spawn_osoyoo build --build-base /root/data/ros2_ws/build/spawn_osoyoo/build install --record /root/data/ros2_ws/build/spawn_osoyoo/install.log --single-version-externally-managed install_data
+[0.944s] running egg_info
+[0.956s] writing ../../build/spawn_osoyoo/spawn_osoyoo.egg-info/PKG-INFO
+[0.956s] writing dependency_links to ../../build/spawn_osoyoo/spawn_osoyoo.egg-info/dependency_links.txt
+[0.957s] writing entry points to ../../build/spawn_osoyoo/spawn_osoyoo.egg-info/entry_points.txt
+[0.957s] writing requirements to ../../build/spawn_osoyoo/spawn_osoyoo.egg-info/requires.txt
+[0.957s] writing top-level names to ../../build/spawn_osoyoo/spawn_osoyoo.egg-info/top_level.txt
+[0.983s] reading manifest file '../../build/spawn_osoyoo/spawn_osoyoo.egg-info/SOURCES.txt'
+[0.984s] writing manifest file '../../build/spawn_osoyoo/spawn_osoyoo.egg-info/SOURCES.txt'
+[0.984s] running build
+[0.984s] running build_py
+[0.984s] running install
+[0.990s] running install_lib
+[1.004s] running install_data
+[1.004s] running install_egg_info
+[1.020s] removing '/root/data/ros2_ws/install/spawn_osoyoo/lib/python3.12/site-packages/spawn_osoyoo-0.0.0-py3.12.egg-info' (and everything under it)
+[1.020s] Copying ../../build/spawn_osoyoo/spawn_osoyoo.egg-info to /root/data/ros2_ws/install/spawn_osoyoo/lib/python3.12/site-packages/spawn_osoyoo-0.0.0-py3.12.egg-info
+[1.020s] running install_scripts
+[1.116s] Installing spawn_robot_node script to /root/data/ros2_ws/install/spawn_osoyoo/lib/spawn_osoyoo
+[1.116s] writing list of installed files to '/root/data/ros2_ws/build/spawn_osoyoo/install.log'
+[1.141s] Invoked command in '/root/data/ros2_ws/src/spawn_osoyoo' returned '0': PYTHONPATH=/root/data/ros2_ws/build/spawn_osoyoo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/data/ros2_ws/install/spawn_osoyoo/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/spawn_osoyoo build --build-base /root/data/ros2_ws/build/spawn_osoyoo/build install --record /root/data/ros2_ws/build/spawn_osoyoo/install.log --single-version-externally-managed install_data

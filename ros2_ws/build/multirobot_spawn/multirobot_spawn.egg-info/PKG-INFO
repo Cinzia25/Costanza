@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: multirobot-spawn
+Version: 0.0.1
+Summary: Launch file per spawn multi robot Osoyoo + TurtleBot4
+Maintainer: Cinzia Tomaselli
+Maintainer-email: cinzia251996@gmail.com
+License: Apache License 2.0

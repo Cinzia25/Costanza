@@ -1,0 +1,2 @@
+Invoking command in '/root/data/ros2_ws/build/pose_publisher_plugin': /usr/bin/cmake --build /root/data/ros2_ws/build/pose_publisher_plugin -- -j20 -l20
+Invoked command in '/root/data/ros2_ws/build/pose_publisher_plugin' returned '2': /usr/bin/cmake --build /root/data/ros2_ws/build/pose_publisher_plugin -- -j20 -l20

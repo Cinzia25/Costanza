@@ -1,0 +1,17 @@
+package.xml
+setup.cfg
+setup.py
+../../build/spawn_osoyoo/spawn_osoyoo.egg-info/PKG-INFO
+../../build/spawn_osoyoo/spawn_osoyoo.egg-info/SOURCES.txt
+../../build/spawn_osoyoo/spawn_osoyoo.egg-info/dependency_links.txt
+../../build/spawn_osoyoo/spawn_osoyoo.egg-info/entry_points.txt
+../../build/spawn_osoyoo/spawn_osoyoo.egg-info/requires.txt
+../../build/spawn_osoyoo/spawn_osoyoo.egg-info/top_level.txt
+../../build/spawn_osoyoo/spawn_osoyoo.egg-info/zip-safe
+launch/spawn_robots.launch.py
+resource/spawn_osoyoo
+spawn_osoyoo/__init__.py
+spawn_osoyoo/spawn_robot_node.py
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

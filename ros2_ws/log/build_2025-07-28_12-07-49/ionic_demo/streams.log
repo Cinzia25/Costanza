@@ -1,0 +1,44 @@
+[0.018s] Invoking command in '/root/data/ros2_ws/build/ionic_demo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/data/ros2_ws/install/spawn_osoyoo:/root/data/ros2_ws/install/multirobot_spawn:/opt/ros/jazzy /usr/bin/cmake --build /root/data/ros2_ws/build/ionic_demo -- -j20 -l20
+[0.168s] Invoked command in '/root/data/ros2_ws/build/ionic_demo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/data/ros2_ws/install/spawn_osoyoo:/root/data/ros2_ws/install/multirobot_spawn:/opt/ros/jazzy /usr/bin/cmake --build /root/data/ros2_ws/build/ionic_demo -- -j20 -l20
+[0.174s] Invoking command in '/root/data/ros2_ws/build/ionic_demo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/data/ros2_ws/install/spawn_osoyoo:/root/data/ros2_ws/install/multirobot_spawn:/opt/ros/jazzy /usr/bin/cmake --install /root/data/ros2_ws/build/ionic_demo
+[0.320s] -- Install configuration: ""
+[0.321s] -- Up-to-date: /root/data/ros2_ws/install/ionic_demo/share/ionic_demo/configs
+[0.321s] -- Up-to-date: /root/data/ros2_ws/install/ionic_demo/share/ionic_demo/configs/tb4_camera_bridge.yaml
+[0.321s] -- Up-to-date: /root/data/ros2_ws/install/ionic_demo/share/ionic_demo/configs/nav2.rviz
+[0.321s] -- Up-to-date: /root/data/ros2_ws/install/ionic_demo/share/ionic_demo/launch
+[0.321s] -- Up-to-date: /root/data/ros2_ws/install/ionic_demo/share/ionic_demo/launch/world_launch.py
+[0.321s] -- Up-to-date: /root/data/ros2_ws/install/ionic_demo/share/ionic_demo/launch/ionic_rmf_demo_launch.py
+[0.321s] -- Up-to-date: /root/data/ros2_ws/install/ionic_demo/share/ionic_demo/launch/tb4_spawn_launch.py
+[0.321s] -- Up-to-date: /root/data/ros2_ws/install/ionic_demo/share/ionic_demo/launch/ionic_moveit_demo_launch.py
+[0.321s] -- Up-to-date: /root/data/ros2_ws/install/ionic_demo/share/ionic_demo/launch/ionic_navigation_demo_launch.xml
+[0.323s] -- Up-to-date: /root/data/ros2_ws/install/ionic_demo/share/ionic_demo/launch/ionic_navigation_demo_launch.py
+[0.323s] -- Up-to-date: /root/data/ros2_ws/install/ionic_demo/share/ionic_demo/launch/tb4_spawn_launch.xml
+[0.323s] -- Up-to-date: /root/data/ros2_ws/install/ionic_demo/share/ionic_demo/launch/world_launch.xml
+[0.323s] -- Up-to-date: /root/data/ros2_ws/install/ionic_demo/share/ionic_demo/maps
+[0.323s] -- Up-to-date: /root/data/ros2_ws/install/ionic_demo/share/ionic_demo/maps/ionic_demo.yaml
+[0.323s] -- Up-to-date: /root/data/ros2_ws/install/ionic_demo/share/ionic_demo/maps/ionic_demo.pgm
+[0.323s] -- Up-to-date: /root/data/ros2_ws/install/ionic_demo/share/ionic_demo/worlds
+[0.323s] -- Up-to-date: /root/data/ros2_ws/install/ionic_demo/share/ionic_demo/worlds/ionic.sdf
+[0.323s] -- Up-to-date: /root/data/ros2_ws/install/ionic_demo/share/ionic_demo/models
+[0.323s] -- Up-to-date: /root/data/ros2_ws/install/ionic_demo/share/ionic_demo/models/ionic_tb4.urdf.xacro
+[0.323s] -- Up-to-date: /root/data/ros2_ws/install/ionic_demo/share/ionic_demo/rviz
+[0.324s] -- Up-to-date: /root/data/ros2_ws/install/ionic_demo/share/ionic_demo/rviz/nav2_default_view.rviz
+[0.324s] -- Up-to-date: /root/data/ros2_ws/install/ionic_demo/share/ionic_demo/params
+[0.324s] -- Up-to-date: /root/data/ros2_ws/install/ionic_demo/share/ionic_demo/params/nav2_params.yaml
+[0.324s] -- Up-to-date: /root/data/ros2_ws/install/ionic_demo/share/ionic_demo/environment/ionic_demo.dsv
+[0.324s] -- Up-to-date: /root/data/ros2_ws/install/ionic_demo/share/ament_index/resource_index/package_run_dependencies/ionic_demo
+[0.324s] -- Up-to-date: /root/data/ros2_ws/install/ionic_demo/share/ament_index/resource_index/parent_prefix_path/ionic_demo
+[0.324s] -- Up-to-date: /root/data/ros2_ws/install/ionic_demo/share/ionic_demo/environment/ament_prefix_path.sh
+[0.325s] -- Up-to-date: /root/data/ros2_ws/install/ionic_demo/share/ionic_demo/environment/ament_prefix_path.dsv
+[0.325s] -- Up-to-date: /root/data/ros2_ws/install/ionic_demo/share/ionic_demo/environment/path.sh
+[0.325s] -- Up-to-date: /root/data/ros2_ws/install/ionic_demo/share/ionic_demo/environment/path.dsv
+[0.325s] -- Up-to-date: /root/data/ros2_ws/install/ionic_demo/share/ionic_demo/local_setup.bash
+[0.325s] -- Up-to-date: /root/data/ros2_ws/install/ionic_demo/share/ionic_demo/local_setup.sh
+[0.325s] -- Up-to-date: /root/data/ros2_ws/install/ionic_demo/share/ionic_demo/local_setup.zsh
+[0.325s] -- Up-to-date: /root/data/ros2_ws/install/ionic_demo/share/ionic_demo/local_setup.dsv
+[0.325s] -- Installing: /root/data/ros2_ws/install/ionic_demo/share/ionic_demo/package.dsv
+[0.325s] -- Up-to-date: /root/data/ros2_ws/install/ionic_demo/share/ament_index/resource_index/packages/ionic_demo
+[0.325s] -- Up-to-date: /root/data/ros2_ws/install/ionic_demo/share/ionic_demo/cmake/ionic_demoConfig.cmake
+[0.325s] -- Up-to-date: /root/data/ros2_ws/install/ionic_demo/share/ionic_demo/cmake/ionic_demoConfig-version.cmake
+[0.325s] -- Up-to-date: /root/data/ros2_ws/install/ionic_demo/share/ionic_demo/package.xml
+[0.326s] Invoked command in '/root/data/ros2_ws/build/ionic_demo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/data/ros2_ws/install/spawn_osoyoo:/root/data/ros2_ws/install/multirobot_spawn:/opt/ros/jazzy /usr/bin/cmake --install /root/data/ros2_ws/build/ionic_demo

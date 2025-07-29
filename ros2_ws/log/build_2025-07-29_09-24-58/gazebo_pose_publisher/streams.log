@@ -1,0 +1,45 @@
+[0.023s] Invoking command in '/root/data/ros2_ws/build/gazebo_pose_publisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /root/data/ros2_ws/src/gazebo_pos_publisher -DCMAKE_INSTALL_PREFIX=/root/data/ros2_ws/install/gazebo_pose_publisher
+[0.158s] -- The C compiler identification is GNU 13.3.0
+[0.215s] -- The CXX compiler identification is GNU 13.3.0
+[0.229s] -- Detecting C compiler ABI info
+[0.283s] -- Detecting C compiler ABI info - done
+[0.289s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.289s] -- Detecting C compile features
+[0.289s] -- Detecting C compile features - done
+[0.296s] -- Detecting CXX compiler ABI info
+[0.365s] -- Detecting CXX compiler ABI info - done
+[0.372s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.372s] -- Detecting CXX compile features
+[0.372s] -- Detecting CXX compile features - done
+[0.383s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.505s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.617s] -- Found rclcpp: 28.1.10 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.677s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.696s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.722s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.748s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.852s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.858s] -- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.948s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[0.966s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[0.984s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.083s] -- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[1.144s] [31mCMake Error at CMakeLists.txt:7 (find_package):
+[1.144s]   By not providing "Findgazebo_ros.cmake" in CMAKE_MODULE_PATH this project
+[1.145s]   has asked CMake to find a package configuration file provided by
+[1.145s]   "gazebo_ros", but CMake did not find one.
+[1.145s] 
+[1.145s]   Could not find a package configuration file provided by "gazebo_ros" with
+[1.145s]   any of the following names:
+[1.145s] 
+[1.145s]     gazebo_rosConfig.cmake
+[1.145s]     gazebo_ros-config.cmake
+[1.145s] 
+[1.145s]   Add the installation prefix of "gazebo_ros" to CMAKE_PREFIX_PATH or set
+[1.145s]   "gazebo_ros_DIR" to a directory containing one of the above files.  If
+[1.145s]   "gazebo_ros" provides a separate development package or SDK, be sure it has
+[1.146s]   been installed.
+[1.146s] 
+[1.146s] [0m
+[1.146s] -- Configuring incomplete, errors occurred!
+[1.151s] Invoked command in '/root/data/ros2_ws/build/gazebo_pose_publisher' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /root/data/ros2_ws/src/gazebo_pos_publisher -DCMAKE_INSTALL_PREFIX=/root/data/ros2_ws/install/gazebo_pose_publisher

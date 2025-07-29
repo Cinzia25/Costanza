@@ -1,0 +1,4 @@
+Invoking command in '/root/data/ros2_ws/build/pose_publisher_plugin': /usr/bin/cmake /root/data/ros2_ws/src/pose_publisher_plugin -DCMAKE_INSTALL_PREFIX=/root/data/ros2_ws/install/pose_publisher_plugin
+Invoked command in '/root/data/ros2_ws/build/pose_publisher_plugin' returned '0': /usr/bin/cmake /root/data/ros2_ws/src/pose_publisher_plugin -DCMAKE_INSTALL_PREFIX=/root/data/ros2_ws/install/pose_publisher_plugin
+Invoking command in '/root/data/ros2_ws/build/pose_publisher_plugin': /usr/bin/cmake --build /root/data/ros2_ws/build/pose_publisher_plugin -- -j20 -l20
+Invoked command in '/root/data/ros2_ws/build/pose_publisher_plugin' returned '2': /usr/bin/cmake --build /root/data/ros2_ws/build/pose_publisher_plugin -- -j20 -l20

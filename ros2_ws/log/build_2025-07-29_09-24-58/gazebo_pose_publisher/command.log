@@ -1,0 +1,2 @@
+Invoking command in '/root/data/ros2_ws/build/gazebo_pose_publisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /root/data/ros2_ws/src/gazebo_pos_publisher -DCMAKE_INSTALL_PREFIX=/root/data/ros2_ws/install/gazebo_pose_publisher
+Invoked command in '/root/data/ros2_ws/build/gazebo_pose_publisher' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /root/data/ros2_ws/src/gazebo_pos_publisher -DCMAKE_INSTALL_PREFIX=/root/data/ros2_ws/install/gazebo_pose_publisher

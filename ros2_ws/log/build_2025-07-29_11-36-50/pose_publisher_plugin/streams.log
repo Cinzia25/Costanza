@@ -1,0 +1,21 @@
+[0.138s] Invoking command in '/root/data/ros2_ws/build/pose_publisher_plugin': /usr/bin/cmake --build /root/data/ros2_ws/build/pose_publisher_plugin -- -j20 -l20
+[0.166s] -- Configuring incomplete, errors occurred!
+[0.166s] [31mCMake Error at CMakeLists.txt:7 (find_package):
+[0.166s]   By not providing "Findgz-sim.cmake" in CMAKE_MODULE_PATH this project has
+[0.166s]   asked CMake to find a package configuration file provided by "gz-sim", but
+[0.166s]   CMake did not find one.
+[0.166s] 
+[0.166s]   Could not find a package configuration file provided by "gz-sim" with any
+[0.166s]   of the following names:
+[0.166s] 
+[0.166s]     gz-simConfig.cmake
+[0.166s]     gz-sim-config.cmake
+[0.166s] 
+[0.166s]   Add the installation prefix of "gz-sim" to CMAKE_PREFIX_PATH or set
+[0.166s]   "gz-sim_DIR" to a directory containing one of the above files.  If "gz-sim"
+[0.166s]   provides a separate development package or SDK, be sure it has been
+[0.166s]   installed.
+[0.166s] 
+[0.166s] [0m
+[0.167s] gmake: *** [Makefile:179: cmake_check_build_system] Error 1
+[0.277s] Invoked command in '/root/data/ros2_ws/build/pose_publisher_plugin' returned '2': /usr/bin/cmake --build /root/data/ros2_ws/build/pose_publisher_plugin -- -j20 -l20

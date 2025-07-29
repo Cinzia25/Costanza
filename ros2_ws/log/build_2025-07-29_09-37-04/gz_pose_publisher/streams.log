@@ -1,0 +1,45 @@
+[0.018s] Invoking command in '/root/data/ros2_ws/build/gz_pose_publisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /root/data/ros2_ws/src/gz_pose_publisher -DCMAKE_INSTALL_PREFIX=/root/data/ros2_ws/install/gz_pose_publisher
+[0.154s] -- The C compiler identification is GNU 13.3.0
+[0.154s] -- The CXX compiler identification is GNU 13.3.0
+[0.154s] -- Detecting C compiler ABI info
+[0.154s] -- Detecting C compiler ABI info - done
+[0.160s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.160s] -- Detecting C compile features
+[0.161s] -- Detecting C compile features - done
+[0.167s] -- Detecting CXX compiler ABI info
+[0.226s] -- Detecting CXX compiler ABI info - done
+[0.232s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.233s] -- Detecting CXX compile features
+[0.233s] -- Detecting CXX compile features - done
+[0.237s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.350s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.461s] -- Found rclcpp: 28.1.10 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.512s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.528s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.547s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.568s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.652s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.657s] -- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.727s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[0.743s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[0.761s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.836s] -- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[0.878s] [31mCMake Error at CMakeLists.txt:7 (find_package):
+[0.878s]   By not providing "Findgz-sim6.cmake" in CMAKE_MODULE_PATH this project has
+[0.878s]   asked CMake to find a package configuration file provided by "gz-sim6", but
+[0.878s]   CMake did not find one.
+[0.878s] 
+[0.878s]   Could not find a package configuration file provided by "gz-sim6" with any
+[0.879s]   of the following names:
+[0.879s] 
+[0.879s]     gz-sim6Config.cmake
+[0.879s]     gz-sim6-config.cmake
+[0.879s] 
+[0.879s]   Add the installation prefix of "gz-sim6" to CMAKE_PREFIX_PATH or set
+[0.879s]   "gz-sim6_DIR" to a directory containing one of the above files.  If
+[0.879s]   "gz-sim6" provides a separate development package or SDK, be sure it has
+[0.879s]   been installed.
+[0.879s] 
+[0.879s] [0m
+[0.880s] -- Configuring incomplete, errors occurred!
+[0.884s] Invoked command in '/root/data/ros2_ws/build/gz_pose_publisher' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /root/data/ros2_ws/src/gz_pose_publisher -DCMAKE_INSTALL_PREFIX=/root/data/ros2_ws/install/gz_pose_publisher
