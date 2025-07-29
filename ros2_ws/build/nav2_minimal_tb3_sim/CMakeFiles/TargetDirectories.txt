@@ -1,9 +1,0 @@
-/root/data/ros2_ws/build/nav2_minimal_tb3_sim/CMakeFiles/uninstall.dir
-/root/data/ros2_ws/build/nav2_minimal_tb3_sim/CMakeFiles/nav2_minimal_tb3_sim_uninstall.dir
-/root/data/ros2_ws/build/nav2_minimal_tb3_sim/CMakeFiles/test.dir
-/root/data/ros2_ws/build/nav2_minimal_tb3_sim/CMakeFiles/edit_cache.dir
-/root/data/ros2_ws/build/nav2_minimal_tb3_sim/CMakeFiles/rebuild_cache.dir
-/root/data/ros2_ws/build/nav2_minimal_tb3_sim/CMakeFiles/list_install_components.dir
-/root/data/ros2_ws/build/nav2_minimal_tb3_sim/CMakeFiles/install.dir
-/root/data/ros2_ws/build/nav2_minimal_tb3_sim/CMakeFiles/install/local.dir
-/root/data/ros2_ws/build/nav2_minimal_tb3_sim/CMakeFiles/install/strip.dir

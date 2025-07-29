@@ -1,3 +1,0 @@
-/root/data/ros2_ws/build/pose_publisher_plugin/CMakeFiles/pose_publisher.dir
-/root/data/ros2_ws/build/pose_publisher_plugin/CMakeFiles/edit_cache.dir
-/root/data/ros2_ws/build/pose_publisher_plugin/CMakeFiles/rebuild_cache.dir

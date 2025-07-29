@@ -1,5 +1,0 @@
-[0.156s] Invoking command in '/root/data/ros2_ws/build/nav2_minimal_tb4_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/data/ros2_ws/install/spawn_osoyoo:/root/data/ros2_ws/install/multirobot_spawn:/opt/ros/jazzy /usr/bin/cmake --build /root/data/ros2_ws/build/nav2_minimal_tb4_description -- -j20 -l20
-[0.172s] [0mCMake Error: The source directory "/root/data/ros2_ws/models/turtlebot4/nav2_minimal_turtlebot_description" does not exist.
-[0.172s] Specify --help for usage, or press the help button on the CMake GUI.[0m
-[0.173s] gmake: *** [Makefile:226: cmake_check_build_system] Error 1
-[0.305s] Invoked command in '/root/data/ros2_ws/build/nav2_minimal_tb4_description' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/data/ros2_ws/install/spawn_osoyoo:/root/data/ros2_ws/install/multirobot_spawn:/opt/ros/jazzy /usr/bin/cmake --build /root/data/ros2_ws/build/nav2_minimal_tb4_description -- -j20 -l20

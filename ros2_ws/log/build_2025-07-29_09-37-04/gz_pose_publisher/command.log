@@ -1,2 +1,0 @@
-Invoking command in '/root/data/ros2_ws/build/gz_pose_publisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /root/data/ros2_ws/src/gz_pose_publisher -DCMAKE_INSTALL_PREFIX=/root/data/ros2_ws/install/gz_pose_publisher
-Invoked command in '/root/data/ros2_ws/build/gz_pose_publisher' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /root/data/ros2_ws/src/gz_pose_publisher -DCMAKE_INSTALL_PREFIX=/root/data/ros2_ws/install/gz_pose_publisher
