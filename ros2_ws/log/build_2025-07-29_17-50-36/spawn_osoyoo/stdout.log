@@ -1,0 +1,37 @@
+running egg_info
+creating ../../build/spawn_osoyoo/spawn_osoyoo.egg-info
+writing ../../build/spawn_osoyoo/spawn_osoyoo.egg-info/PKG-INFO
+writing dependency_links to ../../build/spawn_osoyoo/spawn_osoyoo.egg-info/dependency_links.txt
+writing entry points to ../../build/spawn_osoyoo/spawn_osoyoo.egg-info/entry_points.txt
+writing requirements to ../../build/spawn_osoyoo/spawn_osoyoo.egg-info/requires.txt
+writing top-level names to ../../build/spawn_osoyoo/spawn_osoyoo.egg-info/top_level.txt
+writing manifest file '../../build/spawn_osoyoo/spawn_osoyoo.egg-info/SOURCES.txt'
+reading manifest file '../../build/spawn_osoyoo/spawn_osoyoo.egg-info/SOURCES.txt'
+writing manifest file '../../build/spawn_osoyoo/spawn_osoyoo.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /root/data/ros2_ws/build/spawn_osoyoo/build
+creating /root/data/ros2_ws/build/spawn_osoyoo/build/lib
+creating /root/data/ros2_ws/build/spawn_osoyoo/build/lib/spawn_osoyoo
+copying spawn_osoyoo/__init__.py -> /root/data/ros2_ws/build/spawn_osoyoo/build/lib/spawn_osoyoo
+copying spawn_osoyoo/spawn_robot_node.py -> /root/data/ros2_ws/build/spawn_osoyoo/build/lib/spawn_osoyoo
+running install
+running install_lib
+creating /root/data/ros2_ws/install/spawn_osoyoo/lib/python3.12/site-packages/spawn_osoyoo
+copying /root/data/ros2_ws/build/spawn_osoyoo/build/lib/spawn_osoyoo/__init__.py -> /root/data/ros2_ws/install/spawn_osoyoo/lib/python3.12/site-packages/spawn_osoyoo
+copying /root/data/ros2_ws/build/spawn_osoyoo/build/lib/spawn_osoyoo/spawn_robot_node.py -> /root/data/ros2_ws/install/spawn_osoyoo/lib/python3.12/site-packages/spawn_osoyoo
+byte-compiling /root/data/ros2_ws/install/spawn_osoyoo/lib/python3.12/site-packages/spawn_osoyoo/__init__.py to __init__.cpython-312.pyc
+byte-compiling /root/data/ros2_ws/install/spawn_osoyoo/lib/python3.12/site-packages/spawn_osoyoo/spawn_robot_node.py to spawn_robot_node.cpython-312.pyc
+running install_data
+creating /root/data/ros2_ws/install/spawn_osoyoo/share/ament_index
+creating /root/data/ros2_ws/install/spawn_osoyoo/share/ament_index/resource_index
+creating /root/data/ros2_ws/install/spawn_osoyoo/share/ament_index/resource_index/packages
+copying resource/spawn_osoyoo -> /root/data/ros2_ws/install/spawn_osoyoo/share/ament_index/resource_index/packages
+copying package.xml -> /root/data/ros2_ws/install/spawn_osoyoo/share/spawn_osoyoo
+creating /root/data/ros2_ws/install/spawn_osoyoo/share/spawn_osoyoo/launch
+copying launch/spawn_robots.launch.py -> /root/data/ros2_ws/install/spawn_osoyoo/share/spawn_osoyoo/launch
+running install_egg_info
+Copying ../../build/spawn_osoyoo/spawn_osoyoo.egg-info to /root/data/ros2_ws/install/spawn_osoyoo/lib/python3.12/site-packages/spawn_osoyoo-0.0.0-py3.12.egg-info
+running install_scripts
+Installing spawn_robot_node script to /root/data/ros2_ws/install/spawn_osoyoo/lib/spawn_osoyoo
+writing list of installed files to '/root/data/ros2_ws/build/spawn_osoyoo/install.log'
