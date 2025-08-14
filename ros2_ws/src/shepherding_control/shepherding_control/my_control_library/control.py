@@ -56,4 +56,3 @@ def compute_cmd(idx, H, T, is_herder):
     cmd.angular.z = max(min(cmd.angular.z, 1.0), -1.0)
 
     return cmd
-

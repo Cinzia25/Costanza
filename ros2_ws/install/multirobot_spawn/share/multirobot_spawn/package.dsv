@@ -1,6 +1,0 @@
-source;share/multirobot_spawn/hook/pythonpath.ps1
-source;share/multirobot_spawn/hook/pythonpath.dsv
-source;share/multirobot_spawn/hook/pythonpath.sh
-source;share/multirobot_spawn/hook/ament_prefix_path.ps1
-source;share/multirobot_spawn/hook/ament_prefix_path.dsv
-source;share/multirobot_spawn/hook/ament_prefix_path.sh

@@ -3,16 +3,16 @@
   
   
   <xacro:arg name="gz_namespace" default="" />
-
+  <xacro:arg name="tb4_urdf_dir" default="$(find-pkg-share nav2_minimal_tb4_description)/urdf"/>
 
   <!-- Base create3 model -->
-  <xacro:include filename="/root/data/ros2_ws/models/turtlebot4/nav2_minimal_tb4_description/urdf/icreate/create3.urdf.xacro" />
-  <xacro:include filename="$(find nav2_minimal_tb4_description)/urdf/sensors/rplidar.urdf.xacro" />
-  <xacro:include filename="$(find nav2_minimal_tb4_description)/urdf/sensors/oakd.urdf.xacro" />
-  <xacro:include filename="$(find nav2_minimal_tb4_description)/urdf/sensors/camera_bracket.urdf.xacro" />
-  <xacro:include filename="$(find nav2_minimal_tb4_description)/urdf/standard/tower_standoff.urdf.xacro" />
-  <xacro:include filename="$(find nav2_minimal_tb4_description)/urdf/standard/tower_sensor_plate.urdf.xacro" />
-  <xacro:include filename="$(find nav2_minimal_tb4_description)/urdf/standard/weight_block.urdf.xacro" />
+  <xacro:include filename="$(arg tb4_urdf_dir)/icreate/create3.urdf.xacro" />
+  <xacro:include filename="$(arg tb4_urdf_dir)/sensors/rplidar.urdf.xacro" />
+  <xacro:include filename="$(arg tb4_urdf_dir)/sensors/oakd.urdf.xacro" />
+  <xacro:include filename="$(arg tb4_urdf_dir)/sensors/camera_bracket.urdf.xacro" />
+  <xacro:include filename="$(arg tb4_urdf_dir)/standard/tower_standoff.urdf.xacro" />
+  <xacro:include filename="$(arg tb4_urdf_dir)/standard/tower_sensor_plate.urdf.xacro" />
+  <xacro:include filename="$(arg tb4_urdf_dir)/standard/weight_block.urdf.xacro" />
 
   <!-- Mechanical properties -->
   <xacro:property name="shell_z_offset"                value="${3*cm2m}" />

@@ -1,2 +1,0 @@
-[console_scripts]
-spawn_robot_node = spawn_osoyoo.spawn_robot_node:main

@@ -1,6 +1,7 @@
 <?xml version="1.0" ?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro" name="ionic_tb4">
+  <xacro:arg name="tb4_urdf_dir" default="/root/data/ros2_ws/models/turtlebot4/nav2_minimal_tb4_description/urdf"/>
   <xacro:arg name="gz_namespace" default="" />  
-  <xacro:include filename="/root/data/ros2_ws/models/turtlebot4/nav2_minimal_tb4_description/urdf/standard/turtlebot4.urdf.xacro" />
+  <xacro:include filename="$(arg tb4_urdf_dir)/standard/turtlebot4.urdf.xacro" />
 </robot>
 

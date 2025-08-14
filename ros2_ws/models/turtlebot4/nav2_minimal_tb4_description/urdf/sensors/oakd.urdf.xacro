@@ -2,7 +2,8 @@
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
 
 <xacro:macro name="oakd" params="name:=oakd parent_link *origin model:=pro">
-  <xacro:include filename="$(find nav2_minimal_tb4_description)/urdf/icreate/common_properties.urdf.xacro"/>
+  <xacro:arg name="tb4_urdf_dir" default="$(find-pkg-share nav2_minimal_tb4_description)/urdf"/>
+  <xacro:include filename="$(arg tb4_urdf_dir)/icreate/common_properties.urdf.xacro"/>
 
   <xacro:property name="mass"       value="0.061"/>
   <xacro:property name="baseline" value="0.075" />

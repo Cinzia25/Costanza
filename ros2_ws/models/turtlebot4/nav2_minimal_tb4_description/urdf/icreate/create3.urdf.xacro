@@ -1,16 +1,20 @@
 <?xml version="1.0" ?>
 <robot name="create3" xmlns:xacro="http://ros.org/wiki/xacro">
-  <xacro:include filename="$(find nav2_minimal_tb4_description)/urdf/icreate/bumper.urdf.xacro" />
-  <xacro:include filename="$(find nav2_minimal_tb4_description)/urdf/icreate/caster.urdf.xacro" />
-  <xacro:include filename="$(find nav2_minimal_tb4_description)/urdf/icreate/common_properties.urdf.xacro"/>
-  <xacro:include filename="$(find nav2_minimal_tb4_description)/urdf/icreate/sensors/imu.urdf.xacro" />
-  <xacro:include filename="$(find nav2_minimal_tb4_description)/urdf/icreate/wheel.urdf.xacro" />
+
+  <xacro:arg name="tb4_urdf_dir" default="$(find-pkg-share nav2_minimal_tb4_description)/urdf"/>
+
+  <xacro:include filename="$(arg tb4_urdf_dir)/icreate/bumper.urdf.xacro" />
+  <xacro:include filename="$(arg tb4_urdf_dir)/icreate/caster.urdf.xacro" />
+  <xacro:include filename="$(arg tb4_urdf_dir)/icreate/common_properties.urdf.xacro"/>
+  <xacro:include filename="$(arg tb4_urdf_dir)/icreate/sensors/imu.urdf.xacro" />
+  <xacro:include filename="$(arg tb4_urdf_dir)/icreate/wheel.urdf.xacro" />
 
   <!-- Gazebo version -->
   <xacro:arg name="gazebo"                       default="ignition" />
 
   <!-- Namespace -->
   <xacro:arg name="namespace"                    default=""/>
+  
 
   <!-- Mechanical properties -->
   <xacro:property name="body_z_offset"           value="${-2.5*cm2m}" />
@@ -59,6 +63,7 @@
   <gazebo reference="base_link">
     <xacro:material_darkgray/>
   </gazebo>
+  
 
   <!-- Bumper -->
   <xacro:bumper
@@ -130,10 +135,11 @@
      </plugin>
      
      <plugin 
-        filename="gz-sim-odometry-publisher-system" 
-        name = "gz::sim::systems::OdometryPublisher">
-     </plugin>
-      
+      filename="gz-sim-odometry-publisher-system" 
+      name = "gz::sim::systems::OdometryPublisher"> 
+    </plugin>
+    
   </gazebo>
+  
 
 </robot>

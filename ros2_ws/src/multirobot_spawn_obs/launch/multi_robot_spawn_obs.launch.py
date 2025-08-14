@@ -1,6 +1,8 @@
 from launch import LaunchDescription
 from launch.actions import GroupAction, OpaqueFunction
 from launch_ros.actions import Node, PushRosNamespace
+from shapely.geometry import Point, Polygon
+from shapely import affinity
 import numpy as np
 import random
 import os
@@ -8,20 +10,41 @@ import xacro
 import tempfile
 import subprocess
 
+
+def rotated_box(center, size, angle_rad):
+    """
+    Build a rotated rectangle (Shapely Polygon), centered at `center`,
+    axis lengths `size=(lx, ly)`, rotated by `angle_deg` (NOTE: radians).
+    """
+    cx, cy = center
+    lx, ly = size
+    # Base rectangle centered at origin
+    box = Polygon([[-lx/2, -ly/2], [lx/2, -ly/2], [lx/2, ly/2], [-lx/2, ly/2]])
+    # Rotate around (0,0); use_radians=True means `angle_rad` must already be in radians
+    box = affinity.rotate(box, angle_rad, origin=(0, 0), use_radians=True)
+    # Translate to the requested center
+    box = affinity.translate(box, cx, cy)
+    return box
     
-def is_valid(x, y, positions):
+def is_valid(x, y, positions, rect):
     """
     Validate a spawn position:
     - Keep at least 1 meter from previously accepted positions.
+    - Keep at least 0.3 m from the obstacle polygon `rect`.
     """
     pt = np.array([x, y])
+    point = Point(x, y)
 
     # Minimum distance from other robots
     if positions:
         dists = np.linalg.norm(np.array(positions) - pt, axis=1)
         if not np.all(dists > 1):
             return False
-            
+
+    # Minimum distance from the obstacle
+    if point.distance(rect) < 0.3:
+        return False
+
     return True
 
 
@@ -118,7 +141,7 @@ def create_turtlebot(index, x, y, z):
         f'tb4_urdf_dir:={turtlebot_model_path}'
     ]
     urdf_xml = subprocess.check_output(xacro_cmd).decode('utf-8')
-
+    
     urdf_path = f'/tmp/{robot_name}.urdf'
     with open(urdf_path, 'w') as f:
         f.write(urdf_xml)
@@ -148,8 +171,9 @@ def create_turtlebot(index, x, y, z):
 def generate_launch_description():
     """
     Build a LaunchDescription that:
+    - Creates one rotated rectangular obstacle (Shapely, used only for placement checks).
     - Randomly spawns M Osoyoo targets and N TurtleBot4 herders,
-      enforcing min distance between robots.
+      enforcing min distance to obstacle and between robots.
     - Sets up per-model ROS<->Gazebo bridges and namespaces.
     """
     ld = LaunchDescription()
@@ -158,7 +182,15 @@ def generate_launch_description():
     turtlebot_count = 2
     model_path_osoyoo = '/root/data/ros2_ws/models/osoyoo/model.sdf'
 
-
+    # Obstacle parameters (angle already in radians)
+    xc = 2
+    yc = 2
+    lx = 1 
+    ly = 2
+    theta_rad = 0.7854
+    
+    rect = rotated_box(center=(xc, yc), size=(lx, ly), angle_rad=theta_rad)
+    
     positions = []  # accepted (x,y) positions to enforce spacing
 
     # Spawn Osoyoo targets
@@ -167,7 +199,7 @@ def generate_launch_description():
         x, y, z = random.uniform(-5, 5), random.uniform(-5, 5), 0.07
         # Deterministic alternative for debugging:
         # x, y, z = 4, 4, 0.07
-        if is_valid(x, y, positions):
+        if is_valid(x, y, positions, rect):
             positions.append([x, y])
             nodes = create_osoyoo(i, model_path_osoyoo, x, y, z)
             for node in nodes:
@@ -180,7 +212,7 @@ def generate_launch_description():
         x, y, z = random.uniform(-5, 5), random.uniform(-5, 5), 0.0
         # Deterministic alternative for debugging:
         # x, y, z = -1, -1, 0.00
-        if is_valid(x, y, positions):
+        if is_valid(x, y, positions, rect):
             positions.append([x, y])
             nodes = create_turtlebot(j, x, y, z)
             for node in nodes:

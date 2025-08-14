@@ -1,7 +1,9 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
 
-<xacro:include filename="$(find nav2_minimal_tb4_description)/urdf/icreate/common_properties.urdf.xacro"/>
+<xacro:arg name="tb4_urdf_dir" default="$(find-pkg-share nav2_minimal_tb4_description)/urdf"/>
+
+<xacro:include filename="$(arg tb4_urdf_dir)/icreate/common_properties.urdf.xacro"/>
 
 <xacro:macro name="weight_block" params="name parent_link:=base_link *origin">
 

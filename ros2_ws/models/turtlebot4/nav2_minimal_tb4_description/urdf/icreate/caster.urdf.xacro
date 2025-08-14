@@ -2,7 +2,8 @@
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
 
 <xacro:macro name="caster" params="name parent_link *origin">
-  <xacro:include filename="$(find nav2_minimal_tb4_description)/urdf/icreate/common_properties.urdf.xacro"/>
+  <xacro:arg name="tb4_urdf_dir" default="/root/data/ros2_ws/models/turtlebot4/nav2_minimal_tb4_description/urdf"/>
+  <xacro:include filename="$(arg tb4_urdf_dir)/icreate/common_properties.urdf.xacro"/>
 
   <xacro:property name="radius" value="${1*cm2m}" />
   <xacro:property name="mass"   value="0.01"/>
