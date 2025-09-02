@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "vicon_receiver__py",
+		"source" : "/home/stefano/dev/Costanza/ros2_ws/build/vicon_receiver/vicon_receiver__py"
+	}
+}

@@ -1,0 +1,18 @@
+[1.144s] Invoking command in '/home/stefano/dev/Costanza/ros2_ws/build/multirobot_spawn': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/stefano/dev/Costanza/ros2_ws/build/multirobot_spawn/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/stefano/dev/Costanza/ros2_ws/build/multirobot_spawn/build --no-deps symlink_data --force
+[1.414s] running develop
+[1.612s] running egg_info
+[1.630s] writing multirobot_spawn.egg-info/PKG-INFO
+[1.630s] writing dependency_links to multirobot_spawn.egg-info/dependency_links.txt
+[1.630s] writing requirements to multirobot_spawn.egg-info/requires.txt
+[1.630s] writing top-level names to multirobot_spawn.egg-info/top_level.txt
+[1.670s] reading manifest file 'multirobot_spawn.egg-info/SOURCES.txt'
+[1.670s] writing manifest file 'multirobot_spawn.egg-info/SOURCES.txt'
+[1.685s] running build_ext
+[1.685s] Creating /home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn/lib/python3.12/site-packages/multirobot-spawn.egg-link (link to .)
+[1.686s] 
+[1.686s] Installed /home/stefano/dev/Costanza/ros2_ws/build/multirobot_spawn
+[1.686s] running symlink_data
+[1.686s] symbolically linking /home/stefano/dev/Costanza/ros2_ws/build/multirobot_spawn/resource/multirobot_spawn -> /home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn/share/ament_index/resource_index/packages
+[1.686s] symbolically linking /home/stefano/dev/Costanza/ros2_ws/build/multirobot_spawn/package.xml -> /home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn/share/multirobot_spawn
+[1.686s] symbolically linking /home/stefano/dev/Costanza/ros2_ws/build/multirobot_spawn/launch/multi_robot_spawn.launch.py -> /home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn/share/multirobot_spawn/launch
+[1.715s] Invoked command in '/home/stefano/dev/Costanza/ros2_ws/build/multirobot_spawn' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/stefano/dev/Costanza/ros2_ws/build/multirobot_spawn/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/stefano/dev/Costanza/ros2_ws/build/multirobot_spawn/build --no-deps symlink_data --force

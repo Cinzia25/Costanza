@@ -1,0 +1,42 @@
+[1.389s] Invoking command in '/home/stefano/dev/Costanza/ros2_ws/build/shepherding_control': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/stefano/dev/Costanza/ros2_ws/build/shepherding_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/stefano/dev/Costanza/ros2_ws/build/shepherding_control/build
+[1.716s] running develop
+[1.929s] Removing /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages/shepherding-control.egg-link (link to .)
+[1.966s] Invoked command in '/home/stefano/dev/Costanza/ros2_ws/build/shepherding_control' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/stefano/dev/Costanza/ros2_ws/build/shepherding_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/stefano/dev/Costanza/ros2_ws/build/shepherding_control/build
+[1.967s] Invoking command in '/home/stefano/dev/Costanza/ros2_ws/src/shepherding_control': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/stefano/dev/Costanza/ros2_ws/build/shepherding_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/shepherding_control build --build-base /home/stefano/dev/Costanza/ros2_ws/build/shepherding_control/build install --record /home/stefano/dev/Costanza/ros2_ws/build/shepherding_control/install.log --single-version-externally-managed install_data --force
+[2.309s] running egg_info
+[2.329s] writing ../../build/shepherding_control/shepherding_control.egg-info/PKG-INFO
+[2.329s] writing dependency_links to ../../build/shepherding_control/shepherding_control.egg-info/dependency_links.txt
+[2.330s] writing entry points to ../../build/shepherding_control/shepherding_control.egg-info/entry_points.txt
+[2.330s] writing requirements to ../../build/shepherding_control/shepherding_control.egg-info/requires.txt
+[2.330s] writing top-level names to ../../build/shepherding_control/shepherding_control.egg-info/top_level.txt
+[2.370s] reading manifest file '../../build/shepherding_control/shepherding_control.egg-info/SOURCES.txt'
+[2.371s] writing manifest file '../../build/shepherding_control/shepherding_control.egg-info/SOURCES.txt'
+[2.371s] running build
+[2.371s] running build_py
+[2.371s] copying shepherding_control/dummy_controller_node.py -> /home/stefano/dev/Costanza/ros2_ws/build/shepherding_control/build/lib/shepherding_control
+[2.371s] copying shepherding_control/my_control_library/control.py -> /home/stefano/dev/Costanza/ros2_ws/build/shepherding_control/build/lib/shepherding_control/my_control_library
+[2.372s] running install
+[2.380s] running install_lib
+[2.411s] creating /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages/shepherding_control
+[2.412s] copying /home/stefano/dev/Costanza/ros2_ws/build/shepherding_control/build/lib/shepherding_control/dummy_controller_node.py -> /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages/shepherding_control
+[2.412s] copying /home/stefano/dev/Costanza/ros2_ws/build/shepherding_control/build/lib/shepherding_control/controller_node.py -> /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages/shepherding_control
+[2.412s] copying /home/stefano/dev/Costanza/ros2_ws/build/shepherding_control/build/lib/shepherding_control/__init__.py -> /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages/shepherding_control
+[2.412s] creating /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages/shepherding_control/my_control_library
+[2.412s] copying /home/stefano/dev/Costanza/ros2_ws/build/shepherding_control/build/lib/shepherding_control/my_control_library/control.py -> /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages/shepherding_control/my_control_library
+[2.412s] copying /home/stefano/dev/Costanza/ros2_ws/build/shepherding_control/build/lib/shepherding_control/my_control_library/lama_control.py -> /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages/shepherding_control/my_control_library
+[2.412s] copying /home/stefano/dev/Costanza/ros2_ws/build/shepherding_control/build/lib/shepherding_control/my_control_library/lama_control_obs.py -> /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages/shepherding_control/my_control_library
+[2.413s] byte-compiling /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages/shepherding_control/dummy_controller_node.py to dummy_controller_node.cpython-312.pyc
+[2.413s] byte-compiling /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages/shepherding_control/controller_node.py to controller_node.cpython-312.pyc
+[2.415s] byte-compiling /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages/shepherding_control/__init__.py to __init__.cpython-312.pyc
+[2.416s] byte-compiling /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages/shepherding_control/my_control_library/control.py to control.cpython-312.pyc
+[2.416s] byte-compiling /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages/shepherding_control/my_control_library/lama_control.py to lama_control.cpython-312.pyc
+[2.419s] byte-compiling /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages/shepherding_control/my_control_library/lama_control_obs.py to lama_control_obs.cpython-312.pyc
+[2.421s] running install_data
+[2.422s] copying resource/shepherding_control -> /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/share/ament_index/resource_index/packages
+[2.422s] copying package.xml -> /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/share/shepherding_control
+[2.422s] running install_egg_info
+[2.443s] Copying ../../build/shepherding_control/shepherding_control.egg-info to /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages/shepherding_control-0.0.0-py3.12.egg-info
+[2.444s] running install_scripts
+[2.587s] Installing controller_node script to /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/shepherding_control
+[2.587s] writing list of installed files to '/home/stefano/dev/Costanza/ros2_ws/build/shepherding_control/install.log'
+[2.630s] Invoked command in '/home/stefano/dev/Costanza/ros2_ws/src/shepherding_control' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/stefano/dev/Costanza/ros2_ws/build/shepherding_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/shepherding_control build --build-base /home/stefano/dev/Costanza/ros2_ws/build/shepherding_control/build install --record /home/stefano/dev/Costanza/ros2_ws/build/shepherding_control/install.log --single-version-externally-managed install_data --force

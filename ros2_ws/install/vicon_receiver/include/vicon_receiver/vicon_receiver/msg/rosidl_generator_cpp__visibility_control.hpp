@@ -1,0 +1,1 @@
+/home/stefano/dev/Costanza/ros2_ws/build/vicon_receiver/rosidl_generator_cpp/vicon_receiver/msg/rosidl_generator_cpp__visibility_control.hpp

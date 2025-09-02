@@ -1,0 +1,28 @@
+[1.288s] Invoking command in '/home/stefano/dev/Costanza/ros2_ws/build/multirobot_spawn_obs': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/stefano/dev/Costanza/ros2_ws/build/multirobot_spawn_obs/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn_obs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/stefano/dev/Costanza/ros2_ws/build/multirobot_spawn_obs/build
+[1.599s] running develop
+[1.796s] Removing /home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn_obs/lib/python3.12/site-packages/multirobot-spawn-obs.egg-link (link to .)
+[1.836s] Invoked command in '/home/stefano/dev/Costanza/ros2_ws/build/multirobot_spawn_obs' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/stefano/dev/Costanza/ros2_ws/build/multirobot_spawn_obs/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn_obs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/stefano/dev/Costanza/ros2_ws/build/multirobot_spawn_obs/build
+[1.837s] Invoking command in '/home/stefano/dev/Costanza/ros2_ws/src/multirobot_spawn_obs': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/stefano/dev/Costanza/ros2_ws/build/multirobot_spawn_obs/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn_obs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/multirobot_spawn_obs build --build-base /home/stefano/dev/Costanza/ros2_ws/build/multirobot_spawn_obs/build install --record /home/stefano/dev/Costanza/ros2_ws/build/multirobot_spawn_obs/install.log --single-version-externally-managed install_data --force
+[2.109s] running egg_info
+[2.133s] writing ../../build/multirobot_spawn_obs/multirobot_spawn_obs.egg-info/PKG-INFO
+[2.134s] writing dependency_links to ../../build/multirobot_spawn_obs/multirobot_spawn_obs.egg-info/dependency_links.txt
+[2.134s] writing requirements to ../../build/multirobot_spawn_obs/multirobot_spawn_obs.egg-info/requires.txt
+[2.134s] writing top-level names to ../../build/multirobot_spawn_obs/multirobot_spawn_obs.egg-info/top_level.txt
+[2.171s] reading manifest file '../../build/multirobot_spawn_obs/multirobot_spawn_obs.egg-info/SOURCES.txt'
+[2.172s] writing manifest file '../../build/multirobot_spawn_obs/multirobot_spawn_obs.egg-info/SOURCES.txt'
+[2.172s] running build
+[2.172s] running build_py
+[2.172s] running install
+[2.179s] running install_lib
+[2.200s] creating /home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn_obs/lib/python3.12/site-packages/multirobot_spawn_obs
+[2.200s] copying /home/stefano/dev/Costanza/ros2_ws/build/multirobot_spawn_obs/build/lib/multirobot_spawn_obs/__init__.py -> /home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn_obs/lib/python3.12/site-packages/multirobot_spawn_obs
+[2.200s] byte-compiling /home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn_obs/lib/python3.12/site-packages/multirobot_spawn_obs/__init__.py to __init__.cpython-312.pyc
+[2.201s] running install_data
+[2.201s] copying resource/multirobot_spawn_obs -> /home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn_obs/share/ament_index/resource_index/packages
+[2.201s] copying package.xml -> /home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn_obs/share/multirobot_spawn_obs
+[2.201s] copying launch/multi_robot_spawn_obs.launch.py -> /home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn_obs/share/multirobot_spawn_obs/launch
+[2.201s] running install_egg_info
+[2.228s] Copying ../../build/multirobot_spawn_obs/multirobot_spawn_obs.egg-info to /home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn_obs/lib/python3.12/site-packages/multirobot_spawn_obs-0.0.1-py3.12.egg-info
+[2.229s] running install_scripts
+[2.408s] writing list of installed files to '/home/stefano/dev/Costanza/ros2_ws/build/multirobot_spawn_obs/install.log'
+[2.458s] Invoked command in '/home/stefano/dev/Costanza/ros2_ws/src/multirobot_spawn_obs' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/stefano/dev/Costanza/ros2_ws/build/multirobot_spawn_obs/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn_obs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/multirobot_spawn_obs build --build-base /home/stefano/dev/Costanza/ros2_ws/build/multirobot_spawn_obs/build install --record /home/stefano/dev/Costanza/ros2_ws/build/multirobot_spawn_obs/install.log --single-version-externally-managed install_data --force

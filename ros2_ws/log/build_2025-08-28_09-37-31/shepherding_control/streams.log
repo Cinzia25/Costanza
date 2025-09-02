@@ -1,0 +1,19 @@
+[1.128s] Invoking command in '/home/stefano/dev/Costanza/ros2_ws/build/shepherding_control': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/stefano/dev/Costanza/ros2_ws/build/shepherding_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/stefano/dev/Costanza/ros2_ws/build/shepherding_control/build --no-deps symlink_data --force
+[1.367s] running develop
+[1.516s] running egg_info
+[1.529s] writing shepherding_control.egg-info/PKG-INFO
+[1.530s] writing dependency_links to shepherding_control.egg-info/dependency_links.txt
+[1.531s] writing entry points to shepherding_control.egg-info/entry_points.txt
+[1.531s] writing requirements to shepherding_control.egg-info/requires.txt
+[1.531s] writing top-level names to shepherding_control.egg-info/top_level.txt
+[1.560s] reading manifest file 'shepherding_control.egg-info/SOURCES.txt'
+[1.560s] writing manifest file 'shepherding_control.egg-info/SOURCES.txt'
+[1.576s] running build_ext
+[1.576s] Creating /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages/shepherding-control.egg-link (link to .)
+[1.577s] Installing controller_node script to /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/shepherding_control
+[1.577s] 
+[1.577s] Installed /home/stefano/dev/Costanza/ros2_ws/build/shepherding_control
+[1.577s] running symlink_data
+[1.577s] symbolically linking /home/stefano/dev/Costanza/ros2_ws/build/shepherding_control/resource/shepherding_control -> /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/share/ament_index/resource_index/packages
+[1.577s] symbolically linking /home/stefano/dev/Costanza/ros2_ws/build/shepherding_control/package.xml -> /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/share/shepherding_control
+[1.604s] Invoked command in '/home/stefano/dev/Costanza/ros2_ws/build/shepherding_control' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/stefano/dev/Costanza/ros2_ws/build/shepherding_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/stefano/dev/Costanza/ros2_ws/build/shepherding_control/build --no-deps symlink_data --force

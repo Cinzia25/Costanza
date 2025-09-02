@@ -1,0 +1,632 @@
+[0.104s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.104s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7d7842194740>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7d78422c0b60>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7d78422c0b60>>, mixin_verb=('build',))
+[0.146s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.146s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.146s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.146s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.146s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.147s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.147s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/stefano/dev/Costanza/ros2_ws'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(models) by extensions ['ignore', 'ignore_ament_install']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(models) by extension 'ignore'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(models) by extension 'ignore_ament_install'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(models) by extensions ['colcon_pkg']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(models) by extension 'colcon_pkg'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(models) by extensions ['colcon_meta']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(models) by extension 'colcon_meta'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(models) by extensions ['ros']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(models) by extension 'ros'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(models) by extensions ['cmake', 'python']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(models) by extension 'cmake'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(models) by extension 'python'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(models) by extensions ['python_setup_py']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(models) by extension 'python_setup_py'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(models/osoyoo) by extensions ['ignore', 'ignore_ament_install']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(models/osoyoo) by extension 'ignore'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(models/osoyoo) by extension 'ignore_ament_install'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(models/osoyoo) by extensions ['colcon_pkg']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(models/osoyoo) by extension 'colcon_pkg'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(models/osoyoo) by extensions ['colcon_meta']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(models/osoyoo) by extension 'colcon_meta'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(models/osoyoo) by extensions ['ros']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(models/osoyoo) by extension 'ros'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(models/osoyoo) by extensions ['cmake', 'python']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(models/osoyoo) by extension 'cmake'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(models/osoyoo) by extension 'python'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(models/osoyoo) by extensions ['python_setup_py']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(models/osoyoo) by extension 'python_setup_py'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4) by extensions ['ignore', 'ignore_ament_install']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4) by extension 'ignore'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4) by extension 'ignore_ament_install'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4) by extensions ['colcon_pkg']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4) by extension 'colcon_pkg'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4) by extensions ['colcon_meta']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4) by extension 'colcon_meta'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4) by extensions ['ros']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4) by extension 'ros'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4) by extensions ['cmake', 'python']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4) by extension 'cmake'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4) by extension 'python'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4) by extensions ['python_setup_py']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4) by extension 'python_setup_py'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description) by extensions ['ignore', 'ignore_ament_install']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description) by extension 'ignore'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description) by extension 'ignore_ament_install'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description) by extensions ['colcon_pkg']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description) by extension 'colcon_pkg'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description) by extensions ['colcon_meta']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description) by extension 'colcon_meta'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description) by extensions ['ros']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description) by extension 'ros'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description) by extensions ['cmake', 'python']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description) by extension 'cmake'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description) by extension 'python'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description) by extensions ['python_setup_py']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description) by extension 'python_setup_py'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/hooks) by extensions ['ignore', 'ignore_ament_install']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/hooks) by extension 'ignore'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/hooks) by extension 'ignore_ament_install'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/hooks) by extensions ['colcon_pkg']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/hooks) by extension 'colcon_pkg'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/hooks) by extensions ['colcon_meta']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/hooks) by extension 'colcon_meta'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/hooks) by extensions ['ros']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/hooks) by extension 'ros'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/hooks) by extensions ['cmake', 'python']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/hooks) by extension 'cmake'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/hooks) by extension 'python'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/hooks) by extensions ['python_setup_py']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/hooks) by extension 'python_setup_py'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/launch) by extensions ['ignore', 'ignore_ament_install']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/launch) by extension 'ignore'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/launch) by extension 'ignore_ament_install'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/launch) by extensions ['colcon_pkg']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/launch) by extension 'colcon_pkg'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/launch) by extensions ['colcon_meta']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/launch) by extension 'colcon_meta'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/launch) by extensions ['ros']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/launch) by extension 'ros'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/launch) by extensions ['cmake', 'python']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/launch) by extension 'cmake'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/launch) by extension 'python'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/launch) by extensions ['python_setup_py']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/launch) by extension 'python_setup_py'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/meshes) by extensions ['ignore', 'ignore_ament_install']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/meshes) by extension 'ignore'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/meshes) by extension 'ignore_ament_install'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/meshes) by extensions ['colcon_pkg']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/meshes) by extension 'colcon_pkg'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/meshes) by extensions ['colcon_meta']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/meshes) by extension 'colcon_meta'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/meshes) by extensions ['ros']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/meshes) by extension 'ros'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/meshes) by extensions ['cmake', 'python']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/meshes) by extension 'cmake'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/meshes) by extension 'python'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/meshes) by extensions ['python_setup_py']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/meshes) by extension 'python_setup_py'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/rviz) by extensions ['ignore', 'ignore_ament_install']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/rviz) by extension 'ignore'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/rviz) by extension 'ignore_ament_install'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/rviz) by extensions ['colcon_pkg']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/rviz) by extension 'colcon_pkg'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/rviz) by extensions ['colcon_meta']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/rviz) by extension 'colcon_meta'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/rviz) by extensions ['ros']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/rviz) by extension 'ros'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/rviz) by extensions ['cmake', 'python']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/rviz) by extension 'cmake'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/rviz) by extension 'python'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/rviz) by extensions ['python_setup_py']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/rviz) by extension 'python_setup_py'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf) by extensions ['ignore', 'ignore_ament_install']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf) by extension 'ignore'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf) by extension 'ignore_ament_install'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf) by extensions ['colcon_pkg']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf) by extension 'colcon_pkg'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf) by extensions ['colcon_meta']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf) by extension 'colcon_meta'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf) by extensions ['ros']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf) by extension 'ros'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf) by extensions ['cmake', 'python']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf) by extension 'cmake'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf) by extension 'python'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf) by extensions ['python_setup_py']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf) by extension 'python_setup_py'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf/icreate) by extensions ['ignore', 'ignore_ament_install']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf/icreate) by extension 'ignore'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf/icreate) by extension 'ignore_ament_install'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf/icreate) by extensions ['colcon_pkg']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf/icreate) by extension 'colcon_pkg'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf/icreate) by extensions ['colcon_meta']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf/icreate) by extension 'colcon_meta'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf/icreate) by extensions ['ros']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf/icreate) by extension 'ros'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf/icreate) by extensions ['cmake', 'python']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf/icreate) by extension 'cmake'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf/icreate) by extension 'python'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf/icreate) by extensions ['python_setup_py']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf/icreate) by extension 'python_setup_py'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf/icreate/sensors) by extensions ['ignore', 'ignore_ament_install']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf/icreate/sensors) by extension 'ignore'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf/icreate/sensors) by extension 'ignore_ament_install'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf/icreate/sensors) by extensions ['colcon_pkg']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf/icreate/sensors) by extension 'colcon_pkg'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf/icreate/sensors) by extensions ['colcon_meta']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf/icreate/sensors) by extension 'colcon_meta'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf/icreate/sensors) by extensions ['ros']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf/icreate/sensors) by extension 'ros'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf/icreate/sensors) by extensions ['cmake', 'python']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf/icreate/sensors) by extension 'cmake'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf/icreate/sensors) by extension 'python'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf/icreate/sensors) by extensions ['python_setup_py']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf/icreate/sensors) by extension 'python_setup_py'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf/sensors) by extensions ['ignore', 'ignore_ament_install']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf/sensors) by extension 'ignore'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf/sensors) by extension 'ignore_ament_install'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf/sensors) by extensions ['colcon_pkg']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf/sensors) by extension 'colcon_pkg'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf/sensors) by extensions ['colcon_meta']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf/sensors) by extension 'colcon_meta'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf/sensors) by extensions ['ros']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf/sensors) by extension 'ros'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf/sensors) by extensions ['cmake', 'python']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf/sensors) by extension 'cmake'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf/sensors) by extension 'python'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf/sensors) by extensions ['python_setup_py']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf/sensors) by extension 'python_setup_py'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf/standard) by extensions ['ignore', 'ignore_ament_install']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf/standard) by extension 'ignore'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf/standard) by extension 'ignore_ament_install'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf/standard) by extensions ['colcon_pkg']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf/standard) by extension 'colcon_pkg'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf/standard) by extensions ['colcon_meta']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf/standard) by extension 'colcon_meta'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf/standard) by extensions ['ros']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf/standard) by extension 'ros'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf/standard) by extensions ['cmake', 'python']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf/standard) by extension 'cmake'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf/standard) by extension 'python'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf/standard) by extensions ['python_setup_py']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(models/turtlebot4/nav2_minimal_tb4_description/urdf/standard) by extension 'python_setup_py'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/ionic_demo) by extensions ['ignore', 'ignore_ament_install']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/ionic_demo) by extension 'ignore'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/ionic_demo) by extension 'ignore_ament_install'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/ionic_demo) by extensions ['colcon_pkg']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/ionic_demo) by extension 'colcon_pkg'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/ionic_demo) by extensions ['colcon_meta']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/ionic_demo) by extension 'colcon_meta'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/ionic_demo) by extensions ['ros']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/ionic_demo) by extension 'ros'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/ionic_demo) by extensions ['cmake', 'python']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/ionic_demo) by extension 'cmake'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/ionic_demo) by extension 'python'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/ionic_demo) by extensions ['python_setup_py']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/ionic_demo) by extension 'python_setup_py'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/ionic_demo/ionic_demo) by extensions ['ignore', 'ignore_ament_install']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/ionic_demo/ionic_demo) by extension 'ignore'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/ionic_demo/ionic_demo) by extension 'ignore_ament_install'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/ionic_demo/ionic_demo) by extensions ['colcon_pkg']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/ionic_demo/ionic_demo) by extension 'colcon_pkg'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/ionic_demo/ionic_demo) by extensions ['colcon_meta']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/ionic_demo/ionic_demo) by extension 'colcon_meta'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/ionic_demo/ionic_demo) by extensions ['ros']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/ionic_demo/ionic_demo) by extension 'ros'
+[0.176s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ionic_demo/ionic_demo' with type 'ros.ament_cmake' and name 'ionic_demo'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/multirobot_spawn) by extensions ['ignore', 'ignore_ament_install']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/multirobot_spawn) by extension 'ignore'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/multirobot_spawn) by extension 'ignore_ament_install'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/multirobot_spawn) by extensions ['colcon_pkg']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/multirobot_spawn) by extension 'colcon_pkg'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/multirobot_spawn) by extensions ['colcon_meta']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/multirobot_spawn) by extension 'colcon_meta'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/multirobot_spawn) by extensions ['ros']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/multirobot_spawn) by extension 'ros'
+[0.177s] DEBUG:colcon.colcon_core.package_identification:Package 'src/multirobot_spawn' with type 'ros.ament_python' and name 'multirobot_spawn'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/multirobot_spawn_obs) by extensions ['ignore', 'ignore_ament_install']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/multirobot_spawn_obs) by extension 'ignore'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/multirobot_spawn_obs) by extension 'ignore_ament_install'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/multirobot_spawn_obs) by extensions ['colcon_pkg']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/multirobot_spawn_obs) by extension 'colcon_pkg'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/multirobot_spawn_obs) by extensions ['colcon_meta']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/multirobot_spawn_obs) by extension 'colcon_meta'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/multirobot_spawn_obs) by extensions ['ros']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/multirobot_spawn_obs) by extension 'ros'
+[0.178s] DEBUG:colcon.colcon_core.package_identification:Package 'src/multirobot_spawn_obs' with type 'ros.ament_python' and name 'multirobot_spawn_obs'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2-vicon-receiver) by extensions ['ignore', 'ignore_ament_install']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2-vicon-receiver) by extension 'ignore'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2-vicon-receiver) by extension 'ignore_ament_install'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2-vicon-receiver) by extensions ['colcon_pkg']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2-vicon-receiver) by extension 'colcon_pkg'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2-vicon-receiver) by extensions ['colcon_meta']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2-vicon-receiver) by extension 'colcon_meta'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2-vicon-receiver) by extensions ['ros']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2-vicon-receiver) by extension 'ros'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2-vicon-receiver) by extensions ['cmake', 'python']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2-vicon-receiver) by extension 'cmake'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2-vicon-receiver) by extension 'python'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2-vicon-receiver) by extensions ['python_setup_py']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2-vicon-receiver) by extension 'python_setup_py'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2-vicon-receiver/DataStreamSDK_1.12.0) by extensions ['ignore', 'ignore_ament_install']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2-vicon-receiver/DataStreamSDK_1.12.0) by extension 'ignore'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2-vicon-receiver/DataStreamSDK_1.12.0) by extension 'ignore_ament_install'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2-vicon-receiver/DataStreamSDK_1.12.0) by extensions ['colcon_pkg']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2-vicon-receiver/DataStreamSDK_1.12.0) by extension 'colcon_pkg'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2-vicon-receiver/DataStreamSDK_1.12.0) by extensions ['colcon_meta']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2-vicon-receiver/DataStreamSDK_1.12.0) by extension 'colcon_meta'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2-vicon-receiver/DataStreamSDK_1.12.0) by extensions ['ros']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2-vicon-receiver/DataStreamSDK_1.12.0) by extension 'ros'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2-vicon-receiver/DataStreamSDK_1.12.0) by extensions ['cmake', 'python']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2-vicon-receiver/DataStreamSDK_1.12.0) by extension 'cmake'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2-vicon-receiver/DataStreamSDK_1.12.0) by extension 'python'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2-vicon-receiver/DataStreamSDK_1.12.0) by extensions ['python_setup_py']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2-vicon-receiver/DataStreamSDK_1.12.0) by extension 'python_setup_py'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2-vicon-receiver/vicon_receiver) by extensions ['ignore', 'ignore_ament_install']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2-vicon-receiver/vicon_receiver) by extension 'ignore'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2-vicon-receiver/vicon_receiver) by extension 'ignore_ament_install'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2-vicon-receiver/vicon_receiver) by extensions ['colcon_pkg']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2-vicon-receiver/vicon_receiver) by extension 'colcon_pkg'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2-vicon-receiver/vicon_receiver) by extensions ['colcon_meta']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2-vicon-receiver/vicon_receiver) by extension 'colcon_meta'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2-vicon-receiver/vicon_receiver) by extensions ['ros']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2-vicon-receiver/vicon_receiver) by extension 'ros'
+[0.180s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros2-vicon-receiver/vicon_receiver' with type 'ros.ament_cmake' and name 'vicon_receiver'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/shepherding_control) by extensions ['ignore', 'ignore_ament_install']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/shepherding_control) by extension 'ignore'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/shepherding_control) by extension 'ignore_ament_install'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/shepherding_control) by extensions ['colcon_pkg']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/shepherding_control) by extension 'colcon_pkg'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/shepherding_control) by extensions ['colcon_meta']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/shepherding_control) by extension 'colcon_meta'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/shepherding_control) by extensions ['ros']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src/shepherding_control) by extension 'ros'
+[0.181s] DEBUG:colcon.colcon_core.package_identification:Package 'src/shepherding_control' with type 'ros.ament_python' and name 'shepherding_control'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(worlds) by extensions ['ignore', 'ignore_ament_install']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(worlds) by extension 'ignore'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(worlds) by extension 'ignore_ament_install'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(worlds) by extensions ['colcon_pkg']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(worlds) by extension 'colcon_pkg'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(worlds) by extensions ['colcon_meta']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(worlds) by extension 'colcon_meta'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(worlds) by extensions ['ros']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(worlds) by extension 'ros'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(worlds) by extensions ['cmake', 'python']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(worlds) by extension 'cmake'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(worlds) by extension 'python'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(worlds) by extensions ['python_setup_py']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(worlds) by extension 'python_setup_py'
+[0.181s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.181s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.181s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.181s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.181s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.197s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.197s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.199s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 4 installed packages in /home/stefano/dev/Costanza/ros2_ws/install
+[0.200s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 315 installed packages in /opt/ros/jazzy
+[0.201s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.229s] Level 5:colcon.colcon_core.verb:set package 'ionic_demo' build argument 'cmake_args' from command line to 'None'
+[0.229s] Level 5:colcon.colcon_core.verb:set package 'ionic_demo' build argument 'cmake_target' from command line to 'None'
+[0.229s] Level 5:colcon.colcon_core.verb:set package 'ionic_demo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.229s] Level 5:colcon.colcon_core.verb:set package 'ionic_demo' build argument 'cmake_clean_cache' from command line to 'False'
+[0.229s] Level 5:colcon.colcon_core.verb:set package 'ionic_demo' build argument 'cmake_clean_first' from command line to 'False'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'ionic_demo' build argument 'cmake_force_configure' from command line to 'False'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'ionic_demo' build argument 'ament_cmake_args' from command line to 'None'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'ionic_demo' build argument 'catkin_cmake_args' from command line to 'None'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'ionic_demo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.230s] DEBUG:colcon.colcon_core.verb:Building package 'ionic_demo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/stefano/dev/Costanza/ros2_ws/build/ionic_demo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/stefano/dev/Costanza/ros2_ws/install/ionic_demo', 'merge_install': False, 'path': '/home/stefano/dev/Costanza/ros2_ws/src/ionic_demo/ionic_demo', 'symlink_install': True, 'test_result_base': None}
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'multirobot_spawn' build argument 'cmake_args' from command line to 'None'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'multirobot_spawn' build argument 'cmake_target' from command line to 'None'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'multirobot_spawn' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'multirobot_spawn' build argument 'cmake_clean_cache' from command line to 'False'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'multirobot_spawn' build argument 'cmake_clean_first' from command line to 'False'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'multirobot_spawn' build argument 'cmake_force_configure' from command line to 'False'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'multirobot_spawn' build argument 'ament_cmake_args' from command line to 'None'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'multirobot_spawn' build argument 'catkin_cmake_args' from command line to 'None'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'multirobot_spawn' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.230s] DEBUG:colcon.colcon_core.verb:Building package 'multirobot_spawn' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/stefano/dev/Costanza/ros2_ws/build/multirobot_spawn', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn', 'merge_install': False, 'path': '/home/stefano/dev/Costanza/ros2_ws/src/multirobot_spawn', 'symlink_install': True, 'test_result_base': None}
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'multirobot_spawn_obs' build argument 'cmake_args' from command line to 'None'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'multirobot_spawn_obs' build argument 'cmake_target' from command line to 'None'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'multirobot_spawn_obs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'multirobot_spawn_obs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'multirobot_spawn_obs' build argument 'cmake_clean_first' from command line to 'False'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'multirobot_spawn_obs' build argument 'cmake_force_configure' from command line to 'False'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'multirobot_spawn_obs' build argument 'ament_cmake_args' from command line to 'None'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'multirobot_spawn_obs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'multirobot_spawn_obs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.230s] DEBUG:colcon.colcon_core.verb:Building package 'multirobot_spawn_obs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/stefano/dev/Costanza/ros2_ws/build/multirobot_spawn_obs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn_obs', 'merge_install': False, 'path': '/home/stefano/dev/Costanza/ros2_ws/src/multirobot_spawn_obs', 'symlink_install': True, 'test_result_base': None}
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'shepherding_control' build argument 'cmake_args' from command line to 'None'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'shepherding_control' build argument 'cmake_target' from command line to 'None'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'shepherding_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'shepherding_control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'shepherding_control' build argument 'cmake_clean_first' from command line to 'False'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'shepherding_control' build argument 'cmake_force_configure' from command line to 'False'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'shepherding_control' build argument 'ament_cmake_args' from command line to 'None'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'shepherding_control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.230s] Level 5:colcon.colcon_core.verb:set package 'shepherding_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.230s] DEBUG:colcon.colcon_core.verb:Building package 'shepherding_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/stefano/dev/Costanza/ros2_ws/build/shepherding_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/stefano/dev/Costanza/ros2_ws/install/shepherding_control', 'merge_install': False, 'path': '/home/stefano/dev/Costanza/ros2_ws/src/shepherding_control', 'symlink_install': True, 'test_result_base': None}
+[0.231s] Level 5:colcon.colcon_core.verb:set package 'vicon_receiver' build argument 'cmake_args' from command line to 'None'
+[0.231s] Level 5:colcon.colcon_core.verb:set package 'vicon_receiver' build argument 'cmake_target' from command line to 'None'
+[0.231s] Level 5:colcon.colcon_core.verb:set package 'vicon_receiver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.231s] Level 5:colcon.colcon_core.verb:set package 'vicon_receiver' build argument 'cmake_clean_cache' from command line to 'False'
+[0.231s] Level 5:colcon.colcon_core.verb:set package 'vicon_receiver' build argument 'cmake_clean_first' from command line to 'False'
+[0.231s] Level 5:colcon.colcon_core.verb:set package 'vicon_receiver' build argument 'cmake_force_configure' from command line to 'False'
+[0.231s] Level 5:colcon.colcon_core.verb:set package 'vicon_receiver' build argument 'ament_cmake_args' from command line to 'None'
+[0.231s] Level 5:colcon.colcon_core.verb:set package 'vicon_receiver' build argument 'catkin_cmake_args' from command line to 'None'
+[0.231s] Level 5:colcon.colcon_core.verb:set package 'vicon_receiver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.231s] DEBUG:colcon.colcon_core.verb:Building package 'vicon_receiver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/stefano/dev/Costanza/ros2_ws/build/vicon_receiver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver', 'merge_install': False, 'path': '/home/stefano/dev/Costanza/ros2_ws/src/ros2-vicon-receiver/vicon_receiver', 'symlink_install': True, 'test_result_base': None}
+[0.231s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.232s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.232s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/stefano/dev/Costanza/ros2_ws/src/ionic_demo/ionic_demo' with build type 'ament_cmake'
+[0.232s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/stefano/dev/Costanza/ros2_ws/src/ionic_demo/ionic_demo'
+[0.236s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.236s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.236s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.239s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/stefano/dev/Costanza/ros2_ws/src/multirobot_spawn' with build type 'ament_python'
+[0.239s] Level 1:colcon.colcon_core.shell:create_environment_hook('multirobot_spawn', 'ament_prefix_path')
+[0.239s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn/share/multirobot_spawn/hook/ament_prefix_path.ps1'
+[0.240s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn/share/multirobot_spawn/hook/ament_prefix_path.dsv'
+[0.241s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn/share/multirobot_spawn/hook/ament_prefix_path.sh'
+[0.242s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.242s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.244s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/stefano/dev/Costanza/ros2_ws/src/multirobot_spawn_obs' with build type 'ament_python'
+[0.244s] Level 1:colcon.colcon_core.shell:create_environment_hook('multirobot_spawn_obs', 'ament_prefix_path')
+[0.245s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn_obs/share/multirobot_spawn_obs/hook/ament_prefix_path.ps1'
+[0.245s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn_obs/share/multirobot_spawn_obs/hook/ament_prefix_path.dsv'
+[0.245s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn_obs/share/multirobot_spawn_obs/hook/ament_prefix_path.sh'
+[0.246s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.246s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.248s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/stefano/dev/Costanza/ros2_ws/src/shepherding_control' with build type 'ament_python'
+[0.248s] Level 1:colcon.colcon_core.shell:create_environment_hook('shepherding_control', 'ament_prefix_path')
+[0.249s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/share/shepherding_control/hook/ament_prefix_path.ps1'
+[0.249s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/share/shepherding_control/hook/ament_prefix_path.dsv'
+[0.250s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/share/shepherding_control/hook/ament_prefix_path.sh'
+[0.250s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.250s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.253s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/stefano/dev/Costanza/ros2_ws/src/ros2-vicon-receiver/vicon_receiver' with build type 'ament_cmake'
+[0.253s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/stefano/dev/Costanza/ros2_ws/src/ros2-vicon-receiver/vicon_receiver'
+[0.253s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.253s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.258s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/stefano/dev/Costanza/ros2_ws/build/ionic_demo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/stefano/dev/Costanza/ros2_ws/install/shepherding_control:/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn_obs:/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/stefano/dev/Costanza/ros2_ws/src/ionic_demo/ionic_demo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/stefano/dev/Costanza/ros2_ws/install/ionic_demo
+[0.413s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/stefano/dev/Costanza/ros2_ws/src/multirobot_spawn'
+[0.413s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.413s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.569s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/stefano/dev/Costanza/ros2_ws/src/multirobot_spawn_obs'
+[0.569s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.569s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.733s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/stefano/dev/Costanza/ros2_ws/src/shepherding_control'
+[0.733s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.733s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.741s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/stefano/dev/Costanza/ros2_ws/build/vicon_receiver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/stefano/dev/Costanza/ros2_ws/install/shepherding_control:/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn_obs:/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/stefano/dev/Costanza/ros2_ws/src/ros2-vicon-receiver/vicon_receiver -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver
+[0.743s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/stefano/dev/Costanza/ros2_ws/build/ionic_demo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/stefano/dev/Costanza/ros2_ws/install/shepherding_control:/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn_obs:/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/stefano/dev/Costanza/ros2_ws/src/ionic_demo/ionic_demo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/stefano/dev/Costanza/ros2_ws/install/ionic_demo
+[0.743s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/stefano/dev/Costanza/ros2_ws/build/ionic_demo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/stefano/dev/Costanza/ros2_ws/install/shepherding_control:/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn_obs:/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/stefano/dev/Costanza/ros2_ws/build/ionic_demo -- -j8 -l8
+[0.773s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/stefano/dev/Costanza/ros2_ws/build/ionic_demo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/stefano/dev/Costanza/ros2_ws/install/shepherding_control:/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn_obs:/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/stefano/dev/Costanza/ros2_ws/build/ionic_demo -- -j8 -l8
+[0.780s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/stefano/dev/Costanza/ros2_ws/build/ionic_demo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/stefano/dev/Costanza/ros2_ws/install/shepherding_control:/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn_obs:/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/stefano/dev/Costanza/ros2_ws/build/ionic_demo
+[1.029s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ionic_demo)
+[1.030s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/stefano/dev/Costanza/ros2_ws/build/ionic_demo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/stefano/dev/Costanza/ros2_ws/install/shepherding_control:/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn_obs:/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/stefano/dev/Costanza/ros2_ws/build/ionic_demo
+[1.035s] Level 1:colcon.colcon_core.environment:checking '/home/stefano/dev/Costanza/ros2_ws/install/ionic_demo' for CMake module files
+[1.036s] Level 1:colcon.colcon_core.environment:checking '/home/stefano/dev/Costanza/ros2_ws/install/ionic_demo' for CMake config files
+[1.036s] Level 1:colcon.colcon_core.shell:create_environment_hook('ionic_demo', 'cmake_prefix_path')
+[1.036s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/stefano/dev/Costanza/ros2_ws/install/ionic_demo/share/ionic_demo/hook/cmake_prefix_path.ps1'
+[1.037s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/stefano/dev/Costanza/ros2_ws/install/ionic_demo/share/ionic_demo/hook/cmake_prefix_path.dsv'
+[1.037s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/stefano/dev/Costanza/ros2_ws/install/ionic_demo/share/ionic_demo/hook/cmake_prefix_path.sh'
+[1.038s] Level 1:colcon.colcon_core.environment:checking '/home/stefano/dev/Costanza/ros2_ws/install/ionic_demo/bin'
+[1.038s] Level 1:colcon.colcon_core.environment:checking '/home/stefano/dev/Costanza/ros2_ws/install/ionic_demo/lib/pkgconfig/ionic_demo.pc'
+[1.039s] Level 1:colcon.colcon_core.environment:checking '/home/stefano/dev/Costanza/ros2_ws/install/ionic_demo/lib/python3.12/site-packages'
+[1.039s] Level 1:colcon.colcon_core.environment:checking '/home/stefano/dev/Costanza/ros2_ws/install/ionic_demo/bin'
+[1.039s] INFO:colcon.colcon_core.shell:Creating package script '/home/stefano/dev/Costanza/ros2_ws/install/ionic_demo/share/ionic_demo/package.ps1'
+[1.040s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/stefano/dev/Costanza/ros2_ws/install/ionic_demo/share/ionic_demo/package.dsv'
+[1.040s] INFO:colcon.colcon_core.shell:Creating package script '/home/stefano/dev/Costanza/ros2_ws/install/ionic_demo/share/ionic_demo/package.sh'
+[1.041s] INFO:colcon.colcon_core.shell:Creating package script '/home/stefano/dev/Costanza/ros2_ws/install/ionic_demo/share/ionic_demo/package.bash'
+[1.041s] INFO:colcon.colcon_core.shell:Creating package script '/home/stefano/dev/Costanza/ros2_ws/install/ionic_demo/share/ionic_demo/package.zsh'
+[1.042s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/stefano/dev/Costanza/ros2_ws/install/ionic_demo/share/colcon-core/packages/ionic_demo)
+[1.043s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ionic_demo)
+[1.043s] Level 1:colcon.colcon_core.environment:checking '/home/stefano/dev/Costanza/ros2_ws/install/ionic_demo' for CMake module files
+[1.043s] Level 1:colcon.colcon_core.environment:checking '/home/stefano/dev/Costanza/ros2_ws/install/ionic_demo' for CMake config files
+[1.043s] Level 1:colcon.colcon_core.shell:create_environment_hook('ionic_demo', 'cmake_prefix_path')
+[1.044s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/stefano/dev/Costanza/ros2_ws/install/ionic_demo/share/ionic_demo/hook/cmake_prefix_path.ps1'
+[1.044s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/stefano/dev/Costanza/ros2_ws/install/ionic_demo/share/ionic_demo/hook/cmake_prefix_path.dsv'
+[1.044s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/stefano/dev/Costanza/ros2_ws/install/ionic_demo/share/ionic_demo/hook/cmake_prefix_path.sh'
+[1.045s] Level 1:colcon.colcon_core.environment:checking '/home/stefano/dev/Costanza/ros2_ws/install/ionic_demo/bin'
+[1.045s] Level 1:colcon.colcon_core.environment:checking '/home/stefano/dev/Costanza/ros2_ws/install/ionic_demo/lib/pkgconfig/ionic_demo.pc'
+[1.045s] Level 1:colcon.colcon_core.environment:checking '/home/stefano/dev/Costanza/ros2_ws/install/ionic_demo/lib/python3.12/site-packages'
+[1.046s] Level 1:colcon.colcon_core.environment:checking '/home/stefano/dev/Costanza/ros2_ws/install/ionic_demo/bin'
+[1.046s] INFO:colcon.colcon_core.shell:Creating package script '/home/stefano/dev/Costanza/ros2_ws/install/ionic_demo/share/ionic_demo/package.ps1'
+[1.046s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/stefano/dev/Costanza/ros2_ws/install/ionic_demo/share/ionic_demo/package.dsv'
+[1.047s] INFO:colcon.colcon_core.shell:Creating package script '/home/stefano/dev/Costanza/ros2_ws/install/ionic_demo/share/ionic_demo/package.sh'
+[1.047s] INFO:colcon.colcon_core.shell:Creating package script '/home/stefano/dev/Costanza/ros2_ws/install/ionic_demo/share/ionic_demo/package.bash'
+[1.047s] INFO:colcon.colcon_core.shell:Creating package script '/home/stefano/dev/Costanza/ros2_ws/install/ionic_demo/share/ionic_demo/package.zsh'
+[1.047s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/stefano/dev/Costanza/ros2_ws/install/ionic_demo/share/colcon-core/packages/ionic_demo)
+[1.372s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn_obs/share/ament_index/resource_index/packages/multirobot_spawn_obs
+[1.372s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn_obs/share/multirobot_spawn_obs/package.xml
+[1.372s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn_obs/share/multirobot_spawn_obs/launch/multi_robot_spawn_obs.launch.py
+[1.374s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/stefano/dev/Costanza/ros2_ws/build/multirobot_spawn_obs': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/stefano/dev/Costanza/ros2_ws/build/multirobot_spawn_obs/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn_obs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/stefano/dev/Costanza/ros2_ws/build/multirobot_spawn_obs/build --no-deps symlink_data --force
+[1.375s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/share/ament_index/resource_index/packages/shepherding_control
+[1.375s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/share/shepherding_control/package.xml
+[1.375s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/shepherding_control/controller_node
+[1.377s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/stefano/dev/Costanza/ros2_ws/build/shepherding_control': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/stefano/dev/Costanza/ros2_ws/build/shepherding_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/stefano/dev/Costanza/ros2_ws/build/shepherding_control/build --no-deps symlink_data --force
+[1.381s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn/share/ament_index/resource_index/packages/multirobot_spawn
+[1.381s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn/share/multirobot_spawn/package.xml
+[1.381s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn/share/multirobot_spawn/launch/multi_robot_spawn.launch.py
+[1.383s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/stefano/dev/Costanza/ros2_ws/build/multirobot_spawn': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/stefano/dev/Costanza/ros2_ws/build/multirobot_spawn/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/stefano/dev/Costanza/ros2_ws/build/multirobot_spawn/build --no-deps symlink_data --force
+[1.853s] Level 1:colcon.colcon_core.shell:create_environment_hook('shepherding_control', 'pythonpath_develop')
+[1.853s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/stefano/dev/Costanza/ros2_ws/build/shepherding_control/share/shepherding_control/hook/pythonpath_develop.ps1'
+[1.853s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/stefano/dev/Costanza/ros2_ws/build/shepherding_control' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/stefano/dev/Costanza/ros2_ws/build/shepherding_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/stefano/dev/Costanza/ros2_ws/build/shepherding_control/build --no-deps symlink_data --force
+[1.854s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/stefano/dev/Costanza/ros2_ws/build/shepherding_control/share/shepherding_control/hook/pythonpath_develop.dsv'
+[1.854s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/stefano/dev/Costanza/ros2_ws/build/shepherding_control/share/shepherding_control/hook/pythonpath_develop.sh'
+[1.855s] Level 1:colcon.colcon_core.environment:checking '/home/stefano/dev/Costanza/ros2_ws/install/shepherding_control' for CMake module files
+[1.855s] Level 1:colcon.colcon_core.environment:checking '/home/stefano/dev/Costanza/ros2_ws/install/shepherding_control' for CMake config files
+[1.856s] Level 1:colcon.colcon_core.environment:checking '/home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib'
+[1.856s] Level 1:colcon.colcon_core.environment:checking '/home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/bin'
+[1.856s] Level 1:colcon.colcon_core.environment:checking '/home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/pkgconfig/shepherding_control.pc'
+[1.856s] Level 1:colcon.colcon_core.environment:checking '/home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages'
+[1.856s] Level 1:colcon.colcon_core.shell:create_environment_hook('shepherding_control', 'pythonpath')
+[1.857s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/share/shepherding_control/hook/pythonpath.ps1'
+[1.857s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/share/shepherding_control/hook/pythonpath.dsv'
+[1.857s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/share/shepherding_control/hook/pythonpath.sh'
+[1.858s] Level 1:colcon.colcon_core.environment:checking '/home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/bin'
+[1.858s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(shepherding_control)
+[1.858s] INFO:colcon.colcon_core.shell:Creating package script '/home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/share/shepherding_control/package.ps1'
+[1.859s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/share/shepherding_control/package.dsv'
+[1.859s] INFO:colcon.colcon_core.shell:Creating package script '/home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/share/shepherding_control/package.sh'
+[1.860s] INFO:colcon.colcon_core.shell:Creating package script '/home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/share/shepherding_control/package.bash'
+[1.860s] INFO:colcon.colcon_core.shell:Creating package script '/home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/share/shepherding_control/package.zsh'
+[1.860s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/share/colcon-core/packages/shepherding_control)
+[1.881s] Level 1:colcon.colcon_core.shell:create_environment_hook('multirobot_spawn_obs', 'pythonpath_develop')
+[1.881s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/stefano/dev/Costanza/ros2_ws/build/multirobot_spawn_obs/share/multirobot_spawn_obs/hook/pythonpath_develop.ps1'
+[1.882s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/stefano/dev/Costanza/ros2_ws/build/multirobot_spawn_obs' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/stefano/dev/Costanza/ros2_ws/build/multirobot_spawn_obs/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn_obs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/stefano/dev/Costanza/ros2_ws/build/multirobot_spawn_obs/build --no-deps symlink_data --force
+[1.882s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/stefano/dev/Costanza/ros2_ws/build/multirobot_spawn_obs/share/multirobot_spawn_obs/hook/pythonpath_develop.dsv'
+[1.882s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/stefano/dev/Costanza/ros2_ws/build/multirobot_spawn_obs/share/multirobot_spawn_obs/hook/pythonpath_develop.sh'
+[1.882s] Level 1:colcon.colcon_core.environment:checking '/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn_obs' for CMake module files
+[1.883s] Level 1:colcon.colcon_core.environment:checking '/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn_obs' for CMake config files
+[1.883s] Level 1:colcon.colcon_core.environment:checking '/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn_obs/lib'
+[1.883s] Level 1:colcon.colcon_core.environment:checking '/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn_obs/bin'
+[1.883s] Level 1:colcon.colcon_core.environment:checking '/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn_obs/lib/pkgconfig/multirobot_spawn_obs.pc'
+[1.883s] Level 1:colcon.colcon_core.environment:checking '/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn_obs/lib/python3.12/site-packages'
+[1.883s] Level 1:colcon.colcon_core.shell:create_environment_hook('multirobot_spawn_obs', 'pythonpath')
+[1.883s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn_obs/share/multirobot_spawn_obs/hook/pythonpath.ps1'
+[1.884s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn_obs/share/multirobot_spawn_obs/hook/pythonpath.dsv'
+[1.884s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn_obs/share/multirobot_spawn_obs/hook/pythonpath.sh'
+[1.884s] Level 1:colcon.colcon_core.environment:checking '/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn_obs/bin'
+[1.884s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(multirobot_spawn_obs)
+[1.884s] INFO:colcon.colcon_core.shell:Creating package script '/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn_obs/share/multirobot_spawn_obs/package.ps1'
+[1.885s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn_obs/share/multirobot_spawn_obs/package.dsv'
+[1.885s] INFO:colcon.colcon_core.shell:Creating package script '/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn_obs/share/multirobot_spawn_obs/package.sh'
+[1.885s] INFO:colcon.colcon_core.shell:Creating package script '/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn_obs/share/multirobot_spawn_obs/package.bash'
+[1.886s] INFO:colcon.colcon_core.shell:Creating package script '/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn_obs/share/multirobot_spawn_obs/package.zsh'
+[1.886s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn_obs/share/colcon-core/packages/multirobot_spawn_obs)
+[1.953s] Level 1:colcon.colcon_core.shell:create_environment_hook('multirobot_spawn', 'pythonpath_develop')
+[1.954s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/stefano/dev/Costanza/ros2_ws/build/multirobot_spawn/share/multirobot_spawn/hook/pythonpath_develop.ps1'
+[1.954s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/stefano/dev/Costanza/ros2_ws/build/multirobot_spawn' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/stefano/dev/Costanza/ros2_ws/build/multirobot_spawn/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/stefano/dev/Costanza/ros2_ws/build/multirobot_spawn/build --no-deps symlink_data --force
+[1.954s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/stefano/dev/Costanza/ros2_ws/build/multirobot_spawn/share/multirobot_spawn/hook/pythonpath_develop.dsv'
+[1.955s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/stefano/dev/Costanza/ros2_ws/build/multirobot_spawn/share/multirobot_spawn/hook/pythonpath_develop.sh'
+[1.955s] Level 1:colcon.colcon_core.environment:checking '/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn' for CMake module files
+[1.956s] Level 1:colcon.colcon_core.environment:checking '/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn' for CMake config files
+[1.956s] Level 1:colcon.colcon_core.environment:checking '/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn/lib'
+[1.956s] Level 1:colcon.colcon_core.environment:checking '/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn/bin'
+[1.956s] Level 1:colcon.colcon_core.environment:checking '/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn/lib/pkgconfig/multirobot_spawn.pc'
+[1.956s] Level 1:colcon.colcon_core.environment:checking '/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn/lib/python3.12/site-packages'
+[1.956s] Level 1:colcon.colcon_core.shell:create_environment_hook('multirobot_spawn', 'pythonpath')
+[1.957s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn/share/multirobot_spawn/hook/pythonpath.ps1'
+[1.957s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn/share/multirobot_spawn/hook/pythonpath.dsv'
+[1.957s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn/share/multirobot_spawn/hook/pythonpath.sh'
+[1.958s] Level 1:colcon.colcon_core.environment:checking '/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn/bin'
+[1.958s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(multirobot_spawn)
+[1.958s] INFO:colcon.colcon_core.shell:Creating package script '/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn/share/multirobot_spawn/package.ps1'
+[1.959s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn/share/multirobot_spawn/package.dsv'
+[1.959s] INFO:colcon.colcon_core.shell:Creating package script '/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn/share/multirobot_spawn/package.sh'
+[1.960s] INFO:colcon.colcon_core.shell:Creating package script '/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn/share/multirobot_spawn/package.bash'
+[1.960s] INFO:colcon.colcon_core.shell:Creating package script '/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn/share/multirobot_spawn/package.zsh'
+[1.960s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn/share/colcon-core/packages/multirobot_spawn)
+[3.572s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/stefano/dev/Costanza/ros2_ws/build/vicon_receiver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/stefano/dev/Costanza/ros2_ws/install/shepherding_control:/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn_obs:/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/stefano/dev/Costanza/ros2_ws/src/ros2-vicon-receiver/vicon_receiver -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver
+[3.573s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/stefano/dev/Costanza/ros2_ws/build/vicon_receiver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/stefano/dev/Costanza/ros2_ws/install/shepherding_control:/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn_obs:/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/stefano/dev/Costanza/ros2_ws/build/vicon_receiver -- -j8 -l8
+[9.240s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/stefano/dev/Costanza/ros2_ws/build/vicon_receiver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/stefano/dev/Costanza/ros2_ws/install/shepherding_control:/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn_obs:/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/stefano/dev/Costanza/ros2_ws/build/vicon_receiver -- -j8 -l8
+[9.241s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/stefano/dev/Costanza/ros2_ws/build/vicon_receiver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/stefano/dev/Costanza/ros2_ws/install/shepherding_control:/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn_obs:/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/stefano/dev/Costanza/ros2_ws/build/vicon_receiver
+[9.679s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vicon_receiver)
+[9.679s] Level 1:colcon.colcon_core.environment:checking '/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver' for CMake module files
+[9.679s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/stefano/dev/Costanza/ros2_ws/build/vicon_receiver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/stefano/dev/Costanza/ros2_ws/install/shepherding_control:/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn_obs:/home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/stefano/dev/Costanza/ros2_ws/build/vicon_receiver
+[9.680s] Level 1:colcon.colcon_core.environment:checking '/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver' for CMake config files
+[9.680s] Level 1:colcon.colcon_core.shell:create_environment_hook('vicon_receiver', 'cmake_prefix_path')
+[9.680s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/hook/cmake_prefix_path.ps1'
+[9.681s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/hook/cmake_prefix_path.dsv'
+[9.681s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/hook/cmake_prefix_path.sh'
+[9.681s] Level 1:colcon.colcon_core.environment:checking '/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/lib'
+[9.681s] Level 1:colcon.colcon_core.shell:create_environment_hook('vicon_receiver', 'ld_library_path_lib')
+[9.681s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/hook/ld_library_path_lib.ps1'
+[9.682s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/hook/ld_library_path_lib.dsv'
+[9.682s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/hook/ld_library_path_lib.sh'
+[9.682s] Level 1:colcon.colcon_core.environment:checking '/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/bin'
+[9.682s] Level 1:colcon.colcon_core.environment:checking '/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/lib/pkgconfig/vicon_receiver.pc'
+[9.682s] Level 1:colcon.colcon_core.environment:checking '/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/lib/python3.12/site-packages'
+[9.682s] Level 1:colcon.colcon_core.shell:create_environment_hook('vicon_receiver', 'pythonpath')
+[9.683s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/hook/pythonpath.ps1'
+[9.683s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/hook/pythonpath.dsv'
+[9.683s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/hook/pythonpath.sh'
+[9.683s] Level 1:colcon.colcon_core.environment:checking '/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/bin'
+[9.683s] INFO:colcon.colcon_core.shell:Creating package script '/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/package.ps1'
+[9.684s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/package.dsv'
+[9.684s] INFO:colcon.colcon_core.shell:Creating package script '/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/package.sh'
+[9.684s] INFO:colcon.colcon_core.shell:Creating package script '/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/package.bash'
+[9.685s] INFO:colcon.colcon_core.shell:Creating package script '/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/package.zsh'
+[9.685s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/colcon-core/packages/vicon_receiver)
+[9.685s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vicon_receiver)
+[9.685s] Level 1:colcon.colcon_core.environment:checking '/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver' for CMake module files
+[9.686s] Level 1:colcon.colcon_core.environment:checking '/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver' for CMake config files
+[9.686s] Level 1:colcon.colcon_core.shell:create_environment_hook('vicon_receiver', 'cmake_prefix_path')
+[9.686s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/hook/cmake_prefix_path.ps1'
+[9.686s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/hook/cmake_prefix_path.dsv'
+[9.687s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/hook/cmake_prefix_path.sh'
+[9.687s] Level 1:colcon.colcon_core.environment:checking '/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/lib'
+[9.687s] Level 1:colcon.colcon_core.shell:create_environment_hook('vicon_receiver', 'ld_library_path_lib')
+[9.687s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/hook/ld_library_path_lib.ps1'
+[9.687s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/hook/ld_library_path_lib.dsv'
+[9.687s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/hook/ld_library_path_lib.sh'
+[9.688s] Level 1:colcon.colcon_core.environment:checking '/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/bin'
+[9.688s] Level 1:colcon.colcon_core.environment:checking '/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/lib/pkgconfig/vicon_receiver.pc'
+[9.688s] Level 1:colcon.colcon_core.environment:checking '/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/lib/python3.12/site-packages'
+[9.688s] Level 1:colcon.colcon_core.shell:create_environment_hook('vicon_receiver', 'pythonpath')
+[9.688s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/hook/pythonpath.ps1'
+[9.688s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/hook/pythonpath.dsv'
+[9.688s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/hook/pythonpath.sh'
+[9.689s] Level 1:colcon.colcon_core.environment:checking '/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/bin'
+[9.689s] INFO:colcon.colcon_core.shell:Creating package script '/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/package.ps1'
+[9.689s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/package.dsv'
+[9.690s] INFO:colcon.colcon_core.shell:Creating package script '/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/package.sh'
+[9.690s] INFO:colcon.colcon_core.shell:Creating package script '/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/package.bash'
+[9.690s] INFO:colcon.colcon_core.shell:Creating package script '/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/package.zsh'
+[9.690s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/colcon-core/packages/vicon_receiver)
+[9.691s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[9.691s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[9.691s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[9.691s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[9.696s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[9.696s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[9.696s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[9.714s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[9.714s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/stefano/dev/Costanza/ros2_ws/install/local_setup.ps1'
+[9.715s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/stefano/dev/Costanza/ros2_ws/install/_local_setup_util_ps1.py'
+[9.716s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/stefano/dev/Costanza/ros2_ws/install/setup.ps1'
+[9.717s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/stefano/dev/Costanza/ros2_ws/install/local_setup.sh'
+[9.718s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/stefano/dev/Costanza/ros2_ws/install/_local_setup_util_sh.py'
+[9.719s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/stefano/dev/Costanza/ros2_ws/install/setup.sh'
+[9.719s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/stefano/dev/Costanza/ros2_ws/install/local_setup.bash'
+[9.720s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/stefano/dev/Costanza/ros2_ws/install/setup.bash'
+[9.721s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/stefano/dev/Costanza/ros2_ws/install/local_setup.zsh'
+[9.722s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/stefano/dev/Costanza/ros2_ws/install/setup.zsh'

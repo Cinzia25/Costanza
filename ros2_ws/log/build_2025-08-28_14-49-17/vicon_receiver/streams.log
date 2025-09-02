@@ -1,0 +1,263 @@
+[0.675s] Invoking command in '/home/stefano/dev/Costanza/ros2_ws/build/vicon_receiver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/stefano/dev/Costanza/ros2_ws/src/ros2-vicon-receiver/vicon_receiver -DCMAKE_INSTALL_PREFIX=/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver
+[0.696s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.735s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.841s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.852s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.856s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.916s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.952s] -- Found rosidl_adapter: 4.6.5 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[0.953s] -- Found rclcpp: 28.1.10 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.018s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.019s] -- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.086s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.162s] -- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+[1.496s] -- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[1.628s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.802s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.804s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[2.082s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[2.118s] [0mCMake Deprecation Warning at /opt/ros/jazzy/share/rosidl_cmake/cmake/rosidl_target_interfaces.cmake:32 (message):
+[2.118s]   Use rosidl_get_typesupport_target() and target_link_libraries() instead of
+[2.119s]   rosidl_target_interfaces().  i.e:
+[2.119s] 
+[2.119s]     rosidl_get_typesupport_target(cpp_typesupport_target "${PROJECT_NAME}" "rosidl_typesupport_cpp")
+[2.119s]     target_link_libraries(${PROJECT_NAME}_node "${cpp_typesupport_target}")
+[2.119s] 
+[2.119s] Call Stack (most recent call first):
+[2.119s]   CMakeLists.txt:47 (rosidl_target_interfaces)
+[2.119s] 
+[2.120s] [0m
+[2.120s] [0mCMake Deprecation Warning at /opt/ros/jazzy/share/rosidl_cmake/cmake/rosidl_target_interfaces.cmake:32 (message):
+[2.120s]   Use rosidl_get_typesupport_target() and target_link_libraries() instead of
+[2.120s]   rosidl_target_interfaces().  i.e:
+[2.120s] 
+[2.120s]     rosidl_get_typesupport_target(cpp_typesupport_target "${PROJECT_NAME}" "rosidl_typesupport_cpp")
+[2.120s]     target_link_libraries(${PROJECT_NAME}_node "${cpp_typesupport_target}")
+[2.120s] 
+[2.121s] Call Stack (most recent call first):
+[2.121s]   CMakeLists.txt:47 (rosidl_target_interfaces)
+[2.121s] 
+[2.121s] [0m
+[2.121s] [0mCMake Deprecation Warning at /opt/ros/jazzy/share/rosidl_cmake/cmake/rosidl_target_interfaces.cmake:32 (message):
+[2.121s]   Use rosidl_get_typesupport_target() and target_link_libraries() instead of
+[2.121s]   rosidl_target_interfaces().  i.e:
+[2.121s] 
+[2.122s]     rosidl_get_typesupport_target(cpp_typesupport_target "${PROJECT_NAME}" "rosidl_typesupport_cpp")
+[2.122s]     target_link_libraries(${PROJECT_NAME}_node "${cpp_typesupport_target}")
+[2.122s] 
+[2.122s] Call Stack (most recent call first):
+[2.122s]   CMakeLists.txt:47 (rosidl_target_interfaces)
+[2.122s] 
+[2.122s] [0m
+[2.126s] -- Configuring done (1.4s)
+[2.166s] -- Generating done (0.0s)
+[2.179s] -- Build files have been written to: /home/stefano/dev/Costanza/ros2_ws/build/vicon_receiver
+[2.191s] Invoked command in '/home/stefano/dev/Costanza/ros2_ws/build/vicon_receiver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/stefano/dev/Costanza/ros2_ws/src/ros2-vicon-receiver/vicon_receiver -DCMAKE_INSTALL_PREFIX=/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver
+[2.192s] Invoking command in '/home/stefano/dev/Costanza/ros2_ws/build/vicon_receiver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/stefano/dev/Costanza/ros2_ws/build/vicon_receiver -- -j8 -l8
+[2.256s] [  2%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[2.269s] [  2%] Built target ament_cmake_python_symlink_vicon_receiver
+[2.584s] [  2%] Built target vicon_receiver__rosidl_generator_type_description
+[2.584s] running egg_info
+[2.594s] [  4%] [34m[1mGenerating C code for ROS interfaces[0m
+[2.607s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[2.615s] writing vicon_receiver.egg-info/PKG-INFO
+[2.615s] writing dependency_links to vicon_receiver.egg-info/dependency_links.txt
+[2.615s] writing top-level names to vicon_receiver.egg-info/top_level.txt
+[2.677s] reading manifest file 'vicon_receiver.egg-info/SOURCES.txt'
+[2.678s] writing manifest file 'vicon_receiver.egg-info/SOURCES.txt'
+[2.709s] [  6%] Built target ament_cmake_python_build_vicon_receiver_egg
+[2.979s] [  6%] Built target vicon_receiver__cpp
+[3.053s] [ 10%] [32mBuilding C object CMakeFiles/vicon_receiver__rosidl_generator_c.dir/rosidl_generator_c/vicon_receiver/msg/detail/position__description.c.o[0m
+[3.053s] [ 10%] [32mBuilding C object CMakeFiles/vicon_receiver__rosidl_generator_c.dir/rosidl_generator_c/vicon_receiver/msg/detail/position_list__functions.c.o[0m
+[3.056s] [ 12%] [32mBuilding C object CMakeFiles/vicon_receiver__rosidl_generator_c.dir/rosidl_generator_c/vicon_receiver/msg/detail/position__functions.c.o[0m
+[3.056s] [ 14%] [32mBuilding C object CMakeFiles/vicon_receiver__rosidl_generator_c.dir/rosidl_generator_c/vicon_receiver/msg/detail/position_list__description.c.o[0m
+[3.057s] [ 17%] [32mBuilding C object CMakeFiles/vicon_receiver__rosidl_generator_c.dir/rosidl_generator_c/vicon_receiver/msg/detail/position__type_support.c.o[0m
+[3.057s] [ 19%] [32mBuilding C object CMakeFiles/vicon_receiver__rosidl_generator_c.dir/rosidl_generator_c/vicon_receiver/msg/detail/position_list__type_support.c.o[0m
+[3.128s] [ 21%] [32m[1mLinking C shared library libvicon_receiver__rosidl_generator_c.so[0m
+[3.194s] [ 21%] Built target vicon_receiver__rosidl_generator_c
+[3.210s] [ 23%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[3.212s] [ 25%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[3.213s] [ 27%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[3.213s] [ 31%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[3.214s] [ 31%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[3.214s] [ 34%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[3.587s] [ 38%] [32mBuilding CXX object CMakeFiles/vicon_receiver__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/vicon_receiver/msg/position_list__type_support.cpp.o[0m
+[3.587s] [ 38%] [32mBuilding CXX object CMakeFiles/vicon_receiver__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/vicon_receiver/msg/position__type_support.cpp.o[0m
+[3.694s] [ 40%] [32mBuilding CXX object CMakeFiles/vicon_receiver__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vicon_receiver/msg/detail/dds_fastrtps/position__type_support.cpp.o[0m
+[3.694s] [ 42%] [32mBuilding CXX object CMakeFiles/vicon_receiver__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vicon_receiver/msg/detail/dds_fastrtps/position_list__type_support.cpp.o[0m
+[3.829s] [ 44%] [32mBuilding CXX object CMakeFiles/vicon_receiver__rosidl_typesupport_c.dir/rosidl_typesupport_c/vicon_receiver/msg/position__type_support.cpp.o[0m
+[3.894s] [ 48%] [32mBuilding CXX object CMakeFiles/vicon_receiver__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vicon_receiver/msg/detail/position__type_support.cpp.o[0m
+[3.897s] [ 51%] [32mBuilding C object CMakeFiles/vicon_receiver__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vicon_receiver/msg/detail/position__type_support.c.o[0m
+[3.897s] [ 48%] [32mBuilding CXX object CMakeFiles/vicon_receiver__rosidl_typesupport_c.dir/rosidl_typesupport_c/vicon_receiver/msg/position_list__type_support.cpp.o[0m
+[3.954s] [ 53%] [32mBuilding C object CMakeFiles/vicon_receiver__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vicon_receiver/msg/detail/position_list__type_support.c.o[0m
+[3.966s] [ 55%] [32m[1mLinking CXX shared library libvicon_receiver__rosidl_typesupport_c.so[0m
+[3.986s] [ 57%] [32mBuilding CXX object CMakeFiles/vicon_receiver__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vicon_receiver/msg/detail/position__type_support_c.cpp.o[0m
+[4.021s] [ 59%] [32m[1mLinking C shared library libvicon_receiver__rosidl_typesupport_introspection_c.so[0m
+[4.065s] [ 59%] Built target vicon_receiver__rosidl_typesupport_c
+[4.072s] [ 59%] Built target vicon_receiver__rosidl_typesupport_introspection_c
+[4.081s] [ 61%] [32mBuilding CXX object CMakeFiles/vicon_receiver__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vicon_receiver/msg/detail/position_list__type_support_c.cpp.o[0m
+[4.085s] [ 63%] [32mBuilding CXX object CMakeFiles/vicon_receiver__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vicon_receiver/msg/detail/position_list__type_support.cpp.o[0m
+[4.122s] [ 65%] [32m[1mLinking CXX shared library libvicon_receiver__rosidl_typesupport_cpp.so[0m
+[4.199s] [ 65%] Built target vicon_receiver__rosidl_typesupport_cpp
+[4.570s] [ 68%] [32m[1mLinking CXX shared library libvicon_receiver__rosidl_typesupport_fastrtps_cpp.so[0m
+[4.631s] [ 70%] [32m[1mLinking CXX shared library libvicon_receiver__rosidl_typesupport_introspection_cpp.so[0m
+[4.661s] [ 70%] Built target vicon_receiver__rosidl_typesupport_fastrtps_cpp
+[4.706s] [ 70%] Built target vicon_receiver__rosidl_typesupport_introspection_cpp
+[4.750s] [ 72%] [32m[1mLinking CXX shared library libvicon_receiver__rosidl_typesupport_fastrtps_c.so[0m
+[4.864s] [ 72%] Built target vicon_receiver__rosidl_typesupport_fastrtps_c
+[4.898s] [ 72%] Built target vicon_receiver
+[4.940s] [ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[4.976s] [ 76%] [32mBuilding CXX object CMakeFiles/vicon_client.dir/src/vicon_receiver/publisher.cpp.o[0m
+[4.976s] [ 78%] [32mBuilding CXX object CMakeFiles/vicon_client.dir/src/vicon_receiver/communicator.cpp.o[0m
+[5.528s] [ 78%] Built target vicon_receiver__py
+[5.553s] [ 82%] [32mBuilding C object CMakeFiles/vicon_receiver__rosidl_generator_py.dir/rosidl_generator_py/vicon_receiver/msg/_position_list_s.c.o[0m
+[5.553s] [ 82%] [32mBuilding C object CMakeFiles/vicon_receiver__rosidl_generator_py.dir/rosidl_generator_py/vicon_receiver/msg/_position_s.c.o[0m
+[5.691s] [ 85%] [32m[1mLinking C shared library libvicon_receiver__rosidl_generator_py.so[0m
+[5.739s] [ 85%] Built target vicon_receiver__rosidl_generator_py
+[5.762s] [ 87%] [32mBuilding C object CMakeFiles/vicon_receiver_s__rosidl_typesupport_c.dir/rosidl_generator_py/vicon_receiver/_vicon_receiver_s.ep.rosidl_typesupport_c.c.o[0m
+[5.767s] [ 89%] [32mBuilding C object CMakeFiles/vicon_receiver_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/vicon_receiver/_vicon_receiver_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[5.770s] [ 91%] [32mBuilding C object CMakeFiles/vicon_receiver_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/vicon_receiver/_vicon_receiver_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[5.924s] [ 93%] [32m[1mLinking C shared module rosidl_generator_py/vicon_receiver/vicon_receiver_s__rosidl_typesupport_c.so[0m
+[5.929s] [ 97%] [32m[1mLinking C shared module rosidl_generator_py/vicon_receiver/vicon_receiver_s__rosidl_typesupport_introspection_c.so[0m
+[5.929s] [ 97%] [32m[1mLinking C shared module rosidl_generator_py/vicon_receiver/vicon_receiver_s__rosidl_typesupport_fastrtps_c.so[0m
+[5.963s] [ 97%] Built target vicon_receiver_s__rosidl_typesupport_c
+[5.964s] [ 97%] Built target vicon_receiver_s__rosidl_typesupport_fastrtps_c
+[5.970s] [ 97%] Built target vicon_receiver_s__rosidl_typesupport_introspection_c
+[11.117s] [100%] [32m[1mLinking CXX executable vicon_client[0m
+[11.368s] [100%] Built target vicon_client
+[11.381s] Invoked command in '/home/stefano/dev/Costanza/ros2_ws/build/vicon_receiver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/stefano/dev/Costanza/ros2_ws/build/vicon_receiver -- -j8 -l8
+[11.382s] Invoking command in '/home/stefano/dev/Costanza/ros2_ws/build/vicon_receiver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/stefano/dev/Costanza/ros2_ws/build/vicon_receiver
+[11.392s] -- Install configuration: ""
+[11.393s] -- Execute custom install script
+[11.393s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/ament_index/resource_index/rosidl_interfaces/vicon_receiver
+[11.393s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/msg/Position.json
+[11.393s] -- Symlinking: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/msg/PositionList.json
+[11.407s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/include/vicon_receiver/vicon_receiver/msg/detail/position__functions.h
+[11.407s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/include/vicon_receiver/vicon_receiver/msg/detail/position__struct.h
+[11.407s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/include/vicon_receiver/vicon_receiver/msg/detail/position__type_support.h
+[11.408s] -- Symlinking: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/include/vicon_receiver/vicon_receiver/msg/detail/position_list__functions.h
+[11.419s] -- Symlinking: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/include/vicon_receiver/vicon_receiver/msg/detail/position_list__struct.h
+[11.440s] -- Symlinking: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/include/vicon_receiver/vicon_receiver/msg/detail/position_list__type_support.h
+[11.458s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/include/vicon_receiver/vicon_receiver/msg/position.h
+[11.458s] -- Symlinking: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/include/vicon_receiver/vicon_receiver/msg/position_list.h
+[11.474s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/include/vicon_receiver/vicon_receiver/msg/rosidl_generator_c__visibility_control.h
+[11.474s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/environment/library_path.sh
+[11.475s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/environment/library_path.dsv
+[11.475s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/include/vicon_receiver/vicon_receiver/msg/detail/position__rosidl_typesupport_fastrtps_c.h
+[11.475s] -- Symlinking: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/include/vicon_receiver/vicon_receiver/msg/detail/position_list__rosidl_typesupport_fastrtps_c.h
+[11.488s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/include/vicon_receiver/vicon_receiver/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[11.488s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/include/vicon_receiver/vicon_receiver/msg/detail/position__rosidl_typesupport_introspection_c.h
+[11.488s] -- Symlinking: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/include/vicon_receiver/vicon_receiver/msg/detail/position_list__rosidl_typesupport_introspection_c.h
+[11.498s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/include/vicon_receiver/vicon_receiver/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[11.498s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/include/vicon_receiver/vicon_receiver/msg/detail/position__builder.hpp
+[11.498s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/include/vicon_receiver/vicon_receiver/msg/detail/position__struct.hpp
+[11.498s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/include/vicon_receiver/vicon_receiver/msg/detail/position__traits.hpp
+[11.499s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/include/vicon_receiver/vicon_receiver/msg/detail/position__type_support.hpp
+[11.499s] -- Symlinking: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/include/vicon_receiver/vicon_receiver/msg/detail/position_list__builder.hpp
+[11.508s] -- Symlinking: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/include/vicon_receiver/vicon_receiver/msg/detail/position_list__struct.hpp
+[11.516s] -- Symlinking: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/include/vicon_receiver/vicon_receiver/msg/detail/position_list__traits.hpp
+[11.526s] -- Symlinking: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/include/vicon_receiver/vicon_receiver/msg/detail/position_list__type_support.hpp
+[11.537s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/include/vicon_receiver/vicon_receiver/msg/position.hpp
+[11.537s] -- Symlinking: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/include/vicon_receiver/vicon_receiver/msg/position_list.hpp
+[11.551s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/include/vicon_receiver/vicon_receiver/msg/rosidl_generator_cpp__visibility_control.hpp
+[11.552s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/include/vicon_receiver/vicon_receiver/msg/detail/position__rosidl_typesupport_fastrtps_cpp.hpp
+[11.552s] -- Symlinking: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/include/vicon_receiver/vicon_receiver/msg/detail/position_list__rosidl_typesupport_fastrtps_cpp.hpp
+[11.569s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/include/vicon_receiver/vicon_receiver/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[11.570s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/include/vicon_receiver/vicon_receiver/msg/detail/position__rosidl_typesupport_introspection_cpp.hpp
+[11.570s] -- Symlinking: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/include/vicon_receiver/vicon_receiver/msg/detail/position_list__rosidl_typesupport_introspection_cpp.hpp
+[11.587s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/environment/pythonpath.sh
+[11.587s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/environment/pythonpath.dsv
+[11.588s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/lib/python3.12/site-packages/vicon_receiver-0.1.1-py3.12.egg-info/PKG-INFO
+[11.588s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/lib/python3.12/site-packages/vicon_receiver-0.1.1-py3.12.egg-info/SOURCES.txt
+[11.589s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/lib/python3.12/site-packages/vicon_receiver-0.1.1-py3.12.egg-info/dependency_links.txt
+[11.589s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/lib/python3.12/site-packages/vicon_receiver-0.1.1-py3.12.egg-info/top_level.txt
+[11.591s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/lib/python3.12/site-packages/vicon_receiver/__init__.py
+[11.591s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/lib/python3.12/site-packages/vicon_receiver/_vicon_receiver_s.ep.rosidl_typesupport_c.c
+[11.591s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/lib/python3.12/site-packages/vicon_receiver/_vicon_receiver_s.ep.rosidl_typesupport_fastrtps_c.c
+[11.592s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/lib/python3.12/site-packages/vicon_receiver/_vicon_receiver_s.ep.rosidl_typesupport_introspection_c.c
+[11.592s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/lib/python3.12/site-packages/vicon_receiver/msg/__init__.py
+[11.592s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/lib/python3.12/site-packages/vicon_receiver/msg/_position.py
+[11.593s] -- Symlinking: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/lib/python3.12/site-packages/vicon_receiver/msg/_position_list.py
+[11.609s] -- Symlinking: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/lib/python3.12/site-packages/vicon_receiver/msg/_position_list_s.c
+[11.626s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/lib/python3.12/site-packages/vicon_receiver/msg/_position_s.c
+[11.626s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/lib/python3.12/site-packages/vicon_receiver/vicon_receiver_s__rosidl_typesupport_c.so
+[11.627s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/lib/python3.12/site-packages/vicon_receiver/vicon_receiver_s__rosidl_typesupport_fastrtps_c.so
+[11.627s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/lib/python3.12/site-packages/vicon_receiver/vicon_receiver_s__rosidl_typesupport_introspection_c.so
+[11.628s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/lib/python3.12/site-packages/vicon_receiver/vicon_receiver_s__rosidl_typesupport_fastrtps_c.so
+[11.628s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/lib/python3.12/site-packages/vicon_receiver/vicon_receiver_s__rosidl_typesupport_introspection_c.so
+[11.629s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/lib/python3.12/site-packages/vicon_receiver/vicon_receiver_s__rosidl_typesupport_c.so
+[11.629s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/msg/Position.idl
+[11.630s] -- Symlinking: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/msg/PositionList.idl
+[11.650s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/msg/Position.msg
+[11.651s] -- Symlinking: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/msg/PositionList.msg
+[11.662s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/lib/vicon_receiver/vicon_client
+[11.662s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver//launch/client.launch.py
+[11.662s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/ament_index/resource_index/package_run_dependencies/vicon_receiver
+[11.663s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/ament_index/resource_index/parent_prefix_path/vicon_receiver
+[11.663s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/environment/ament_prefix_path.sh
+[11.663s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/environment/ament_prefix_path.dsv
+[11.664s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/environment/path.sh
+[11.664s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/environment/path.dsv
+[11.664s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/local_setup.bash
+[11.665s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/local_setup.sh
+[11.665s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/local_setup.zsh
+[11.665s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/local_setup.dsv
+[11.666s] -- Symlinking: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/package.dsv
+[11.677s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/ament_index/resource_index/packages/vicon_receiver
+[11.677s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/cmake/rosidl_cmake-extras.cmake
+[11.677s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/cmake/ament_cmake_export_dependencies-extras.cmake
+[11.678s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/cmake/ament_cmake_export_include_directories-extras.cmake
+[11.678s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/cmake/ament_cmake_export_libraries-extras.cmake
+[11.678s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/cmake/ament_cmake_export_targets-extras.cmake
+[11.679s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[11.679s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[11.679s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/cmake/vicon_receiverConfig.cmake
+[11.679s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/cmake/vicon_receiverConfig-version.cmake
+[11.680s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/package.xml
+[11.680s] -- Installing: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/lib/libvicon_receiver__rosidl_generator_c.so
+[11.681s] -- Set non-toolchain portion of runtime path of "/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/lib/libvicon_receiver__rosidl_generator_c.so" to ""
+[11.681s] -- Installing: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/lib/libvicon_receiver__rosidl_typesupport_fastrtps_c.so
+[11.682s] -- Set non-toolchain portion of runtime path of "/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/lib/libvicon_receiver__rosidl_typesupport_fastrtps_c.so" to ""
+[11.682s] -- Installing: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/lib/libvicon_receiver__rosidl_typesupport_introspection_c.so
+[11.683s] -- Set non-toolchain portion of runtime path of "/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/lib/libvicon_receiver__rosidl_typesupport_introspection_c.so" to ""
+[11.683s] -- Installing: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/lib/libvicon_receiver__rosidl_typesupport_c.so
+[11.683s] -- Set non-toolchain portion of runtime path of "/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/lib/libvicon_receiver__rosidl_typesupport_c.so" to ""
+[11.684s] -- Installing: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/lib/libvicon_receiver__rosidl_typesupport_fastrtps_cpp.so
+[11.685s] -- Set non-toolchain portion of runtime path of "/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/lib/libvicon_receiver__rosidl_typesupport_fastrtps_cpp.so" to ""
+[11.685s] -- Installing: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/lib/libvicon_receiver__rosidl_typesupport_introspection_cpp.so
+[11.686s] -- Set non-toolchain portion of runtime path of "/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/lib/libvicon_receiver__rosidl_typesupport_introspection_cpp.so" to ""
+[11.686s] -- Installing: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/lib/libvicon_receiver__rosidl_typesupport_cpp.so
+[11.687s] -- Set non-toolchain portion of runtime path of "/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/lib/libvicon_receiver__rosidl_typesupport_cpp.so" to ""
+[11.767s] Listing '/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/lib/python3.12/site-packages/vicon_receiver'...
+[11.767s] Compiling '/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/lib/python3.12/site-packages/vicon_receiver/__init__.py'...
+[11.767s] Listing '/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/lib/python3.12/site-packages/vicon_receiver/msg'...
+[11.767s] Compiling '/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/lib/python3.12/site-packages/vicon_receiver/msg/__init__.py'...
+[11.767s] Compiling '/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/lib/python3.12/site-packages/vicon_receiver/msg/_position.py'...
+[11.767s] Compiling '/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/lib/python3.12/site-packages/vicon_receiver/msg/_position_list.py'...
+[11.772s] -- Installing: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/lib/libvicon_receiver__rosidl_generator_py.so
+[11.773s] -- Set non-toolchain portion of runtime path of "/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/lib/libvicon_receiver__rosidl_generator_py.so" to ""
+[11.773s] -- Old export file "/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/cmake/export_vicon_receiver__rosidl_generator_cExport.cmake" will be replaced.  Removing files [/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/cmake/export_vicon_receiver__rosidl_generator_cExport-noconfig.cmake].
+[11.773s] -- Installing: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/cmake/export_vicon_receiver__rosidl_generator_cExport.cmake
+[11.773s] -- Installing: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/cmake/export_vicon_receiver__rosidl_generator_cExport-noconfig.cmake
+[11.773s] -- Old export file "/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/cmake/export_vicon_receiver__rosidl_typesupport_fastrtps_cExport.cmake" will be replaced.  Removing files [/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/cmake/export_vicon_receiver__rosidl_typesupport_fastrtps_cExport-noconfig.cmake].
+[11.774s] -- Installing: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/cmake/export_vicon_receiver__rosidl_typesupport_fastrtps_cExport.cmake
+[11.774s] -- Installing: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/cmake/export_vicon_receiver__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[11.774s] -- Old export file "/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/cmake/vicon_receiver__rosidl_typesupport_introspection_cExport.cmake" will be replaced.  Removing files [/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/cmake/vicon_receiver__rosidl_typesupport_introspection_cExport-noconfig.cmake].
+[11.774s] -- Installing: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/cmake/vicon_receiver__rosidl_typesupport_introspection_cExport.cmake
+[11.774s] -- Installing: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/cmake/vicon_receiver__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[11.775s] -- Old export file "/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/cmake/vicon_receiver__rosidl_typesupport_cExport.cmake" will be replaced.  Removing files [/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/cmake/vicon_receiver__rosidl_typesupport_cExport-noconfig.cmake].
+[11.775s] -- Installing: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/cmake/vicon_receiver__rosidl_typesupport_cExport.cmake
+[11.775s] -- Installing: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/cmake/vicon_receiver__rosidl_typesupport_cExport-noconfig.cmake
+[11.775s] -- Installing: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/cmake/export_vicon_receiver__rosidl_generator_cppExport.cmake
+[11.775s] -- Old export file "/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/cmake/export_vicon_receiver__rosidl_typesupport_fastrtps_cppExport.cmake" will be replaced.  Removing files [/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/cmake/export_vicon_receiver__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake].
+[11.775s] -- Installing: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/cmake/export_vicon_receiver__rosidl_typesupport_fastrtps_cppExport.cmake
+[11.776s] -- Installing: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/cmake/export_vicon_receiver__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[11.776s] -- Old export file "/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/cmake/vicon_receiver__rosidl_typesupport_introspection_cppExport.cmake" will be replaced.  Removing files [/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/cmake/vicon_receiver__rosidl_typesupport_introspection_cppExport-noconfig.cmake].
+[11.776s] -- Installing: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/cmake/vicon_receiver__rosidl_typesupport_introspection_cppExport.cmake
+[11.776s] -- Installing: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/cmake/vicon_receiver__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[11.776s] -- Old export file "/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/cmake/vicon_receiver__rosidl_typesupport_cppExport.cmake" will be replaced.  Removing files [/home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/cmake/vicon_receiver__rosidl_typesupport_cppExport-noconfig.cmake].
+[11.777s] -- Installing: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/cmake/vicon_receiver__rosidl_typesupport_cppExport.cmake
+[11.777s] -- Installing: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/cmake/vicon_receiver__rosidl_typesupport_cppExport-noconfig.cmake
+[11.777s] -- Up-to-date: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/cmake/export_vicon_receiver__rosidl_generator_pyExport.cmake
+[11.777s] -- Installing: /home/stefano/dev/Costanza/ros2_ws/install/vicon_receiver/share/vicon_receiver/cmake/export_vicon_receiver__rosidl_generator_pyExport-noconfig.cmake
+[11.780s] Invoked command in '/home/stefano/dev/Costanza/ros2_ws/build/vicon_receiver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/stefano/dev/Costanza/ros2_ws/build/vicon_receiver

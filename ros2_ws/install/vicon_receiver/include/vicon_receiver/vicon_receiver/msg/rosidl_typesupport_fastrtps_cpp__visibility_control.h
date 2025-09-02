@@ -1,0 +1,1 @@
+/home/stefano/dev/Costanza/ros2_ws/build/vicon_receiver/rosidl_typesupport_fastrtps_cpp/vicon_receiver/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h

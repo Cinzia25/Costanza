@@ -1,0 +1,1 @@
+/home/stefano/dev/Costanza/ros2_ws/build/vicon_receiver/rosidl_typesupport_fastrtps_c/vicon_receiver/msg/detail/position__rosidl_typesupport_fastrtps_c.h

@@ -1,0 +1,16 @@
+running develop
+running egg_info
+writing multirobot_spawn.egg-info/PKG-INFO
+writing dependency_links to multirobot_spawn.egg-info/dependency_links.txt
+writing requirements to multirobot_spawn.egg-info/requires.txt
+writing top-level names to multirobot_spawn.egg-info/top_level.txt
+reading manifest file 'multirobot_spawn.egg-info/SOURCES.txt'
+writing manifest file 'multirobot_spawn.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn/lib/python3.12/site-packages/multirobot-spawn.egg-link (link to .)
+
+Installed /home/stefano/dev/Costanza/ros2_ws/build/multirobot_spawn
+running symlink_data
+symbolically linking /home/stefano/dev/Costanza/ros2_ws/build/multirobot_spawn/resource/multirobot_spawn -> /home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn/share/ament_index/resource_index/packages
+symbolically linking /home/stefano/dev/Costanza/ros2_ws/build/multirobot_spawn/package.xml -> /home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn/share/multirobot_spawn
+symbolically linking /home/stefano/dev/Costanza/ros2_ws/build/multirobot_spawn/launch/multi_robot_spawn.launch.py -> /home/stefano/dev/Costanza/ros2_ws/install/multirobot_spawn/share/multirobot_spawn/launch

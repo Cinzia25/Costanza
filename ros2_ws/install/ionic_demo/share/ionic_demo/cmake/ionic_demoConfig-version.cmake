@@ -1,0 +1,1 @@
+/home/stefano/dev/Costanza/ros2_ws/build/ionic_demo/ament_cmake_core/ionic_demoConfig-version.cmake

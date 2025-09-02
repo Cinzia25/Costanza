@@ -1,0 +1,1 @@
+/home/stefano/dev/Costanza/ros2_ws/build/vicon_receiver/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake

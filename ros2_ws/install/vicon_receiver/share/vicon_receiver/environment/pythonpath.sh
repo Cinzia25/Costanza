@@ -1,0 +1,1 @@
+/home/stefano/dev/Costanza/ros2_ws/build/vicon_receiver/ament_cmake_environment_hooks/pythonpath.sh

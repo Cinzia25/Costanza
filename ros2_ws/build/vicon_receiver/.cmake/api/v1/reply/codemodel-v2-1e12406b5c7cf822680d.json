@@ -1,0 +1,251 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-a71b70a6c2feab2e8ce7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19
+					]
+				},
+				{
+					"build" : "vicon_receiver__py",
+					"jsonFile" : "directory-vicon_receiver__py-88d69222d43804d7a07c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/stefano/dev/Costanza/ros2_ws/build/vicon_receiver/vicon_receiver__py",
+					"targetIndexes" : 
+					[
+						6
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "vicon_receiver",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_vicon_receiver_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_vicon_receiver_egg-fc6e7d08828fff478045.json",
+					"name" : "ament_cmake_python_build_vicon_receiver_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_symlink_vicon_receiver::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_symlink_vicon_receiver-cd041347d2010cb35403.json",
+					"name" : "ament_cmake_python_symlink_vicon_receiver",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-26cdc815cd81c952a26f.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vicon_client::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vicon_client-e3e9249ad71b7fa06da4.json",
+					"name" : "vicon_client",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vicon_receiver::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vicon_receiver-d52a95cebfea1a8e6bc2.json",
+					"name" : "vicon_receiver",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vicon_receiver__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vicon_receiver__cpp-c1e8afddbd147de5f3ea.json",
+					"name" : "vicon_receiver__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "vicon_receiver__py::@bfa293fd87d7d1ae59e5",
+					"jsonFile" : "target-vicon_receiver__py-89060403f40eb4059c57.json",
+					"name" : "vicon_receiver__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vicon_receiver__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vicon_receiver__rosidl_generator_c-ef7dc5cbb7b07e588f02.json",
+					"name" : "vicon_receiver__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vicon_receiver__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vicon_receiver__rosidl_generator_py-a2344e33161c6735ef9f.json",
+					"name" : "vicon_receiver__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vicon_receiver__rosidl_generator_type_description::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vicon_receiver__rosidl_generator_type_description-98fa9cdd33b9275378b0.json",
+					"name" : "vicon_receiver__rosidl_generator_type_description",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vicon_receiver__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vicon_receiver__rosidl_typesupport_c-a0db84bcada1d6b8f925.json",
+					"name" : "vicon_receiver__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vicon_receiver__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vicon_receiver__rosidl_typesupport_cpp-c0d93a0bcd3b0ef43138.json",
+					"name" : "vicon_receiver__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vicon_receiver__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vicon_receiver__rosidl_typesupport_fastrtps_c-7292f4183bab7aba819a.json",
+					"name" : "vicon_receiver__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vicon_receiver__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vicon_receiver__rosidl_typesupport_fastrtps_cpp-6ef1aa8628d295175899.json",
+					"name" : "vicon_receiver__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vicon_receiver__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vicon_receiver__rosidl_typesupport_introspection_c-bc5120345794051da04f.json",
+					"name" : "vicon_receiver__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vicon_receiver__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vicon_receiver__rosidl_typesupport_introspection_cpp-e2c4c13ae0bdb3731fc5.json",
+					"name" : "vicon_receiver__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vicon_receiver_s__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vicon_receiver_s__rosidl_typesupport_c-2769dfe9fab73dec0ba8.json",
+					"name" : "vicon_receiver_s__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vicon_receiver_s__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vicon_receiver_s__rosidl_typesupport_fastrtps_c-77bfa762636df11ef2ce.json",
+					"name" : "vicon_receiver_s__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vicon_receiver_s__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vicon_receiver_s__rosidl_typesupport_introspection_c-4d305fc3589eeb07382a.json",
+					"name" : "vicon_receiver_s__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vicon_receiver_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vicon_receiver_uninstall-df24a3ce80edbb9e478a.json",
+					"name" : "vicon_receiver_uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/stefano/dev/Costanza/ros2_ws/build/vicon_receiver",
+		"source" : "/home/stefano/dev/Costanza/ros2_ws/src/ros2-vicon-receiver/vicon_receiver"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

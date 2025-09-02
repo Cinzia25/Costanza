@@ -1,0 +1,12 @@
+package.xml
+setup.cfg
+setup.py
+../../build/multirobot_spawn/multirobot_spawn.egg-info/PKG-INFO
+../../build/multirobot_spawn/multirobot_spawn.egg-info/SOURCES.txt
+../../build/multirobot_spawn/multirobot_spawn.egg-info/dependency_links.txt
+../../build/multirobot_spawn/multirobot_spawn.egg-info/requires.txt
+../../build/multirobot_spawn/multirobot_spawn.egg-info/top_level.txt
+../../build/multirobot_spawn/multirobot_spawn.egg-info/zip-safe
+launch/multi_robot_spawn.launch.py
+multirobot_spawn/__init__.py
+resource/multirobot_spawn

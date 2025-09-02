@@ -1,0 +1,1 @@
+/home/stefano/dev/Costanza/ros2_ws/build/vicon_receiver/rosidl_typesupport_introspection_cpp/vicon_receiver/msg/detail/position_list__rosidl_typesupport_introspection_cpp.hpp

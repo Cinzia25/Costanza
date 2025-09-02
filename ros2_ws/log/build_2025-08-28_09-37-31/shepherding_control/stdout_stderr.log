@@ -1,0 +1,17 @@
+running develop
+running egg_info
+writing shepherding_control.egg-info/PKG-INFO
+writing dependency_links to shepherding_control.egg-info/dependency_links.txt
+writing entry points to shepherding_control.egg-info/entry_points.txt
+writing requirements to shepherding_control.egg-info/requires.txt
+writing top-level names to shepherding_control.egg-info/top_level.txt
+reading manifest file 'shepherding_control.egg-info/SOURCES.txt'
+writing manifest file 'shepherding_control.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages/shepherding-control.egg-link (link to .)
+Installing controller_node script to /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/shepherding_control
+
+Installed /home/stefano/dev/Costanza/ros2_ws/build/shepherding_control
+running symlink_data
+symbolically linking /home/stefano/dev/Costanza/ros2_ws/build/shepherding_control/resource/shepherding_control -> /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/share/ament_index/resource_index/packages
+symbolically linking /home/stefano/dev/Costanza/ros2_ws/build/shepherding_control/package.xml -> /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/share/shepherding_control

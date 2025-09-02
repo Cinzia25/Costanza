@@ -1,0 +1,1 @@
+/home/stefano/dev/Costanza/ros2_ws/build/vicon_receiver/rosidl_generator_c/vicon_receiver/msg/detail/position__type_support.h

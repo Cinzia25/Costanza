@@ -1,0 +1,26 @@
+[3.774s] Invoking command in '/home/stefano/dev/Costanza/ros2_ws/src/shepherding_control': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/stefano/dev/Costanza/ros2_ws/build/shepherding_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/shepherding_control build --build-base /home/stefano/dev/Costanza/ros2_ws/build/shepherding_control/build install --record /home/stefano/dev/Costanza/ros2_ws/build/shepherding_control/install.log --single-version-externally-managed install_data
+[4.354s] running egg_info
+[4.402s] writing ../../build/shepherding_control/shepherding_control.egg-info/PKG-INFO
+[4.406s] writing dependency_links to ../../build/shepherding_control/shepherding_control.egg-info/dependency_links.txt
+[4.406s] writing entry points to ../../build/shepherding_control/shepherding_control.egg-info/entry_points.txt
+[4.407s] writing requirements to ../../build/shepherding_control/shepherding_control.egg-info/requires.txt
+[4.407s] writing top-level names to ../../build/shepherding_control/shepherding_control.egg-info/top_level.txt
+[4.502s] reading manifest file '../../build/shepherding_control/shepherding_control.egg-info/SOURCES.txt'
+[4.505s] writing manifest file '../../build/shepherding_control/shepherding_control.egg-info/SOURCES.txt'
+[4.505s] running build
+[4.505s] running build_py
+[4.506s] copying shepherding_control/my_control_library/control.py -> /home/stefano/dev/Costanza/ros2_ws/build/shepherding_control/build/lib/shepherding_control/my_control_library
+[4.511s] running install
+[4.529s] running install_lib
+[4.580s] copying /home/stefano/dev/Costanza/ros2_ws/build/shepherding_control/build/lib/shepherding_control/my_control_library/control.py -> /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages/shepherding_control/my_control_library
+[4.582s] byte-compiling /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages/shepherding_control/my_control_library/control.py to control.cpython-312.pyc
+[4.584s] running install_data
+[4.584s] running install_egg_info
+[4.634s] removing '/home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages/shepherding_control-0.0.0-py3.12.egg-info' (and everything under it)
+[4.635s] Copying ../../build/shepherding_control/shepherding_control.egg-info to /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages/shepherding_control-0.0.0-py3.12.egg-info
+[4.637s] running install_scripts
+[4.962s] Installing controller_node script to /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/shepherding_control
+[4.962s] Installing dummy_controller_node script to /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/shepherding_control
+[4.963s] Installing lama_robot_controller_node script to /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/shepherding_control
+[4.964s] writing list of installed files to '/home/stefano/dev/Costanza/ros2_ws/build/shepherding_control/install.log'
+[5.019s] Invoked command in '/home/stefano/dev/Costanza/ros2_ws/src/shepherding_control' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/stefano/dev/Costanza/ros2_ws/build/shepherding_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/shepherding_control build --build-base /home/stefano/dev/Costanza/ros2_ws/build/shepherding_control/build install --record /home/stefano/dev/Costanza/ros2_ws/build/shepherding_control/install.log --single-version-externally-managed install_data

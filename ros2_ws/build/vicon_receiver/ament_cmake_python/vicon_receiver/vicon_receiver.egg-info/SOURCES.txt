@@ -1,0 +1,9 @@
+setup.py
+vicon_receiver/__init__.py
+vicon_receiver.egg-info/PKG-INFO
+vicon_receiver.egg-info/SOURCES.txt
+vicon_receiver.egg-info/dependency_links.txt
+vicon_receiver.egg-info/top_level.txt
+vicon_receiver/msg/__init__.py
+vicon_receiver/msg/_position.py
+vicon_receiver/msg/_position_list.py

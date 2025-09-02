@@ -24,6 +24,8 @@ setup(
     entry_points={
         'console_scripts': [
             'controller_node = shepherding_control.controller_node:main',
+            'dummy_controller_node = shepherding_control.dummy_controller_node:main',
+            'lama_robot_controller_node = shepherding_control.lama_robot_controller_node:main',
         ],
     },
 )

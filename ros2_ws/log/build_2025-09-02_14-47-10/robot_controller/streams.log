@@ -1,0 +1,21 @@
+[1.160s] Invoking command in '/home/stefano/dev/Costanza/ros2_ws/src/robot_controller': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/stefano/dev/Costanza/ros2_ws/build/robot_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/stefano/dev/Costanza/ros2_ws/install/robot_controller/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_controller build --build-base /home/stefano/dev/Costanza/ros2_ws/build/robot_controller/build install --record /home/stefano/dev/Costanza/ros2_ws/build/robot_controller/install.log --single-version-externally-managed install_data
+[1.370s] running egg_info
+[1.385s] writing ../../build/robot_controller/robot_controller.egg-info/PKG-INFO
+[1.385s] writing dependency_links to ../../build/robot_controller/robot_controller.egg-info/dependency_links.txt
+[1.385s] writing entry points to ../../build/robot_controller/robot_controller.egg-info/entry_points.txt
+[1.385s] writing requirements to ../../build/robot_controller/robot_controller.egg-info/requires.txt
+[1.386s] writing top-level names to ../../build/robot_controller/robot_controller.egg-info/top_level.txt
+[1.418s] reading manifest file '../../build/robot_controller/robot_controller.egg-info/SOURCES.txt'
+[1.419s] writing manifest file '../../build/robot_controller/robot_controller.egg-info/SOURCES.txt'
+[1.419s] running build
+[1.419s] running build_py
+[1.419s] running install
+[1.425s] running install_lib
+[1.440s] running install_data
+[1.441s] running install_egg_info
+[1.457s] removing '/home/stefano/dev/Costanza/ros2_ws/install/robot_controller/lib/python3.12/site-packages/robot_controller-0.0.0-py3.12.egg-info' (and everything under it)
+[1.457s] Copying ../../build/robot_controller/robot_controller.egg-info to /home/stefano/dev/Costanza/ros2_ws/install/robot_controller/lib/python3.12/site-packages/robot_controller-0.0.0-py3.12.egg-info
+[1.458s] running install_scripts
+[1.561s] Installing controller script to /home/stefano/dev/Costanza/ros2_ws/install/robot_controller/lib/robot_controller
+[1.561s] writing list of installed files to '/home/stefano/dev/Costanza/ros2_ws/build/robot_controller/install.log'
+[1.585s] Invoked command in '/home/stefano/dev/Costanza/ros2_ws/src/robot_controller' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/stefano/dev/Costanza/ros2_ws/build/robot_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/stefano/dev/Costanza/ros2_ws/install/robot_controller/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_controller build --build-base /home/stefano/dev/Costanza/ros2_ws/build/robot_controller/build install --record /home/stefano/dev/Costanza/ros2_ws/build/robot_controller/install.log --single-version-externally-managed install_data

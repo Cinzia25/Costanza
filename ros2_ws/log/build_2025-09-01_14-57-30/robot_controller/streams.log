@@ -1,0 +1,40 @@
+[1.285s] Invoking command in '/home/stefano/dev/Costanza/ros2_ws/src/robot_controller': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/stefano/dev/Costanza/ros2_ws/build/robot_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/stefano/dev/Costanza/ros2_ws/install/robot_controller/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_controller build --build-base /home/stefano/dev/Costanza/ros2_ws/build/robot_controller/build install --record /home/stefano/dev/Costanza/ros2_ws/build/robot_controller/install.log --single-version-externally-managed install_data
+[1.486s] running egg_info
+[1.487s] creating ../../build/robot_controller/robot_controller.egg-info
+[1.503s] writing ../../build/robot_controller/robot_controller.egg-info/PKG-INFO
+[1.503s] writing dependency_links to ../../build/robot_controller/robot_controller.egg-info/dependency_links.txt
+[1.503s] writing entry points to ../../build/robot_controller/robot_controller.egg-info/entry_points.txt
+[1.503s] writing requirements to ../../build/robot_controller/robot_controller.egg-info/requires.txt
+[1.503s] writing top-level names to ../../build/robot_controller/robot_controller.egg-info/top_level.txt
+[1.504s] writing manifest file '../../build/robot_controller/robot_controller.egg-info/SOURCES.txt'
+[1.533s] reading manifest file '../../build/robot_controller/robot_controller.egg-info/SOURCES.txt'
+[1.534s] writing manifest file '../../build/robot_controller/robot_controller.egg-info/SOURCES.txt'
+[1.534s] running build
+[1.534s] running build_py
+[1.534s] creating /home/stefano/dev/Costanza/ros2_ws/build/robot_controller/build
+[1.534s] creating /home/stefano/dev/Costanza/ros2_ws/build/robot_controller/build/lib
+[1.534s] creating /home/stefano/dev/Costanza/ros2_ws/build/robot_controller/build/lib/robot_controller
+[1.535s] copying robot_controller/controller_library.py -> /home/stefano/dev/Costanza/ros2_ws/build/robot_controller/build/lib/robot_controller
+[1.535s] copying robot_controller/__init__.py -> /home/stefano/dev/Costanza/ros2_ws/build/robot_controller/build/lib/robot_controller
+[1.535s] copying robot_controller/controller.py -> /home/stefano/dev/Costanza/ros2_ws/build/robot_controller/build/lib/robot_controller
+[1.535s] running install
+[1.540s] running install_lib
+[1.555s] creating /home/stefano/dev/Costanza/ros2_ws/install/robot_controller/lib/python3.12/site-packages/robot_controller
+[1.556s] copying /home/stefano/dev/Costanza/ros2_ws/build/robot_controller/build/lib/robot_controller/controller_library.py -> /home/stefano/dev/Costanza/ros2_ws/install/robot_controller/lib/python3.12/site-packages/robot_controller
+[1.556s] copying /home/stefano/dev/Costanza/ros2_ws/build/robot_controller/build/lib/robot_controller/__init__.py -> /home/stefano/dev/Costanza/ros2_ws/install/robot_controller/lib/python3.12/site-packages/robot_controller
+[1.556s] copying /home/stefano/dev/Costanza/ros2_ws/build/robot_controller/build/lib/robot_controller/controller.py -> /home/stefano/dev/Costanza/ros2_ws/install/robot_controller/lib/python3.12/site-packages/robot_controller
+[1.556s] byte-compiling /home/stefano/dev/Costanza/ros2_ws/install/robot_controller/lib/python3.12/site-packages/robot_controller/controller_library.py to controller_library.cpython-312.pyc
+[1.557s] byte-compiling /home/stefano/dev/Costanza/ros2_ws/install/robot_controller/lib/python3.12/site-packages/robot_controller/__init__.py to __init__.cpython-312.pyc
+[1.557s] byte-compiling /home/stefano/dev/Costanza/ros2_ws/install/robot_controller/lib/python3.12/site-packages/robot_controller/controller.py to controller.cpython-312.pyc
+[1.558s] running install_data
+[1.558s] creating /home/stefano/dev/Costanza/ros2_ws/install/robot_controller/share/ament_index
+[1.558s] creating /home/stefano/dev/Costanza/ros2_ws/install/robot_controller/share/ament_index/resource_index
+[1.558s] creating /home/stefano/dev/Costanza/ros2_ws/install/robot_controller/share/ament_index/resource_index/packages
+[1.558s] copying resource/robot_controller -> /home/stefano/dev/Costanza/ros2_ws/install/robot_controller/share/ament_index/resource_index/packages
+[1.558s] copying package.xml -> /home/stefano/dev/Costanza/ros2_ws/install/robot_controller/share/robot_controller
+[1.558s] running install_egg_info
+[1.574s] Copying ../../build/robot_controller/robot_controller.egg-info to /home/stefano/dev/Costanza/ros2_ws/install/robot_controller/lib/python3.12/site-packages/robot_controller-0.0.0-py3.12.egg-info
+[1.574s] running install_scripts
+[1.679s] Installing controller script to /home/stefano/dev/Costanza/ros2_ws/install/robot_controller/lib/robot_controller
+[1.679s] writing list of installed files to '/home/stefano/dev/Costanza/ros2_ws/build/robot_controller/install.log'
+[1.720s] Invoked command in '/home/stefano/dev/Costanza/ros2_ws/src/robot_controller' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/stefano/dev/Costanza/ros2_ws/build/robot_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/stefano/dev/Costanza/ros2_ws/install/robot_controller/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_controller build --build-base /home/stefano/dev/Costanza/ros2_ws/build/robot_controller/build install --record /home/stefano/dev/Costanza/ros2_ws/build/robot_controller/install.log --single-version-externally-managed install_data
