@@ -13,10 +13,12 @@ shepherding_control/__init__.py
 shepherding_control/controller_node.py
 shepherding_control/dummy_controller_node.py
 shepherding_control/lama_robot_controller_node.py
+shepherding_control/obs_robot_controller.py
 shepherding_control/my_control_library/control.py
 shepherding_control/my_control_library/lama_control.py
 shepherding_control/my_control_library/lama_control_obs.py
 shepherding_control/my_control_library/robot_lama_control.py
+shepherding_control/my_control_library/robot_lama_control_obs.py
 test/test_copyright.py
 test/test_flake8.py
 test/test_pep257.py

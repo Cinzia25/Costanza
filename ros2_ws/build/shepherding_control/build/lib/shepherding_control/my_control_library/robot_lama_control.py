@@ -12,11 +12,11 @@ FACTOR = 1/10               # Global scaling factor for distances
 XI = 200.0*FACTOR + TURTLEBOT_RADIUS + TURTLEBOT_RADIUS  # Herder sensing range 
 LAMBDA = 2.5*FACTOR + OSOYOO_RADIUS + TURTLEBOT_RADIUS   # Target sensing range
 LAMBDA_DELTA = 2.5*0.5*FACTOR+ OSOYOO_RADIUS + TURTLEBOT_RADIUS  # Reduced distance threshold for pushing behaviour
-V_H = 0.1                  # Max linear speed for herders
+V_H = 0.3    # Max linear speed for herders
 RG = 10*FACTOR              # Goal region radius 
 BETA = 3                    # Repulsion scaling factor for targets
-ALPHA = 0.5               # Gain for pushing component
-THRESHOLD = 0.25             # Distance tolerance for switching behaviours
+ALPHA = 3             # Gain for pushing component
+THRESHOLD = 0.5             # Distance tolerance for switching behaviours
 EPSILON = 0.2               # Small offset parameter
 R_REP = 2*TURTLEBOT_RADIUS + 0.1  # Global repulsion radius
 K_REP = 1.0                 # Global repulsion gain 
@@ -35,7 +35,7 @@ def compute_cmd(idx, H, T, logger, is_herder):
     for t in T.values():
         if t is not None:
             positions.append([t.x_trans, t.y_trans])
-    positions = np.array(positions)
+    positions = np.array(positions)/1000
 
     if is_herder:
         # === HERDER behavior ===
@@ -202,24 +202,45 @@ def compute_cmd(idx, H, T, logger, is_herder):
     dX += repulsion_global
 
     # dX is the desired robot velocity command in single integrator dynamics
-
-    projection_distance = 0.05
+    if is_herder:
+        projection_distance = 0.3
+    else:
+        projection_distance = 0.05
 
     cs = np.cos(yaw)
     ss = np.sin(yaw)
 
     linear_vel = cs * dX[0] + ss * dX[1]
     angular_vel = (1 / projection_distance) * (-ss*dX[0] + cs*dX[1])
+    
+    if is_herder:
+        d = TURTLEBOT_RADIUS*angular_vel
+        den1 = abs(linear_vel + d)
+        den2 = abs(linear_vel - d)
+        s = 1.0
+        if den1 > 0:
+            s = min(s, V_H/den1)
+        if den2 > 0:
+            s = min(s, V_H/den2)
+        s = max(0.0, min(1.0, s))
+        linear_vel = s * linear_vel
+        angular_vel = s * angular_vel
+    
 
-    linear_vel = np.clip(linear_vel, -V_H, V_H)
-    angular_vel = np.clip(angular_vel, -2, 2)
+    # if is_herder:
+    #     linear_vel = np.clip(linear_vel, -V_H, V_H)
+    #     angular_vel = np.clip(angular_vel, -1.5, 1.5)
+    # else:
+    #     linear_vel = np.clip(linear_vel, -0.05, 0.05)
+    #     angular_vel = np.clip(angular_vel, -1.8, 1.8)
 
     cmd = Twist()
 
     cmd.linear.x = linear_vel
     cmd.angular.z = angular_vel
-
+    
     print('is herder: ',is_herder, 'linear_vel: ', linear_vel, 'angular_vel: ', angular_vel)
+
 
 
 

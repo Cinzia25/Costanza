@@ -1,0 +1,27 @@
+[1.430s] Invoking command in '/home/stefano/dev/Costanza/ros2_ws/src/shepherding_control': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/stefano/dev/Costanza/ros2_ws/build/shepherding_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/shepherding_control build --build-base /home/stefano/dev/Costanza/ros2_ws/build/shepherding_control/build install --record /home/stefano/dev/Costanza/ros2_ws/build/shepherding_control/install.log --single-version-externally-managed install_data
+[1.652s] running egg_info
+[1.670s] writing ../../build/shepherding_control/shepherding_control.egg-info/PKG-INFO
+[1.671s] writing dependency_links to ../../build/shepherding_control/shepherding_control.egg-info/dependency_links.txt
+[1.671s] writing entry points to ../../build/shepherding_control/shepherding_control.egg-info/entry_points.txt
+[1.671s] writing requirements to ../../build/shepherding_control/shepherding_control.egg-info/requires.txt
+[1.672s] writing top-level names to ../../build/shepherding_control/shepherding_control.egg-info/top_level.txt
+[1.708s] reading manifest file '../../build/shepherding_control/shepherding_control.egg-info/SOURCES.txt'
+[1.710s] writing manifest file '../../build/shepherding_control/shepherding_control.egg-info/SOURCES.txt'
+[1.710s] running build
+[1.711s] running build_py
+[1.711s] copying shepherding_control/my_control_library/robot_lama_control_obs.py -> /home/stefano/dev/Costanza/ros2_ws/build/shepherding_control/build/lib/shepherding_control/my_control_library
+[1.711s] running install
+[1.718s] running install_lib
+[1.735s] copying /home/stefano/dev/Costanza/ros2_ws/build/shepherding_control/build/lib/shepherding_control/my_control_library/robot_lama_control_obs.py -> /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages/shepherding_control/my_control_library
+[1.736s] byte-compiling /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages/shepherding_control/my_control_library/robot_lama_control_obs.py to robot_lama_control_obs.cpython-312.pyc
+[1.739s] running install_data
+[1.739s] running install_egg_info
+[1.757s] removing '/home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages/shepherding_control-0.0.0-py3.12.egg-info' (and everything under it)
+[1.757s] Copying ../../build/shepherding_control/shepherding_control.egg-info to /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages/shepherding_control-0.0.0-py3.12.egg-info
+[1.758s] running install_scripts
+[1.884s] Installing controller_node script to /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/shepherding_control
+[1.884s] Installing dummy_controller_node script to /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/shepherding_control
+[1.884s] Installing lama_robot_controller_node script to /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/shepherding_control
+[1.884s] Installing obs_robot_controller script to /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/shepherding_control
+[1.888s] writing list of installed files to '/home/stefano/dev/Costanza/ros2_ws/build/shepherding_control/install.log'
+[1.934s] Invoked command in '/home/stefano/dev/Costanza/ros2_ws/src/shepherding_control' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/stefano/dev/Costanza/ros2_ws/build/shepherding_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/shepherding_control build --build-base /home/stefano/dev/Costanza/ros2_ws/build/shepherding_control/build install --record /home/stefano/dev/Costanza/ros2_ws/build/shepherding_control/install.log --single-version-externally-managed install_data

@@ -2,16 +2,20 @@
 /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages/shepherding_control/controller_node.py
 /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages/shepherding_control/__init__.py
 /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages/shepherding_control/lama_robot_controller_node.py
+/home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages/shepherding_control/obs_robot_controller.py
 /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages/shepherding_control/my_control_library/robot_lama_control.py
 /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages/shepherding_control/my_control_library/control.py
+/home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages/shepherding_control/my_control_library/robot_lama_control_obs.py
 /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages/shepherding_control/my_control_library/lama_control.py
 /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages/shepherding_control/my_control_library/lama_control_obs.py
 /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages/shepherding_control/__pycache__/dummy_controller_node.cpython-312.pyc
 /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages/shepherding_control/__pycache__/controller_node.cpython-312.pyc
 /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages/shepherding_control/__pycache__/__init__.cpython-312.pyc
 /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages/shepherding_control/__pycache__/lama_robot_controller_node.cpython-312.pyc
+/home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages/shepherding_control/__pycache__/obs_robot_controller.cpython-312.pyc
 /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages/shepherding_control/my_control_library/__pycache__/robot_lama_control.cpython-312.pyc
 /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages/shepherding_control/my_control_library/__pycache__/control.cpython-312.pyc
+/home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages/shepherding_control/my_control_library/__pycache__/robot_lama_control_obs.cpython-312.pyc
 /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages/shepherding_control/my_control_library/__pycache__/lama_control.cpython-312.pyc
 /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages/shepherding_control/my_control_library/__pycache__/lama_control_obs.cpython-312.pyc
 /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/share/ament_index/resource_index/packages/shepherding_control
@@ -26,3 +30,4 @@
 /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/shepherding_control/controller_node
 /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/shepherding_control/dummy_controller_node
 /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/shepherding_control/lama_robot_controller_node
+/home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/shepherding_control/obs_robot_controller
