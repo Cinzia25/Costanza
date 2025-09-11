@@ -32,8 +32,6 @@ mu_w = 0.0                       # Mean angular velocity noise for targets
 # Single polygonal obstacle parameters (rotated box)
 xc = 2                           # Obstacle center x
 yc = 2                           # Obstacle center y
-lx = 1                           # Obstacle width
-ly = 2                           # Obstacle height
 theta_deg = 0.7854               # Obstacle rotation [radians]
 O_REP = 0.2 + TURTLEBOT_RADIUS   # Obstacle repulsion radius
 K_O = 3.0                        # Obstacle repulsion gain

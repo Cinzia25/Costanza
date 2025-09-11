@@ -1,0 +1,39 @@
+[0.053s] Invoking command in '/home/stefano/dev/Costanza/ros2_ws/build/ionic_demo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/stefano/dev/Costanza/ros2_ws/build/ionic_demo -- -j8 -l8
+[1.525s] Invoked command in '/home/stefano/dev/Costanza/ros2_ws/build/ionic_demo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/stefano/dev/Costanza/ros2_ws/build/ionic_demo -- -j8 -l8
+[1.542s] Invoking command in '/home/stefano/dev/Costanza/ros2_ws/build/ionic_demo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/stefano/dev/Costanza/ros2_ws/build/ionic_demo
+[1.558s] -- Install configuration: ""
+[1.559s] -- Execute custom install script
+[1.559s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/ionic_demo/share/ionic_demo/configs/nav2.rviz
+[1.560s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/ionic_demo/share/ionic_demo/configs/tb4_camera_bridge.yaml
+[1.560s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/ionic_demo/share/ionic_demo/launch/ionic_moveit_demo_launch.py
+[1.560s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/ionic_demo/share/ionic_demo/launch/ionic_navigation_demo_launch.py
+[1.563s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/ionic_demo/share/ionic_demo/launch/ionic_navigation_demo_launch.xml
+[1.563s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/ionic_demo/share/ionic_demo/launch/ionic_rmf_demo_launch.py
+[1.563s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/ionic_demo/share/ionic_demo/launch/tb4_spawn_launch.py
+[1.563s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/ionic_demo/share/ionic_demo/launch/tb4_spawn_launch.xml
+[1.563s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/ionic_demo/share/ionic_demo/launch/world_launch.py
+[1.564s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/ionic_demo/share/ionic_demo/launch/world_launch.xml
+[1.564s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/ionic_demo/share/ionic_demo/maps/ionic_demo.pgm
+[1.564s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/ionic_demo/share/ionic_demo/maps/ionic_demo.yaml
+[1.565s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/ionic_demo/share/ionic_demo/worlds/ionic.sdf
+[1.565s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/ionic_demo/share/ionic_demo/models/ionic_tb4.urdf.xacro
+[1.565s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/ionic_demo/share/ionic_demo/models/test.urdf
+[1.565s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/ionic_demo/share/ionic_demo/rviz/nav2_default_view.rviz
+[1.566s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/ionic_demo/share/ionic_demo/params/nav2_params.yaml
+[1.566s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/ionic_demo/share/ionic_demo/environment/ionic_demo.dsv
+[1.567s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/ionic_demo/share/ament_index/resource_index/package_run_dependencies/ionic_demo
+[1.567s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/ionic_demo/share/ament_index/resource_index/parent_prefix_path/ionic_demo
+[1.567s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/ionic_demo/share/ionic_demo/environment/ament_prefix_path.sh
+[1.567s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/ionic_demo/share/ionic_demo/environment/ament_prefix_path.dsv
+[1.568s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/ionic_demo/share/ionic_demo/environment/path.sh
+[1.568s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/ionic_demo/share/ionic_demo/environment/path.dsv
+[1.568s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/ionic_demo/share/ionic_demo/local_setup.bash
+[1.569s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/ionic_demo/share/ionic_demo/local_setup.sh
+[1.569s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/ionic_demo/share/ionic_demo/local_setup.zsh
+[1.569s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/ionic_demo/share/ionic_demo/local_setup.dsv
+[1.569s] -- Symlinking: /home/stefano/dev/Costanza/ros2_ws/install/ionic_demo/share/ionic_demo/package.dsv
+[1.586s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/ionic_demo/share/ament_index/resource_index/packages/ionic_demo
+[1.587s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/ionic_demo/share/ionic_demo/cmake/ionic_demoConfig.cmake
+[1.587s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/ionic_demo/share/ionic_demo/cmake/ionic_demoConfig-version.cmake
+[1.589s] -- Up-to-date symlink: /home/stefano/dev/Costanza/ros2_ws/install/ionic_demo/share/ionic_demo/package.xml
+[1.594s] Invoked command in '/home/stefano/dev/Costanza/ros2_ws/build/ionic_demo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/stefano/dev/Costanza/ros2_ws/build/ionic_demo

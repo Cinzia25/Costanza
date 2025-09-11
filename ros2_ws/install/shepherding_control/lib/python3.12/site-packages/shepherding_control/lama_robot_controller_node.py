@@ -5,8 +5,8 @@ from geometry_msgs.msg import Twist
 ##lama_control_obs for obstacle avoidance, lama_control otherwise
 from shepherding_control.my_control_library.robot_lama_control import compute_cmd
 
-turtlebot_ids = [4, 5]
-osoyoo_ids = [1, 2, 3]
+turtlebot_ids = [4]
+osoyoo_ids = [1]
 
 class LamaRobotControllerNode(Node):
     def __init__(self, n_herder, n_target):
@@ -40,7 +40,7 @@ class LamaRobotControllerNode(Node):
             pub_topic = f"/model/target{str(osoyoo_ids[j-1])}/cmd_vel"
             self.cmd_publishers[('target', j)] = self.create_publisher(Twist, pub_topic, 10)
         # Periodic control loop timer (10 Hz)
-        self.create_timer(0.1, self.control_loop)
+        self.create_timer(0.03, self.control_loop)
  
     def _make_callback(self, kind, idx):
         """
@@ -92,8 +92,8 @@ def main(args=None):
     rclpy.init(args=args)
 
     # Configure number of robots (targets = Osoyoo, herders = TurtleBot)
-    osoyoo_count = 3
-    turtlebot_count = 2
+    osoyoo_count = 1
+    turtlebot_count = 1
 
     # Create controller node with the requested team sizes
     node = LamaRobotControllerNode(n_herder=turtlebot_count, n_target=osoyoo_count)

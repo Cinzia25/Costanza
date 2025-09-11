@@ -1,0 +1,5 @@
+  File "/home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages/shepherding_control/my_control_library/robot_lama_control_obs.py", line 181
+    if flag == 1
+                ^
+SyntaxError: expected ':'
+

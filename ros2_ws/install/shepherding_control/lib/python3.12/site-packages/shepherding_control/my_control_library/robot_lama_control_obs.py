@@ -9,30 +9,30 @@ import rclpy
 # === Constants and parameters ===
 TURTLEBOT_RADIUS = 0.15          # Physical radius of herder (TurtleBot)
 OSOYOO_RADIUS = 0.1              # Physical radius of target (Osoyoo)
-GOAL_X = 0.75                     # X coordinate of goal region center
-GOAL_Y = 0.75                     # Y coordinate of goal region center
+GOAL_X = 0.0                     # X coordinate of goal region center
+GOAL_Y = 0.0                     # Y coordinate of goal region center
 FACTOR = 1/10                    # Global scaling factor for distances
 XI = 200.0*FACTOR + TURTLEBOT_RADIUS + TURTLEBOT_RADIUS   # Herder sensing range 
-LAMBDA = 3.5*FACTOR + OSOYOO_RADIUS + TURTLEBOT_RADIUS    # Target sensing range
+LAMBDA = 2.5*FACTOR + OSOYOO_RADIUS + TURTLEBOT_RADIUS    # Target sensing range
 LAMBDA_DELTA = 2.5*0.5*FACTOR+ OSOYOO_RADIUS + TURTLEBOT_RADIUS  # Reduced distance threshold for pushing behaviour
-V_H = 0.1                       # Max linear speed for herders
+V_H = 0.2                      # Max linear speed for herders
 RG = 10*FACTOR                   # Goal region radius 
-BETA = .5                         # Repulsion scaling factor for targets
+BETA = 5                         # Repulsion scaling factor for targets
 ALPHA = 3                        # Gain for pushing component
 THRESHOLD = 0.5                  # Distance margin for approach/orbit blending
 EPSILON = 0.2                    # Small offset parameter
 R_REP = 0.1 + 2*TURTLEBOT_RADIUS # Global repulsion gain
 p = 2                            # Exponent for repulsion potential
 K_REP = 1                     # Gain for global inter-robot repulsion
-D = 0.1                          # Noise scaling (targets)
+D = 0                          # Noise scaling (targets)
 sigma_v = 1                      # Std dev of linear velocity noise for targets
 sigma_w = 1                      # Std dev of angular velocity noise for targets
 mu_w = 0.0                       # Mean angular velocity noise for targets
 
 # Single polygonal obstacle parameters (rotated box)
-lx = 0.7                           # Obstacle width
-ly = 0.4                        # Obstacle height
-O_REP = 0.2 + TURTLEBOT_RADIUS   # Obstacle repulsion radius
+lx = 0.75                           # Obstacle width
+ly = 0.25                        # Obstacle height
+O_REP = TURTLEBOT_RADIUS + 0.05  # Obstacle repulsion radius
 K_O = 3.0                        # Obstacle repulsion gain
 min_value = 0.0                  # Min radial weight far from obstacle
 max_value = 0.9                  # Max radial weight near obstacle
@@ -128,8 +128,9 @@ def compute_cmd(idx, H, T, O, logger, is_herder):
                 dist = np.linalg.norm(dX_dir) + 1e-6  # Avoid division by zero
 
                 # Special handling: if target is close to obstacle, steer tangentially
-                if point_t.distance(obs) < O_REP + EPSILON:
-                    
+                flag = 0
+                if point_t.distance(obs) < O_REP + EPSILON/2:
+                    flag = 1                    
                     #logger.info("Target vicino all'ostacolo")
                     dist = point_t.distance(obs)
                     closest_point_t = obs.exterior.interpolate(obs.exterior.project(point_t))
@@ -176,6 +177,12 @@ def compute_cmd(idx, H, T, O, logger, is_herder):
                     R = np.array([[0, -1], [1, 0]])
                 else:
                     R = np.array([[0, 1], [-1, 0]])
+                
+                if flag == 1:
+                    vett2 = -diff
+                    scalar_prod = np.dot(vett2,a)
+                    if scalar_prod > 0 and cos_alpha < 0:
+                        R = -R
 
                 perp_dir = R @ a / (norm_a + 1e-6)
                 dir_radial = a / (norm_a + 1e-6)
@@ -217,12 +224,17 @@ def compute_cmd(idx, H, T, O, logger, is_herder):
             else:
                 sigma = (O_REP + EPSILON - dist) / (2*EPSILON)
                 VALUE = max_value - (max_value - min_value) * (dist - O_REP) / EPSILON
+            VALUE = 0.3
+            sigma = 1
             repulsive_component = VALUE * strength * (diff / dist) + (1-VALUE) * strength * R_obs_h @ (diff / dist)
             
             if selected_target is not None:
-                dX = (1 - gamma) * (1 - sigma) * pushing_component + (1 - sigma) * (1 - beta) * gamma * orbiting_component + sigma * repulsive_component
+                #dX = (1 - gamma) * (1 - sigma) * pushing_component + (1 - sigma) * (1 - beta) * gamma * orbiting_component + sigma * repulsive_component
+                dX = (1 - gamma) * pushing_component + (1 - beta) * gamma * orbiting_component + sigma * repulsive_component
+
             else: 
-                dX = (1 - sigma) * dX + sigma * repulsive_component            
+                #dX = (1 - sigma) * dX + sigma * repulsive_component    
+                dX =  dX + sigma * repulsive_component         
 
     else:
         # === TARGET behavior ===
@@ -289,7 +301,7 @@ def compute_cmd(idx, H, T, O, logger, is_herder):
 
        # dX is the desired robot velocity command in single integrator dynamics
     if is_herder:
-        projection_distance = 0.3
+        projection_distance = 0.15
     else:
         projection_distance = 0.05
 

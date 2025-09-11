@@ -131,8 +131,8 @@ def create_turtlebot(index, x, y, z):
     publish its TF via robot_state_publisher, and bridge topics.
     """
     robot_name = f'herder{index+1}'
-    xacro_path = '/root/data/ros2_ws/src/ionic_demo/ionic_demo/models/ionic_tb4.urdf.xacro'
-    turtlebot_model_path = '/root/data/ros2_ws/models/turtlebot4/nav2_minimal_tb4_description/urdf'
+    xacro_path = '/home/stefano/dev/Costanza/ros2_ws/src/ionic_demo/ionic_demo/models/ionic_tb4.urdf.xacro'
+    turtlebot_model_path =  '/home/stefano/dev/Costanza/ros2_ws/models/turtlebot4/nav2_minimal_tb4_description/urdf'
 
     # Generate URDF text from xacro with a model-specific gz namespace
     xacro_cmd = [
@@ -180,7 +180,7 @@ def generate_launch_description():
 
     osoyoo_count = 5
     turtlebot_count = 2
-    model_path_osoyoo = '/root/data/ros2_ws/models/osoyoo/model.sdf'
+    model_path_osoyoo = '/home/stefano/dev/Costanza/ros2_ws/models/osoyoo/model.sdf'
 
     # Obstacle parameters (angle already in radians)
     xc = 2
