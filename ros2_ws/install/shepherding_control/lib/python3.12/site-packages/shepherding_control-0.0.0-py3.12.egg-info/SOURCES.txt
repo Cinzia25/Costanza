@@ -15,6 +15,7 @@ shepherding_control/controller_node_rl.py
 shepherding_control/dummy_controller_node.py
 shepherding_control/lama_robot_controller_node.py
 shepherding_control/obs_robot_controller.py
+shepherding_control/robot_controller_rl.py
 shepherding_control/my_control_library/actor_critic_base.py
 shepherding_control/my_control_library/actor_critic_continuous.py
 shepherding_control/my_control_library/actor_critic_mappo_discrete.py

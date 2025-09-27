@@ -52,7 +52,7 @@ def select_targets(herder_pos, target_pos, num_herders):
 
 def select_targets_learning2(herder_pos, target_pos, num_herders, num_targets, model):
 
-    scaling = 1 / 50 * 20
+    scaling = 1 / 50 * 5
 
     herder_pos = herder_pos.copy()
     target_pos = target_pos.copy()
@@ -68,12 +68,12 @@ def select_targets_learning2(herder_pos, target_pos, num_herders, num_targets, m
     np.fill_diagonal(distances_between_herders, np.inf)  # Exclude self by setting the diagonal to infinity
 
     # Identify the indices of the `num_closest_herders` for each herder
-    closest_herders_indices = np.sort(np.argsort(distances_between_herders, axis=1)[:, :1],
-                                           axis=1)
+    closest_herders_indices = np.sort(
+        np.argsort(distances_between_herders, axis=1)[:, :1], axis=1
+    )
 
     # Retrieve and flatten the positions of the closest herders
-    closest_herders = herder_pos[closest_herders_indices].reshape(num_herders,
-                                                                       -1)  # (num_herders, num_closest_herders * 2)
+    closest_herders = herder_pos[closest_herders_indices].reshape(num_herders, -1)
 
     # Compute distances between herders and all targets
     distances_to_targets = np.linalg.norm(
@@ -81,28 +81,32 @@ def select_targets_learning2(herder_pos, target_pos, num_herders, num_targets, m
     )
 
     # Identify the indices of the `num_closest_targets` for each herder
-    closest_targets_indices = np.sort(np.argsort(distances_to_targets, axis=1)[:, :5],
-                                           axis=1)
+    closest_targets_indices = np.sort(
+        np.argsort(distances_to_targets, axis=1)[:, :5], axis=1
+    )
 
     # Retrieve positions of the closest targets
-    closest_targets = target_pos[closest_targets_indices]  # (num_herders, num_closest_targets, 2)
+    closest_targets = target_pos[closest_targets_indices]  # (num_herders, 5, 2)
 
     # Select the distances corresponding to the chosen closest target indices
     selected_distances = distances_to_targets[np.arange(num_herders)[:, None], closest_targets_indices]
 
-
     # Flatten closest target positions into a single feature vector
-    closest_targets_flat = closest_targets.reshape(num_herders, -1)  # (num_herders, num_closest_targets * 2)
+    closest_targets_flat = closest_targets.reshape(num_herders, -1)  # (num_herders, 10)
 
     obs = np.concatenate([herder_pos, closest_herders, closest_targets_flat], axis=1)
-
     obs = torch.tensor(obs, dtype=torch.float32)
 
-    selection = model.get_action(obs)
+    # NN outputs an index between 0–4 for each herder
+    selection_local = model.get_action(obs).cpu().numpy()
 
-    return selection
+    # Map local index -> global target index
+    selection_global = closest_targets_indices[np.arange(num_herders), selection_local]
 
+    print("target selection (local): ", selection_local)
+    print("target selection (global): ", selection_global)
 
+    return selection_global
 
 
 

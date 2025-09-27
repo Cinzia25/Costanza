@@ -1,3 +1,4 @@
+/home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages/shepherding_control/robot_controller_rl.py
 /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages/shepherding_control/dummy_controller_node.py
 /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages/shepherding_control/controller_node.py
 /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages/shepherding_control/__init__.py
@@ -14,6 +15,7 @@
 /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages/shepherding_control/my_control_library/actor_critic_mappo_discrete.py
 /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages/shepherding_control/my_control_library/learning_control.py
 /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages/shepherding_control/my_control_library/lama_control_obs.py
+/home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages/shepherding_control/__pycache__/robot_controller_rl.cpython-312.pyc
 /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages/shepherding_control/__pycache__/dummy_controller_node.cpython-312.pyc
 /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages/shepherding_control/__pycache__/controller_node.cpython-312.pyc
 /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/python3.12/site-packages/shepherding_control/__pycache__/__init__.cpython-312.pyc
@@ -44,3 +46,4 @@
 /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/shepherding_control/dummy_controller_node
 /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/shepherding_control/lama_robot_controller_node
 /home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/shepherding_control/obs_robot_controller
+/home/stefano/dev/Costanza/ros2_ws/install/shepherding_control/lib/shepherding_control/robot_controller_rl

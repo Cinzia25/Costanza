@@ -5,28 +5,34 @@ from shepherding_control.my_control_library.utils import select_targets, select_
 from shepherding_control.my_control_library.actor_critic_continuous import ActorCriticContinuous
 from shepherding_control.my_control_library.actor_critic_mappo_discrete import ActorCriticMAPPODiscrete
 
-use_learned_target_selection = False
+use_learned_target_selection = True
+
+
 
 # Arena parameters
-scaling_rate = 2 / 40 / 1.6
-rho_g = 5 * scaling_rate    # Radius of goal region
+scaling_rate = 1
+rho_g = 1 * scaling_rate    # Radius of goal region
 
 dt = 0.02
 
-alpha = 0.1
-damping = 60
-diffusion = 0.0
+
+# alpha = 0.02    
+# damping = 2   # 2 funziona meglio
+alpha = 0.2    
+damping = 1
+diffusion = 0.1
 
 # Herder dynamics
-herder_max_vel = 8  # Maximum velocity (in scaled units)
+herder_max_vel = 1  # Maximum velocity (in scaled units)
 
 # Barrier certificate to avoid inter-agent and boundary collisions
 si_barrier_cert = create_single_integrator_barrier_certificate_with_boundary(
-    safety_radius=0.20, boundary_points=np.array([-16, 16, -10, 10])
+    safety_radius=0.20, boundary_points=np.array([-6, 6, -6, 6])
 )
 
 # Conversion between dynamics
-_, uni_to_si_states = create_si_to_uni_mapping(projection_distance=0.05, angular_velocity_limit=1)
+_, uni_to_si_states_herder = create_si_to_uni_mapping(projection_distance=0.15, angular_velocity_limit=1)
+_, uni_to_si_states_target = create_si_to_uni_mapping(projection_distance=0.05, angular_velocity_limit=1)
 si_to_uni_dyn = create_si_to_uni_dynamics(angular_velocity_limit=1)
 
 # === Load Actor-Critic Models ===
@@ -38,7 +44,7 @@ network_config_HL = {
     'hidden_sizes':  [256, 128],
     'activation': "relu"
 }
-model = ActorCriticContinuous(network_config=network_config, max_speed=0.2)
+model = ActorCriticContinuous(network_config=network_config, max_speed=0.3)
 model_HL = ActorCriticMAPPODiscrete(network_config=network_config_HL)
 
 
@@ -48,6 +54,10 @@ def learning_controller(H: np.ndarray, T: np.ndarray, logger):
 #   returns:
 #     herder_cmds: shape (n_herder, 2) rows are [v, omega]
 #     target_cmds: shape (n_target, 2) rows are [v, omega]
+    
+    # Variabile statica "time"
+    if not hasattr(learning_controller, "time"):
+        learning_controller.time = 0.0  # inizializzazione alla prima chiamata
 
     num_herders = np.shape(H)[0]
     num_targets = np.shape(T)[0]
@@ -58,9 +68,25 @@ def learning_controller(H: np.ndarray, T: np.ndarray, logger):
     herder_vel = np.zeros((num_herders, 2))
 
     
-    # Get current agent positions
-    target_pos = T[:, :2]
-    herder_pos = H[:, :2]
+    # # Get current agent positions
+    # target_pos = T[:, :2]
+    # herder_pos = H[:, :2]
+
+    # print("herder.shape:", herder_pos.shape)
+    # print("target.shape:", target_pos.shape)
+
+    # Uso della variabile statica
+    if learning_controller.time > np.inf:
+        goal = np.array([2, 2])
+    else:
+        goal = np.array([0, 0])
+
+    target_pos = uni_to_si_states_target(T.T).T - goal
+    herder_pos = uni_to_si_states_herder(H.T).T - goal
+
+    print("herder.shape:", herder_pos.shape)
+    print("target.shape:", target_pos.shape)
+
 
     x_si = np.vstack((target_pos, herder_pos)).T
     x = np.vstack((T, H)).T
@@ -77,12 +103,16 @@ def learning_controller(H: np.ndarray, T: np.ndarray, logger):
 
     # Compute the Euclidean distances between herders and targets
     distances = np.linalg.norm(relative_positions, axis=2)  # Shape (N, M)
-    # Compute the force kernel using power-law repulsion
-    kernel = alpha / (distances ** 3)
+
+    # Compute the force kernel using power-law repulsion, active only if d <= 1
+    kernel = np.where(distances <= 1, alpha / (distances ** 3), 0.0)
+
+    # Compute repulsion term
     repulsion = np.sum(kernel[:, :, np.newaxis] * relative_positions, axis=1)
 
+    # Target dynamics update
+    target_vel += (-damping * target_vel + repulsion) * dt + diffusion * noise * np.sqrt(dt)
 
-    target_vel += ( - damping * target_vel + repulsion) * dt + diffusion * noise * np.sqrt(dt)
     # === HERDER DYNAMICS ===
 
     # if step % 1 == 0:
@@ -101,8 +131,11 @@ def learning_controller(H: np.ndarray, T: np.ndarray, logger):
     target_positions = np.zeros((num_herders, 2), dtype=np.float32)
     target_positions[valid_mask] = target_pos[selected_targets[valid_mask]]
     relative_positions = target_positions - herder_pos
+
+    print("herder_pos: ", herder_pos)
+    print("target_pos: ", target_pos)
     batch_inputs = np.hstack((relative_positions, target_positions)).astype(np.float32)
-    batch_tensor = torch.tensor(batch_inputs * (1 / 50) * 20 * 0.1)
+    batch_tensor = torch.tensor(batch_inputs / 12)
 
     
 
@@ -111,17 +144,19 @@ def learning_controller(H: np.ndarray, T: np.ndarray, logger):
 
     # === COMBINE VELOCITIES ===
     dxi = np.vstack((target_vel, herder_vel)).T
-    dxi = si_barrier_cert(dxi, x_si)
+    # dxi = si_barrier_cert(dxi, x_si)
     dxu = si_to_uni_dyn(dxi, x)
 
     dxu = dxu.T
 
 
-    target_uni_vel = dxu[:num_targets, :]
+    target_uni_vel = dxu[:num_targets, :] 
     herder_uni_vel = dxu[num_targets:num_agents, :]
 
-    print("herder.shape:", herder_uni_vel.shape)
-    print("target.shape:", target_uni_vel.shape)
+    # Aggiornamento della variabile statica
+    learning_controller.time += dt
+    print("time: ", learning_controller.time)
+
 
     return herder_uni_vel, target_uni_vel
 

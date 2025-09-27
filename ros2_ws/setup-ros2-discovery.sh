@@ -10,7 +10,7 @@ PC_IP="$(hostname -I | awk '{print $1}')"
 
 PC_DISCOVERY=";127.0.0.1:${PORT};"  
 
-export ROS_SUPER_CLIENT=True 
+export ROS_SUPER_CLIENT=1
 export ROS_DOMAIN_ID="${ROS_DOMAIN_ID_VALUE}"
 export RMW_IMPLEMENTATION=rmw_fastrtps_cpp
 export ROS_DISCOVERY_SERVER=${PC_DISCOVERY}

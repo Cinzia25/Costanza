@@ -21,7 +21,7 @@ class ActorCriticContinuous(ActorCriticBase):
     Box([0,-π], [V_MAX, π]) – this class will detect those bounds.
     """
 
-    def __init__(self, network_config, *, max_speed=12.0):
+    def __init__(self, network_config, *, max_speed=0.5):
 
         # ---------------------------------------------------------- #
         # Infer observation / action dimensions and bounds
@@ -56,7 +56,7 @@ class ActorCriticContinuous(ActorCriticBase):
         current_dir = os.path.dirname(os.path.abspath(__file__))
 
         # Load the .npy file instead of the .pt file
-        pt_path = os.path.join(current_dir, 'PPO_LL_agent.pt')
+        pt_path = os.path.join(current_dir, 'PPO_LL_Konstanz4_agent.pt')
 
         pt_path = f'/home/stefano/dev/Costanza/ros2_ws/src/shepherding_control/shepherding_control/my_control_library/PPO_LL_agent.pt'
 

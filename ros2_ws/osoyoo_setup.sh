@@ -1,6 +1,14 @@
 #!/usr/bin/env bash
+set -euo pipefail
+
+CSV_FILE="robots_sheet.csv"   # <-- adjust path to your CSV
 REMOTE_USER="${REMOTE_USER:-pi}"
-OSOYOOS=(134.34.231.94 134.34.231.57 134.34.231.174)
+REMOTE_PASS="${REMOTE_PASS:-raspberry}"
+OSOYOO_IDS=(3 7 9 10)
+# OSOYOO_IDS=(7)
+
+# OSOYOO_IDS=(11 12 13 14 15 16 17 18 19 20 21 22 23 24 25)
+
 PC_IP=$(hostname -I | awk '{print $1}')
 
 SSH_OPTS=(
@@ -11,19 +19,53 @@ SSH_OPTS=(
   -o KbdInteractiveAuthentication=no
 )
 
-for osoyoo in "${OSOYOOS[@]}"; do
-  sshpass -p 'raspberry' ssh "${SSH_OPTS[@]}" "${REMOTE_USER}@${osoyoo}" "
-    set -euo pipefail
-    cd /home/pi
-    # Se il file è scrivibile da pi:
-    sed -i.bak -E 's#(<address>)[^<]+(</address>)#\1'"$PC_IP"'\2#' super_client.xml
-    # Se vedi 'Permission denied' su sed, usa questa riga al posto della precedente:
-    # echo 'raspberry' | sudo -S sed -i.bak -E 's#(<address>)[0-9]{1,3}(\.[0-9]{1,3}){3}(</address>)#\1$PC_IP\3#' super_client.xml
+# Function: get IP from CSV for a given ID
+get_ip_from_csv() {
+  local id="$1"
+  awk -F, -v target="$id" 'NR>1 && $1==target {print $2}' "$CSV_FILE"
+}
 
-    # Assicurati che sia leggibile da pi (exec non serve per source)
-    # chmod 644 setup-ros2-discovery.sh  # solo se necessario
-    source ./setup-ros2-discovery.sh
+# Track failed robots
+FAILED_ROBOTS=()
 
-    printenv | grep -E 'RMW_IMPLEMENTATION|ROS_DOMAIN_ID|ROS_LOCALHOST_ONLY'
-  "
+for idx in "${OSOYOO_IDS[@]}"; do
+  robot_id="OSOYOO_${idx}"
+  ip=$(get_ip_from_csv "$robot_id")
+
+  if [[ -z "$ip" ]]; then
+    echo "[$robot_id] No IP found in $CSV_FILE"
+    FAILED_ROBOTS+=("$robot_id")
+    continue
+  fi
+
+  {
+    echo "[$robot_id] Connecting to $ip ..."
+    sshpass -p "$REMOTE_PASS" ssh "${SSH_OPTS[@]}" "${REMOTE_USER}@${ip}" "
+      set -euo pipefail
+      cd /home/pi
+
+      # Update <address> tag in super_client.xml
+      sed -i.bak -E 's#(<address>)[^<]+(</address>)#\1${PC_IP}\2#' super_client.xml || true
+
+      # Source setup script
+      source ./setup-ros2-discovery.sh
+
+      # Print relevant ROS environment
+      printenv | grep -E 'RMW_IMPLEMENTATION|ROS_DOMAIN_ID|ROS_LOCALHOST_ONLY'
+    "
+  } || {
+    echo "[$robot_id] FAILED"
+    FAILED_ROBOTS+=("$robot_id")
+  } &
 done
+
+wait   # Wait for all parallel SSH jobs
+
+echo
+echo "[LOCAL] All Osoyoo robots processed."
+if [[ ${#FAILED_ROBOTS[@]} -gt 0 ]]; then
+  echo "[LOCAL] The following robots FAILED:"
+  printf ' - %s\n' "${FAILED_ROBOTS[@]}"
+else
+  echo "[LOCAL] All robots succeeded."
+fi

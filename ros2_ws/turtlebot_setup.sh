@@ -1,25 +1,61 @@
 #!/usr/bin/env bash
 #set -Eeuo pipefail
 
+CSV_FILE="robots_sheet.csv"        # <-- adjust path if needed
 REMOTE_USER="${REMOTE_USER:-ubuntu}"
 REMOTE_PASS="${REMOTE_PASS:-turtlebot4}"
 PORT="${PORT:-11811}"
 ROS_DOMAIN_ID_VALUE="${ROS_DOMAIN_ID_VALUE:-5}"
 
-# Robot e loro ID (order by increasing server-id)
-TURTLEBOTS=(134.34.225.157 134.34.225.196)
-TURTLEBOT_IDS=(turtlebot4_4 turtlebot4_5)
-TURTLEBOT_SERVER_IDS=(2 3)
+# Turtlebot IDs as numbers only
+TURTLEBOT_IDS=(3 4)
 
 PC_IP="$(hostname -I | awk '{print $1}')"
 
-# PC_DISCOVERY=";${PC_IP}:${PORT};"
-PC_DISCOVERY=";127.0.0.1:${PORT};"  
-for ip in "${TURTLEBOTS[@]}"; do PC_DISCOVERY+="${ip}:${PORT};"; done
+### ---- Helper: build discovery string ----
+# Args:
+#   $1 = max index (for PC) OR robot index (for TB)
+#   $2 = robot host IP (for TB, empty for PC)
+#   $3 = mode: "pc" or "tb"
+build_discovery() {
+  local max_idx=$1
+  local host_ip=$2
+  local mode=$3
+  local str=""
+
+  for ((slot=1; slot<=max_idx; slot++)); do
+    if (( slot == 1 )); then
+      str+=";${PC_IP}:${PORT};"
+    elif [[ "$mode" == "tb" && $slot -eq $max_idx ]]; then
+      str+="${host_ip}:${PORT};"
+    elif [[ "$mode" == "pc" ]]; then
+      local robot_id="TURTLEBOT4_${slot}"
+      local ip
+      ip=$(awk -F, -v target="$robot_id" 'NR>1 && $1==target {print $2}' "$CSV_FILE")
+      if [[ -n "$ip" ]]; then
+        str+="${ip}:${PORT};"
+      else
+        str+=";"
+      fi
+    else
+      str+=";"
+    fi
+  done
+
+  echo "$str"
+}
+
+### ---- Build ROS_DISCOVERY_SERVER for PC (includes ALL TBs) ----
+max_id=${TURTLEBOT_IDS[-1]}   # largest ID in the list
+PC_DISCOVERY=$(build_discovery "$max_id" "" "pc")
+
 export ROS_SUPER_CLIENT=True 
 export ROS_DOMAIN_ID="${ROS_DOMAIN_ID_VALUE}"
 export RMW_IMPLEMENTATION=rmw_fastrtps_cpp
 export ROS_DISCOVERY_SERVER=${PC_DISCOVERY}
+
+echo "[LOCAL] ROS_DISCOVERY_SERVER for PC:"
+echo "${ROS_DISCOVERY_SERVER}"
 
 printenv | grep -E 'RMW_IMPLEMENTATION|ROS_DOMAIN_ID|ROS_DISCOVERY_SERVER|ROS_LOCALHOST_ONLY'
 
@@ -32,35 +68,32 @@ SSH_OPTS=(
   -o KbdInteractiveAuthentication=no
 )
 
+### ---- Configure Each Turtlebot ----
+for idx in "${TURTLEBOT_IDS[@]}"; do
+  robot_id="TURTLEBOT4_${idx}"
+  tb_id=$(echo "$robot_id" | tr '[:upper:]' '[:lower:]')
 
-for idx in "${!TURTLEBOTS[@]}"; do
-  host="${TURTLEBOTS[$idx]}"
-  tb_id="${TURTLEBOT_IDS[$idx]}"
-  tb_discovery=";${PC_IP}:${PORT};"
+  host=$(awk -F, -v target="$robot_id" 'NR>1 && $1==target {print $2}' "$CSV_FILE")
 
-  counter=2
-  while [ "$counter" -ne "${TURTLEBOT_SERVER_IDS[$idx]}" ]; do
-    tb_discovery+=";"
-    ((counter++))
-  done
+  if [[ -z "$host" ]]; then
+    echo "[LOCAL] Skipping ${robot_id}: no IP in CSV"
+    continue
+  fi
 
-  tb_discovery+="${host}:${PORT};"
-
-
+  tb_discovery=$(build_discovery "$idx" "$host" "tb")
 
   echo "[LOCAL] → ${host} (tb_id=${tb_id}, PC_IP=${PC_IP})"
-  
+  echo "[LOCAL] ROS_DISCOVERY_SERVER for ${robot_id}: ${tb_discovery}"
 
   sshpass -p "$REMOTE_PASS" ssh "${SSH_OPTS[@]}" "${REMOTE_USER}@${host}" /bin/bash -s <<EOF
 set -Eeuo pipefail
-T_IP="$(hostname -I | awk '{print $1}')"
+T_IP="\$(hostname -I | awk '{print \$1}')"
+echo "[REMOTE] Host IP: \$T_IP"
 
-  echo $T_IP
 # Config Fast-DDS / ROS
 export RMW_IMPLEMENTATION=rmw_fastrtps_cpp
 export ROS_DISCOVERY_SERVER="${tb_discovery}"
 export ROS_DOMAIN_ID="${ROS_DOMAIN_ID_VALUE}"
-
 
 # Source ROS
 set +u

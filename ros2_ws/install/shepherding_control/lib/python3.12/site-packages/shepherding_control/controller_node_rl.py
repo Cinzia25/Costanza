@@ -142,8 +142,8 @@ def main(args=None):
     rclpy.init(args=args)
 
     # Configure number of robots (targets = Osoyoo, herders = TurtleBot)
-    osoyoo_count = 5
-    turtlebot_count = 2
+    osoyoo_count = 12
+    turtlebot_count = 4
 
     node = ControllerNodeRL(n_herder=turtlebot_count, n_target=osoyoo_count)
 
