@@ -1,27 +1,19 @@
 import math
 import numpy as np
+import csv
+import os
+from datetime import datetime
 
 import rclpy
 from rclpy.node import Node
 from nav_msgs.msg import Odometry
 from geometry_msgs.msg import Twist
 
-# Assumed interface (adjust here if your function lives elsewhere or has a different signature):
-# learning_controller(H: np.ndarray, T: np.ndarray, logger) -> (np.ndarray, np.ndarray)
-#   H: shape (n_herder, 3) rows are [x, y, yaw]
-#   T: shape (n_target, 3) rows are [x, y, yaw]
-#   returns:
-#     herder_cmds: shape (n_herder, 2) rows are [v, omega]
-#     target_cmds: shape (n_target, 2) rows are [v, omega]
 from shepherding_control.my_control_library.learning_control import learning_controller
 
 
 def quat_to_yaw(qx: float, qy: float, qz: float, qw: float) -> float:
-    """
-    Convert quaternion to yaw (Z axis rotation).
-    Formula consistent with ROS REP-103 / standard yaw extraction.
-    """
-    # yaw (z-axis rotation)
+    """Convert quaternion to yaw (Z-axis rotation)."""
     siny_cosp = 2.0 * (qw * qz + qx * qy)
     cosy_cosp = 1.0 - 2.0 * (qy * qy + qz * qz)
     return math.atan2(siny_cosp, cosy_cosp)
@@ -57,10 +49,19 @@ class ControllerNodeRL(Node):
             pub_topic = f'/model/target{j}/cmd_vel'
             self.cmd_publishers[('target', j)] = self.create_publisher(Twist, pub_topic, 10)
 
+        # === CSV logging setup ===
+        log_name = datetime.now().strftime("gazebo_poses_log_%Y%m%d_%H%M%S.csv")
+        self.log_path = os.path.join(os.getcwd(), log_name)
+        self.csv_file = open(self.log_path, "w", newline="")
+        self.csv_writer = csv.writer(self.csv_file)
+        self.csv_writer.writerow(["time", "type", "id", "x", "y", "yaw"])
+        self.get_logger().info(f"Logging poses to {self.log_path}")
+
         # Control loop at 10 Hz
         self.create_timer(0.1, self.control_loop)
 
     def _make_callback(self, kind: str, idx: int):
+        """Generate callback to store latest Odometry for herder or target."""
         def callback(msg: Odometry):
             pose = msg.pose.pose
             if kind == 'herder':
@@ -70,10 +71,7 @@ class ControllerNodeRL(Node):
         return callback
 
     def _poses_to_array(self, poses_dict, expected_len: int) -> np.ndarray:
-        """
-        Convert a dict of geometry_msgs/Pose (1-based contiguous keys) into
-        an array of shape (expected_len, 3) with rows [x, y, yaw].
-        """
+        """Convert dict of geometry_msgs/Pose into array (expected_len, 3) with [x, y, yaw]."""
         arr = np.zeros((expected_len, 3), dtype=np.float64)
         for k in range(1, expected_len + 1):
             pose = poses_dict[k]
@@ -83,6 +81,22 @@ class ControllerNodeRL(Node):
             arr[k - 1, :] = [position.x, position.y, yaw]
         return arr
 
+    def _log_poses(self, timestamp: float):
+        """Write all herder and target poses to CSV."""
+        for i in range(1, self.n + 1):
+            pose = self.H[i]
+            if pose is not None:
+                x, y, yaw = pose.position.x, pose.position.y, quat_to_yaw(
+                    pose.orientation.x, pose.orientation.y, pose.orientation.z, pose.orientation.w)
+                self.csv_writer.writerow([timestamp, "herder", i, x, y, yaw])
+
+        for j in range(1, self.nt + 1):
+            pose = self.T[j]
+            if pose is not None:
+                x, y, yaw = pose.position.x, pose.position.y, quat_to_yaw(
+                    pose.orientation.x, pose.orientation.y, pose.orientation.z, pose.orientation.w)
+                self.csv_writer.writerow([timestamp, "target", j, x, y, yaw])
+
     def control_loop(self):
         # Check readiness
         not_ready_H = [i for i, p in self.H.items() if p is None]
@@ -90,6 +104,9 @@ class ControllerNodeRL(Node):
         if not_ready_H or not_ready_T:
             self.get_logger().info(f"Waiting for poses: H{not_ready_H}, T{not_ready_T}")
             return
+
+        now = self.get_clock().now().nanoseconds / 1e9
+        self._log_poses(now)  # save current poses
 
         # Build numpy arrays of poses: H -> (n_herder, 3), T -> (n_target, 3)
         try:
@@ -137,16 +154,31 @@ class ControllerNodeRL(Node):
             twist.angular.z = float(omega)
             self.cmd_publishers[('target', j)].publish(twist)
 
+    def destroy_node(self):
+        """Ensure CSV file is closed on shutdown."""
+        try:
+            if hasattr(self, "csv_file"):
+                self.csv_file.close()
+                self.get_logger().info(f"Pose log saved to {self.log_path}")
+        finally:
+            super().destroy_node()
+
 
 def main(args=None):
     rclpy.init(args=args)
 
     # Configure number of robots (targets = Osoyoo, herders = TurtleBot)
-    osoyoo_count = 12
-    turtlebot_count = 4
+    osoyoo_count = 5
+    turtlebot_count = 2
 
     node = ControllerNodeRL(n_herder=turtlebot_count, n_target=osoyoo_count)
 
-    rclpy.spin(node)
-    node.destroy_node()
-    rclpy.shutdown()
+    try:
+        rclpy.spin(node)
+    finally:
+        node.destroy_node()
+        rclpy.shutdown()
+
+
+if __name__ == '__main__':
+    main()

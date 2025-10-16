@@ -154,8 +154,8 @@ def generate_launch_description():
     """
     ld = LaunchDescription()
 
-    osoyoo_count = 12
-    turtlebot_count = 4
+    osoyoo_count = 5
+    turtlebot_count = 2
     model_path_osoyoo = '/home/stefano/dev/Costanza/ros2_ws/models/osoyoo/model.sdf'
 
 

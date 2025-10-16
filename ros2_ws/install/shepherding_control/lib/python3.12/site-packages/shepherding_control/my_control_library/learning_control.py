@@ -18,12 +18,12 @@ dt = 0.02
 
 # alpha = 0.02    
 # damping = 2   # 2 funziona meglio
-alpha = 0.2    
-damping = 1
+alpha = 1    
+damping = 10
 diffusion = 0.1
 
 # Herder dynamics
-herder_max_vel = 1  # Maximum velocity (in scaled units)
+herder_max_vel = 0.3  # Maximum velocity (in scaled units)
 
 # Barrier certificate to avoid inter-agent and boundary collisions
 si_barrier_cert = create_single_integrator_barrier_certificate_with_boundary(
